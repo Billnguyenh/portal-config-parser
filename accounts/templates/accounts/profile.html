@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+
+{% block content %}
+    <div class="container">
+        <h1>My Profile</h1>
+        <p>Username: {{ user.username }}</p>
+    {% if user.first_name %}
+        <p>First Name: {{ user.first_name }}</p>
+    {% else %}
+        <p>First Name: [not yet configured]</p>
+    {% endif %}
+
+    {% if user.last_name %}
+        <p>Last Name: {{ user.last_name }}</p>
+    {% else %}
+        <p>Last Name: [not yet configured]</p>
+    {% endif %}
+
+    {% if user.email %}
+        <p>Email: {{ user.email }}</p>
+    {% else %}
+        <p>Email: [not yet configured. This is needed to send password reset link]</p>
+    {% endif %}
+
+    </div>
+    <div class="container">
+        <a href="{% url 'accounts:edit-profile' %}">
+            <button class='btn btn-primary'>Edit Profile</button>
+        </a>
+        <a href="{% url 'accounts:change-password' %}">
+            <button class='btn btn-primary'>Change Password</button>
+        </a>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,960 @@
+{% extends 'base.html' %}
+{% load parser_filters %}
+{% load static %}
+
+{% block custom_css %}
+<link rel='stylesheet' href="{% static 'css/win_parser/reports.css' %}">
+{% endblock %}
+
+{% block content %}
+
+
+{% include 'win_parser/_modals.html' %}
+
+<!-- 
+    Naming Convention
+    [consistentElementIdPrefix][elementTagNameSuffix]
+    Local Users example:
+        localUsersTable
+        localUsersInfoBtn
+        localUsersModal
+        localUsersSearchBar
+
+    Following this naming convention is necessary to ensure JavaScript functions
+    correctly, identifying the right elements in DOM.
+
+    Exceptions:
+        1.  In "Security Updates", a table is created for each host. the 
+            infoBtn for each table opens the same modal.
+ -->
+
+ <!-- NAVBAR -->
+<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-link" href="{% url 'win_parser:upload' %}">
+            File Uploader
+        </a>
+        <a class="nav-link active" id="nav-overview-tab" data-bs-toggle="tab" href="#nav-overview" role="tab" aria-controls="nav-overview" aria-selected="true">
+            Overview
+        </a>
+        <a class="nav-link" id="nav-users-tab" data-bs-toggle="tab" href="#nav-users" role="tab" aria-controls="nav-users" aria-selected="false">
+            Users
+        </a>    
+        <a class="nav-link" id="nav-programs-tab" data-bs-toggle="tab" href="#nav-programs" role="tab" aria-controls="nav-programs" aria-selected="false">
+            Programs
+        </a>    
+        <a class="nav-link" id="nav-services-tab" data-bs-toggle="tab" href="#nav-services" role="tab" aria-controls="nav-services" aria-selected="false">
+            Services
+        </a>    
+        <a class="nav-link" id="nav-ports-tab" data-bs-toggle="tab" href="#nav-ports" role="tab" aria-controls="nav-ports" aria-selected="false">
+        Listening Ports
+        </a>    
+        <a class="nav-link" id="nav-passwordPolicies-tab" data-bs-toggle="tab" href="#nav-passwordPolicies" role="tab" aria-controls="nav-passwordPolicies" aria-selected="false">
+            Password Policies
+        </a>     
+        <a class="nav-link" id="nav-accountLockoutPolicies-tab" data-bs-toggle="tab" href="#nav-accountLockoutPolicies" role="tab" aria-controls="nav-accountLockoutPolicies" aria-selected="false">
+            Account Lockout Policies
+        </a>     
+        <a class="nav-link" id="nav-auditPolicies-tab" data-bs-toggle="tab" href="#nav-auditPolicies" role="tab" aria-controls="nav-auditPolicies" aria-selected="false">
+            Audit Policies
+        </a>     
+        <a class="nav-link" id="nav-securityOptionsPolicies-tab" data-bs-toggle="tab" href="#nav-securityOptionsPolicies" role="tab" aria-controls="nav-securityOptionsPolicies" aria-selected="false">
+            Security Options
+        </a>     
+        <a class="nav-link" id="nav-privilegeRightsPolicies-tab" data-bs-toggle="tab" href="#nav-privilegeRightsPolicies" role="tab" aria-controls="nav-privilegeRightsPolicies" aria-selected="false">
+            Privilege Rights
+        </a>     
+        <a class="nav-link" id="nav-securityUpdates-tab" data-bs-toggle="tab" href="#nav-securityUpdates" role="tab" aria-controls="nav-securityUpdates" aria-selected="false">
+            Security Updates
+        </a>     
+        <a class="nav-link" id="nav-timeSettings-tab" data-bs-toggle="tab" href="#nav-timeSettings" role="tab" aria-controls="nav-timeSettings" aria-selected="false">
+            Time Settings
+        </a>     
+        <a class="nav-link" id="nav-rdpSecurityLevel-tab" data-bs-toggle="tab" href="#nav-rdpSecurityLevel" role="tab" aria-controls="nav-rdpSecurityLevel" aria-selected="false">
+            RDP Security Level
+        </a>     
+        <a class="nav-link" id="nav-screenSaverTimeout-tab" data-bs-toggle="tab" href="#nav-screenSaverTimeout" role="tab" aria-controls="nav-screenSaverTimeout" aria-selected="false">
+            Screen Saver Timeout
+        </a>     
+    </div>
+</nav>
+
+<!-- LOADING SPINNER -->
+<div id="loading-spinner" class="spinner-border" role="status"> 
+    <span class="visually-hidden">Loading...</span> 
+</div>
+
+<!-- REPORT SECTION  -->
+<div id="report-section" class="tab-content" id="nav-tabContent">
+
+    <!-- OVERVIEW SECTION  -->
+    <div class="tab-pane fade show active" id="nav-overview" role="tabpanel" aria-labelledby="nav-overview-tab">
+
+        <div class="section-directory container mt-3">
+            <ul class="list-group list-group-horizontal-lg">
+                <a href="#hostOsHardware" class="list-group-item list-group-item-action">Host OS and Hardware</a>
+                <a href="#networkAdapters" class="list-group-item list-group-item-action">Network Adapters</a>
+                <a href="#groupPolicies" class="list-group-item list-group-item-action">Group Policies Applied (Gpresult)</a>
+            </ul>
+            <hr>
+        </div>
+
+        <div id="hostOsHardware" class="container mt-3">
+            <h4>
+                Host OS and Hardware
+                <img id="hostOsHardwareInfoBtn" class="info-button" src="{% static 'images/info-icon.svg' %}">
+            </h4>
+            <input id="hostOsHardwareSearchBar" type="text" onkeyup="searchTable('hostOsHardwareSearchBar', 'hostOsHardwareTable')" placeholder="Search for..." class='form-control'>
+            <table id="hostOsHardwareTable" class='table table-bordered table-striped table-sm'>
+                <thead>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Hostname 
+                                <span class="host-count-badge badge bg-dark"></span>
+                            </button>
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Operating System
+                            </button>                        
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Hardware
+                            </button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for config in windowsconfigs %}
+                    <tr>
+                        <td>{{ config.hostname }}</td>
+                        <td>{{ config.operating_system }}</td>
+                        <td>{{ config.hardware }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="networkAdapters" class="container mt-3">
+            <h4>
+                Network Adapters
+                <img id="networkAdaptersInfoBtn" class="info-button" src="{% static 'images/info-icon.svg' %}">
+            </h4>
+            <input type="text" id="networkAdaptersSearchBar" onkeyup="searchTable('networkAdaptersSearchBar', 'networkAdaptersTable')" placeholder="Search for..." class='form-control'>
+            <table id="networkAdaptersTable" class='table table-bordered table-striped table-sm'>
+                <thead>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Hostname
+                                <span class="host-count-badge badge bg-dark"></span>
+                            </button>
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Network Adapters
+                            </button>                        
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for config in windowsconfigs %}
+                    <tr>
+                        <td>{{ config.hostname }}</td>
+                        <td>
+                            {% for network_adapters in config.network_adapters|decode_json %}
+                                {{ network_adapters }};<br>
+                            {% endfor %}
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <div id="groupPolicies" class="container mt-3">
+            <h4>
+                Group Policies Applied (Gpresult)
+                <img id="groupPoliciesInfoBtn" class="info-button" src="{% static 'images/info-icon.svg' %}">
+            </h4>
+            <input type="text" id="groupPoliciesSearchBar" onkeyup="searchTable('groupPoliciesSearchBar', 'groupPoliciesTable')" placeholder="Search for..." class='form-control'>
+            <table id="groupPoliciesTable" class='table table-bordered table-striped table-sm'>
+                <thead>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Hostname
+                                <span class="host-count-badge badge bg-dark"></span>
+                            </button>
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Group Policies
+                            </button>                        
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Domain Name
+                            </button>                        
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for config in windowsconfigs %}
+                    <tr>
+                        <td>{{ config.hostname }}</td>
+                        <td>
+                            {% for gpo in config.gpresult|decode_json %}
+                                {{ gpo }}<br>
+                            {% endfor %}
+                        </td>
+                        <td>{{ config.domain_name }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- USERS SECTION  -->
+    <div class="tab-pane fade" id="nav-users" role="tabpanel" aria-labelledby="nav-users-tab">
+
+        <div class="section-directory container mt-3">
+            <ul class="list-group list-group-horizontal-lg">
+                <a href="#localUsers" class="list-group-item list-group-item-action">Local Users</a>
+                <a href="#administratorsGroup" class="list-group-item list-group-item-action">Users in Administrator Group</a>
+                <a href="#defaultUsers" class="list-group-item list-group-item-action">Default User Accounts Status</a>
+            </ul>
+            <hr>
+        </div>
+
+        <div id="localUsers" class="container mt-3">
+            <h4>
+                Local Users
+                <img id="localUsersInfoBtn" class="info-button" src="{% static 'images/info-icon.svg' %}">
+            </h4>
+            <input type="text" id="localUsersSearchBar" onkeyup="searchTable('localUsersSearchBar', 'localUsersTable')" placeholder="Search for..." class='form-control'>
+            <table id="localUsersTable" class='table table-bordered table-striped table-sm'>
+                <thead>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Hostname
+                                <span class="host-count-badge badge bg-dark"></span>
+                            </button>
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Local Users
+                            </button>                        
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for config in windowsconfigs %}
+                    <tr>
+                        <td>{{ config.hostname }}</td>
+                        <td>
+                            {% for local_users in config.users|decode_json %}
+                                {{ local_users }}; <br>
+                            {% endfor %}
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <div id="administratorsGroup" class="container mt-3">
+            <h4>
+                Users in Administrator Group
+                <img id="administratorsGroupInfoBtn" class="info-button" src="{% static 'images/info-icon.svg' %}">
+            </h4>
+            <input type="text" id="administratorsGroupSearchBar" onkeyup="searchTable('administratorsGroupSearchBar', 'administratorsGroupTable')" placeholder="Search for..." class='form-control'>
+            <table id="administratorsGroupTable" class='table table-bordered table-striped table-sm'>
+                <thead>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Hostname
+                                <span class="host-count-badge badge bg-dark"></span>
+                            </button>
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Administrators Group Users and Roles
+                            </button>                        
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for config in windowsconfigs %}
+                    <tr>
+                        <td>{{ config.hostname }}</td>
+                        <td>
+                            {% for administrators in config.admins|decode_json %}
+                                {{ administrators }}; <br>
+                            {% endfor %}
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <div id="defaultUsers" class="container mt-3">
+            <h4>
+                Default User Accounts Status
+                <img id="defaultUsersInfoBtn" class="info-button" src="{% static 'images/info-icon.svg' %}">
+            </h4>
+            <input type="text" id="defaultUsersSearchBar" onkeyup="searchTable('defaultUsersSearchBar', 'defaultUsersTable')" placeholder="Search for..." class='form-control'>
+            <table id="defaultUsersTable" class='table table-striped table-bordered table-sm'>
+                <thead>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Hostname
+                                <span class="host-count-badge badge bg-dark"></span>
+                            </button>
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Administrators Group Users and Roles
+                            </button>                        
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for config in windowsconfigs %}
+                    <tr>
+                        <td>{{ config.hostname }}</td>
+                        <td>
+                            {% for test in config.default_users|decode_json %}
+                                {{ test }} <br>
+                            {% endfor %}
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- PROGRAMS SECTION  -->
+    <div class="tab-pane fade" id="nav-programs" role="tabpanel" aria-labelledby="nav-programs-tab">
+        <div id="programs" class="container mt-3">
+            <h4>
+                Installed Programs
+                <img id="programsInfoBtn" class="info-button" src="{% static 'images/info-icon.svg' %}">
+            </h4>
+            <input type="text" id="programsSearchBar" onkeyup="searchTable('programsSearchBar', 'programsTable')" placeholder="Search for..." class='form-control'>
+            <table id='programsTable' class='table table-striped table-bordered table-sm'>
+                <thead>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Hostname
+                                <span class="host-count-badge badge bg-dark"></span>
+                            </button>
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Program
+                            </button>                        
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Version
+                            </button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for config in windowsconfigs %}
+                    {% with program_dict=config.programs|decode_json %}
+                        {% for program, version in program_dict.items %}
+                        <tr>
+                            <td>{{ config.hostname }}</td>
+                            <td>{{ program }}</td>
+                            <td>{{ version }}</td>
+                        </tr>
+                        {% endfor %}
+                    {% endwith %}
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- SERVICES SECTION  -->
+    <div class="tab-pane fade" id="nav-services" role="tabpanel" aria-labelledby="nav-services-tab">
+        <div id="services" class="container mt-3">
+            <h4>
+                Running Services
+                <img id="servicesInfoBtn" class="info-button" src="{% static 'images/info-icon.svg' %}">
+            </h4> 
+            <input type="text" id="servicesSearchBar" onkeyup="searchTable('servicesSearchBar', 'servicesTable')" placeholder="Search for..." class='form-control'>
+            <table id='servicesTable' class='table table-striped table-bordered table-sm'>
+                <thead>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Hostname
+                                <span class="host-count-badge badge bg-dark"></span>
+                            </button>
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Service
+                            </button>                        
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for config in windowsconfigs %}
+                    {% for service in config.services|decode_json %}
+                        <tr>
+                            <td>{{ config.hostname }}</td>
+                            <td>{{ service }}</td>
+                        </tr>
+                    {% endfor %}
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- PORTS SECTION  -->
+    <div class="tab-pane fade" id="nav-ports" role="tabpanel" aria-labelledby="nav-ports-tab">
+        <div id="ports" class="container mt-3">
+            <h4>
+                Listening Ports
+                <img id="portsInfoBtn" class="info-button" src="{% static 'images/info-icon.svg' %}">
+            </h4> 
+            <input type="text" id="portsSearchBar" onkeyup="searchTable('portsSearchBar', 'portsTable')" placeholder="Search for..." class='form-control'>
+            <table id='portsTable' class='table table-striped table-bordered table-sm'>
+                <thead>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Hostname
+                                <span class="host-count-badge badge bg-dark"></span>
+                            </button>
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Port
+                            </button>                        
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Service Details Provided
+                            </button>                        
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for config in windowsconfigs %}
+                    {% with ports_dict=config.listening_ports|decode_json %}
+                        {% for port,details in ports_dict.items %}
+                        <tr>
+                            <td>{{ config.hostname }}</td>
+                            <td>{{ port }}</td>
+                            <td>{{ details }}</td>
+                        </tr>
+                        {% endfor %}
+                    {% endwith %}
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- PASSWORD POLICIES  -->
+    <div class="tab-pane fade" id="nav-passwordPolicies" role="tabpanel" aria-labelledby="nav-passwordPolicies-tab">
+        <div id="passwordPolicies" class="container mt-3">
+            <h4>
+                Password Policy
+                <img id="passwordPoliciesInfoBtn" class="info-button" src="{% static 'images/info-icon.svg' %}">
+            </h4> 
+            <input type="text" id="passwordPoliciesSearchBar" onkeyup="searchTable('passwordPoliciesSearchBar', 'passwordPoliciesTable')" placeholder="Search for..." class='form-control'>
+            <table id='passwordPoliciesTable' class='table table-striped table-bordered table-sm'>
+                <thead>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Hostname
+                                <span class="host-count-badge badge bg-dark"></span>
+                            </button>
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Policy
+                            </button>                        
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Value
+                            </button>                        
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for config in windowsconfigs %}
+                    {% with password_policy_dict=config.password_policies|decode_json %}
+                        {% for policy,value in password_policy_dict.items %}
+                        <tr>
+                            <td>{{ config.hostname }}</td>
+                            <td>{{ policy }}</td>
+                            <td>{{ value }}</td>
+                        </tr>
+                        {% endfor %}
+                    {% endwith %}
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <!-- ACCOUNT LOCKOUT POLICIES  -->
+    <div class="tab-pane fade" id="nav-accountLockoutPolicies" role="tabpanel" aria-labelledby="nav-accountLockoutPolicies-tab">
+        <div id="accountLockoutPolicies" class="container mt-3">
+            <h4>
+                Account Lockout Policies
+                <img id="accountLockoutPoliciesInfoBtn" class="info-button" src="{% static 'images/info-icon.svg' %}">
+            </h4> 
+            <input type="text" id="accountLockoutPoliciesSearchBar" onkeyup="searchTable('accountLockoutPoliciesSearchBar', 'accountLockoutPoliciesTable')" placeholder="Search for..." class='form-control'>
+            <table id='accountLockoutPoliciesTable' class='table table-striped table-bordered table-sm'>
+                <thead>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Hostname
+                                <span class="host-count-badge badge bg-dark"></span>
+                            </button>
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Policy
+                            </button>                        
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Value
+                            </button>                        
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for config in windowsconfigs %}
+                    {% with account_lockout_policy_dict=config.account_lockout_policies|decode_json %}
+                        {% for policy,value in account_lockout_policy_dict.items %}
+                        <tr>
+                            <td>{{ config.hostname }}</td>
+                            <td>{{ policy }}</td>
+                            <td>{{ value }}</td>
+                        </tr>
+                        {% endfor %}
+                    {% endwith %}
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- AUDIT POLICIES  -->
+    <div class="tab-pane fade" id="nav-auditPolicies" role="tabpanel" aria-labelledby="nav-auditPolicies-tab">
+        <div id="auditPolicies" class="container mt-3">
+            <h4>
+                Audit Policies
+                <img id="auditPoliciesInfoBtn" class="info-button" src="{% static 'images/info-icon.svg' %}">
+            </h4> 
+            <input type="text" id="auditPoliciesSearchBar" onkeyup="searchTable('auditPoliciesSearchBar', 'auditPoliciesTable')" placeholder="Search for..." class='form-control'>
+            <table id='auditPoliciesTable' class='table table-striped table-bordered table-sm'>
+                <thead>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Hostname
+                                <span class="host-count-badge badge bg-dark"></span>
+                            </button>
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Policy
+                            </button>                        
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Value
+                            </button>                        
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for config in windowsconfigs %}
+                    {% with audit_policy_dict=config.audit_policies|decode_json %}
+                        {% for policy,value in audit_policy_dict.items %}
+                        <tr>
+                            <td>{{ config.hostname }}</td>
+                            <td>{{ policy }}</td>
+                            <td>{{ value }}</td>
+                        </tr>
+                        {% endfor %}
+                    {% endwith %}
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <!-- SECURITY OPTION POLICIES  -->
+    <div class="tab-pane fade" id="nav-securityOptionsPolicies" role="tabpanel" aria-labelledby="nav-securityOptionsPolicies-tab">
+
+        <div class="section-directory container mt-3">
+            <ul class="list-group list-group-horizontal-lg">
+                <a href="#securityOptionsPolicies" class="list-group-item list-group-item-action">Security Option Policies (Spot Checked & Translated)</a>
+                <a href="#rawsecurityOptionsPolicies" class="list-group-item list-group-item-action">Security Option Policies (Raw Data Full)</a>
+            </ul>
+            <hr>
+        </div>
+        
+        <div id="securityOptionsPolicies" class="container mt-3">
+            <h4>
+                Security Option Policies (Spot Checked & Translated)
+                <img id="securityOptionsPoliciesInfoBtn" class="info-button" src="{% static 'images/info-icon.svg' %}">
+            </h4> 
+            <a href="https://tevora.atlassian.net/l/c/emLxwujy" target="_blank"><p>See section "10. Local Security Policies" > "Security Options" for details on reduction</p></a>
+            <input type="text" id="securityOptionsPoliciesSearchBar" onkeyup="searchTable('securityOptionsPoliciesSearchBar', 'securityOptionsPoliciesTable')" placeholder="Search for..." class='form-control'>
+            <table id='securityOptionsPoliciesTable' class='table table-striped table-bordered table-sm'>
+                <thead>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Hostname
+                                <span class="host-count-badge badge bg-dark"></span>
+                            </button>
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Policy
+                            </button>                        
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Value
+                            </button>                        
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for config in windowsconfigs %}
+                {% with security_options_policy_dict=config.registry_values|decode_json %}
+                    {% for registry_path,number in security_options_policy_dict.items %}
+                        {% if registry_path|is_in_security_options_sample %}
+                            {% with registry_name=registry_path|clean_registry_path %}
+                            {% with string_tuple=registry_name|add:";"|add:number %}
+                            {% with readable_list_tuple=string_tuple|convert_security_options_string_tuple_to_readable_list_tuple %}
+                            <tr>
+                                <td>{{ config.hostname }}</td>
+                                <td>{{ readable_list_tuple.0 }}</td>
+                                <td>{{ readable_list_tuple.1 }}</td>
+                            </tr>
+                            {% endwith %}
+                            {% endwith %}
+                            {% endwith %}
+                        {% endif %}
+                    {% endfor %}
+                {% endwith %}
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="rawsecurityOptionsPolicies"  class="container mt-3">
+            <h4>
+                Security Option Policies (Raw Data Full)
+                <img id="rawSecurityOptionsPoliciesInfoBtn" class="info-button" src="{% static 'images/info-icon.svg' %}">
+            </h4> 
+            <input type="text" id="rawSecurityOptionsPoliciesSearchBar" onkeyup="searchTable('rawSecurityOptionsPoliciesSearchBar', 'rawSecurityOptionsPoliciesTable')" placeholder="Search for..." class='form-control'>
+            <table id='rawSecurityOptionsPoliciesTable' class='table table-striped table-bordered table-sm'>
+                <thead>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Hostname
+                                <span class="host-count-badge badge bg-dark"></span>
+                            </button>
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Policy
+                            </button>                        
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Value
+                            </button>                        
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for config in windowsconfigs %}
+                    {% with security_options_policy_dict=config.registry_values|decode_json %}
+                        {% for policy,value in security_options_policy_dict.items %}
+                        <tr>
+                            <td>{{ config.hostname }}</td>
+                            <td>{{ policy|clean_registry_path }}</td>
+                            <td>
+                            {% with value_list=value|split_security_options_values %}
+                                {% for value in value_list %}    
+                                    {{ value }} <br>
+                                {% endfor %}
+                            {% endwith %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    {% endwith %}
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- PRIVILEGE RIGHTS POLICIES  -->
+    <div class="tab-pane fade" id="nav-privilegeRightsPolicies" role="tabpanel" aria-labelledby="nav-privilegeRightsPolicies-tab">
+        <div id="privilegeRightsPolicies" class="container mt-3">
+            <h4>
+                Privilege Rights Policies (User Rights Assignments)
+                <img id="privilegeRightsPoliciesInfoBtn" class="info-button" src="{% static 'images/info-icon.svg' %}">
+            </h4> 
+            <input type="text" id="privilegeRightsPoliciesSearchBar" onkeyup="searchTable('privilegeRightsPoliciesSearchBar', 'privilegeRightsPoliciesTable')" placeholder="Search for..." class='form-control'>
+            <table id='privilegeRightsPoliciesTable' class='table table-striped table-bordered table-sm'>
+                <thead>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Hostname
+                                <span class="host-count-badge badge bg-dark"></span>
+                            </button>
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Policy
+                            </button>                        
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Value
+                            </button>                        
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for config in windowsconfigs %}
+                    {% with privilege_rights_policy_dict=config.privilege_rights|decode_json %}
+                        {% for policy,value in privilege_rights_policy_dict.items %}
+                        <tr>
+                            <td>{{ config.hostname }}</td>
+                            <td>{{ policy }}</td>
+                            <td>
+                            {% with translated_list=value|translate_privilege_rights_values_to_list %} 
+                                {% for translated_value in translated_list %}
+                                    {{ translated_value }} <br>
+                                {% endfor %}
+                            {% endwith %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    {% endwith %}
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- SECURITY UPDATES  -->
+    <div class="tab-pane fade" id="nav-securityUpdates" role="tabpanel" aria-labelledby="nav-securityUpdates-tab">
+
+        <div class="section-directory container mt-3">
+            <h4>Host Directory</h4>
+            <ul class="list-group">
+            {% for config in windowsconfigs %}
+                <a href="#{{ config.hostname }}-securityUpdates" class="list-group-item list-group-item-action">{{ config.hostname }}</a>
+            {% endfor %}
+            </ul>
+            <hr>
+        </div>
+
+        {% for config in windowsconfigs %}
+        <div id="{{ config.hostname }}-securityUpdates" class="container mt-3">
+            <h4>
+                Security Updates ({{ config.hostname }})
+                <img id="securityUpdatesInfoBtn" class="info-button" src="{% static 'images/info-icon.svg' %}">
+            </h4> 
+            <input type="text" id="{{ config.hostname }}-securityUpdatesSearchBar" onkeyup="searchTable('{{ config.hostname }}-securityUpdatesSearchBar', '{{ config.hostname }}-securityUpdatesTable')" placeholder="Search for..." class='form-control'>
+            <table id='{{ config.hostname }}-securityUpdatesTable' class='table table-striped table-bordered table-sm'>
+                <thead>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Hostname
+                                <span class="host-count-badge badge bg-dark"></span>
+                            </button>
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Hotfix ID
+                            </button>                        
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Date
+                            </button>                        
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% with security_updates_dict=config.security_updates|decode_json %}
+                        {% for hotfixId,date in security_updates_dict.items %}
+                        <tr>
+                            <td>{{ config.hostname }}</td>
+                            <td>{{ hotfixId }}</td>
+                            <td>{{ date }}</td>
+                        </tr>
+                        {% endfor %}
+                    {% endwith %}
+
+                </tbody>
+            </table>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- TIME SETTINGS  -->
+    <div class="tab-pane fade" id="nav-timeSettings" role="tabpanel" aria-labelledby="nav-timeSettings-tab">
+        <div id="timeSettings" class="container mt-3">
+            <h4>
+                Time Settings
+                <img id="timeSettingsInfoBtn" class="info-button" src="{% static 'images/info-icon.svg' %}">
+            </h4> 
+            <input type="text" id="timeSettingsSearchBar" onkeyup="searchTable('timeSettingsSearchBar', 'timeSettingsTable')" placeholder="Search for..." class='form-control'>
+            <table id='timeSettingsTable' class='table table-striped table-bordered table-sm'>
+                <thead>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Hostname
+                                <span class="host-count-badge badge bg-dark"></span>
+                            </button>
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Time Source
+                            </button>                        
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Time Peer
+                            </button>                        
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for config in windowsconfigs %}
+                    <tr>
+                        <td>{{ config.hostname }}</td>
+                        <td>{{ config.time_source|translate_time_configuration }}</td>
+                        <td>{{ config.time_peer|translate_time_configuration }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- RDP SECURITY LEVEL  -->
+    <div class="tab-pane fade" id="nav-rdpSecurityLevel" role="tabpanel" aria-labelledby="nav-rdpSecurityLevel-tab">
+        <div id="rdpSecurityLevel" class="container mt-3">
+            <h4>
+                RDP Security Level
+                <img id="rdpSecurityLevelInfoBtn" class="info-button" src="{% static 'images/info-icon.svg' %}">
+            </h4> 
+            <input type="text" id="rdpSecurityLevelSearchBar" onkeyup="searchTable('rdpSecurityLevelSearchBar', 'rdpSecurityLevelTable')" placeholder="Search for..." class='form-control'>
+            <table id='rdpSecurityLevelTable' class='table table-striped table-bordered table-sm'>
+                <thead>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Hostname
+                                <span class="host-count-badge badge bg-dark"></span>
+                            </button>
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                RDP Security Level
+                            </button>                        
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for config in windowsconfigs %}
+                    <tr>
+                        <td>{{ config.hostname }}</td>
+                        <td>{{ config.rdp_security_level|translate_rdp_security_level }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- SCREEN SAVER TIMEOUT  -->
+    <div class="tab-pane fade" id="nav-screenSaverTimeout" role="tabpanel" aria-labelledby="nav-screenSaverTimeout-tab">
+        <div id="screenSaverTimeout" class="container mt-3">
+            <h4>
+                Screen Saver Timeout
+                <img id="screenSaverTimeoutInfoBtn" class="info-button" src="{% static 'images/info-icon.svg' %}">
+            </h4> 
+            <input type="text" id="screenSaverTimeoutSearchBar" onkeyup="searchTable('screenSaverTimeoutSearchBar', 'screenSaverTimeoutTable')" placeholder="Search for..." class='form-control'>
+            <table id='screenSaverTimeoutTable' class='table table-striped table-bordered table-sm'>
+                <thead>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Hostname
+                                <span class="host-count-badge badge bg-dark"></span>
+                            </button>
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-secondary">
+                                Screen Saver Timeout
+                            </button>                        
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for config in windowsconfigs %}
+                    <tr>
+                        <td>{{ config.hostname }}</td>
+                        <td>{{ config.screen_saver_timeout|translate_screen_saver_timeout }}</td>
+                        <td></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'scripts/win-report-table-manipulation.js' %}"></script>
+    <script src="{% static 'scripts/win-report-modal.js' %}"></script>
+{% endblock %}

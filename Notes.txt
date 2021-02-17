@@ -1,0 +1,33 @@
+To Do
+[ ] Fill in Guidance details in modals
+
+
+
+[ ] Make Report Template components reusable
+[ ] Figure out how to delete files once a user is deleted.
+[ ] Add file validator
+[ ] Section Parsing Indicators should be customizable
+
+Done
+[X] Optimize Sort function
+[X] Create Modal with Guidance
+[X] Separate JS from HTML for table sort functions. Remove "onclick" from HTML. Use logic improved from modals
+[N/A] Add ability to "reverse" search function, identify lines that "DONT" have search query
+[N/A] Figure out how to CSS "reverse" button properly o.o
+[X] Create JavaScript code to organize modals
+[X] Indicate when Host is Missing in search
+[X] Add multiple file upload feature (https://stackoverflow.com/questions/39525188/upload-multiple-files-in-django)
+[X] Add interface & logic to "Scan" txt files and populate config data in model
+[X] Once config data has been populated, make "Report" views available
+
+[X] Create Table Sort function using JavaScript
+[X] Convert Registry Key Values & Privilege Rights values to readable form
+
+[X] Home View should redirect to login page if not logged in. 
+
+
+
+[ ] https://www.youtube.com/watch?v=8gNrZ4lAnAw&ab_channel=DesignCourse
+
+Deploying Django to AWS EC2
+https://medium.com/saarthi-ai/ec2apachedjango-838e3f6014ab

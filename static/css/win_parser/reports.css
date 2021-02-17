@@ -1,0 +1,37 @@
+#loading-spinner {
+    display:none; position:fixed; 
+    left:40%; 
+    top:30%; 
+    z-index:1000; 
+    width:100px; 
+    height:100px;
+}
+
+
+.info-button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    transition: .2s;
+}
+
+.info-button:hover {
+    background-color: #8be28c;
+    transition: .2s;
+}
+
+.info-button:active {
+    width: 24px;
+    height: 24px;
+    transition: .0001s;
+    filter: brightness(100%);
+}
+
+.table-search-bar {
+    display: inline;
+    float: right;
+}
+
+.section-directory a {
+    color: #0D6EFD;
+}

@@ -1,0 +1,552 @@
+{% load static %}
+
+{% block custom_css %}
+<link rel='stylesheet' href="{% static 'css/win_parser/modals.css' %}">
+{% endblock %}
+
+<!-- HOST OS AND HARDWARE -->
+<div id="hostOsHardwareModal" class="modal">
+    <div class="modal-content">
+
+        <div class="modal-header">
+            <h2>Host OS and Hardware</h2>
+            <span class="close">&times;</span>
+        </div>
+
+        <div class="modal-body">
+            <p>
+                Review the Operating Systems in use to identify & understand following: <br>
+                1. What is the specific OS in use? This information is necessary for when we identify OS patch related vulnerabilities later <br>
+                2. Are there any operating systems that are beyond vendor end-of-life? <br>
+                3. What the hardware information is <br>
+            </p>
+            <p>Raw "systeminfo" cmd command output example:</p>
+            <img src="{% static 'images/win_parser/systeminfo-cli-output.png' %}">
+            <br><br>
+            <p>Here's what we would look at during interviews or via screen shots:</p>
+            <img src="{% static 'images/win_parser/systeminfo-screenshot.png' %}">
+        </div>
+
+        <div class="modal-footer">
+            <p>PCI DSS 6.2 Ensure that all system components and software are protected from known vulnerabilities by installing applicable vendor-supplied security patches. Install critical security patches within one month of release.</p>
+        </div>
+
+    </div>    
+</div>
+
+<!-- NETWORK ADAPTERS -->
+<div id="networkAdaptersModal" class="modal">
+    <div class="modal-content">
+        
+        <div class="modal-header">
+            <h2>Network Adapters</h2>
+            <span class="close">&times;</span>
+        </div>
+
+        <div class="modal-body">
+            <h5>Guidance</h5>
+            <p>
+                This section will give you insight into: <br>
+                1. The IP address of the host (most helpful when trying to make sense of the network when cross-referencing network diagrams and firewall configurations). <br>
+                2. How many "Network Interfaces" this host is connected to. Usually, this aligns with the "Network Interface Controllers" (NIC). For example, this could represent the number of ethernet cables plugged into a desktop computer and the WiFi receivers/adapters used on the machine<br>
+                3. See if the system is connected to a Wireless Network, indicated with a "Wireless LAN adapter" parameter with an IP address registered. <br>
+                Note: The table skips and does not show any adapters with the value of "Media disconnected". <br>
+            </p>
+            <p>This data is extracted from all "IPv4 Address" resulting from running "ipconfig" on Command Prompt(cmd):</p>
+            <img src="{% static 'images/win_parser/ipconfig-cli-output.png' %}">
+        </div>
+
+        <div class="modal-footer">
+            <h4></h4>
+        </div>
+
+    </div>    
+</div>
+
+<!-- GROUP POLICIES APPLIED -->
+<div id="groupPoliciesModal" class="modal">
+    <div class="modal-content">
+        
+        <div class="modal-header">
+            <h2>Group Policies Applied (Gpresult)</h2>
+            <span class="close">&times;</span>
+        </div>
+
+        <div class="modal-body">
+            <h5>Guidance</h5>
+            <p>
+                This section will give you insight into: <br>
+                1. What Windows Group Policy Objects (GPO) are applied on this host. <br>
+            </p>
+            <p>This data is extracted from all "Applied Group Policy Objects" resulting from running "gpresult /r" on Command Prompt(cmd):</p>
+            <img src="{% static 'images/win_parser/gpresult-cli-output.png' %}">
+        </div>
+
+        <div class="modal-footer">
+            <h4>Modal Footer</h4>
+        </div>
+
+    </div>    
+</div>
+
+<!-- LOCAL USERS -->
+<div id="localUsersModal" class="modal">
+    <div class="modal-content">
+        
+        <div class="modal-header">
+            <h2>Local Users</h2>
+            <span class="close">&times;</span>
+        </div>
+
+        <div class="modal-body">
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <p>
+            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            </p> 
+        </div>
+
+        <div class="modal-footer">
+            <h4>Modal Footer</h4>
+        </div>
+
+    </div>    
+</div>
+
+<!-- ADMINISTRATOR GROUP -->
+<div id="administratorsGroupModal" class="modal">
+    <div class="modal-content">
+        
+        <div class="modal-header">
+            <h2>Users in Administrator Group</h2>
+            <span class="close">&times;</span>
+        </div>
+
+        <div class="modal-body">
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <p>
+            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            </p> 
+        </div>
+
+        <div class="modal-footer">
+            <h4>Modal Footer</h4>
+        </div>
+
+    </div>    
+</div>
+
+<!-- DEFAULT USERS -->
+<div id="defaultUsersModal" class="modal">
+    <div class="modal-content">
+        
+        <div class="modal-header">
+            <h2>Default User Accounts Status</h2>
+            <span class="close">&times;</span>
+        </div>
+
+        <div class="modal-body">
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <p>
+            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            </p> 
+        </div>
+
+        <div class="modal-footer">
+            <h4>Modal Footer</h4>
+        </div>
+
+    </div>    
+</div>
+
+
+<!-- PROGRAMS -->
+<div id="programsModal" class="modal">
+    <div class="modal-content">
+        
+        <div class="modal-header">
+            <h2>Installed Programs</h2>
+            <span class="close">&times;</span>
+        </div>
+
+        <div class="modal-body">
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <p>
+            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            </p> 
+        </div>
+
+        <div class="modal-footer">
+            <h4>Modal Footer</h4>
+        </div>
+
+    </div>    
+</div>
+
+<!-- SERVICES -->
+<div id="servicesModal" class="modal">
+    <div class="modal-content">
+        
+        <div class="modal-header">
+            <h2>Running Services</h2>
+            <span class="close">&times;</span>
+        </div>
+
+        <div class="modal-body">
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <p>
+            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            </p> 
+        </div>
+
+        <div class="modal-footer">
+            <h4>Modal Footer</h4>
+        </div>
+
+    </div>    
+</div>
+
+<!-- LISTENING PORTS -->
+
+<div id="portsModal" class="modal">
+    <div class="modal-content">
+        
+        <div class="modal-header">
+            <h2>Listening Ports</h2>
+            <span class="close">&times;</span>
+        </div>
+
+        <div class="modal-body">
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <p>
+            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            </p> 
+        </div>
+
+        <div class="modal-footer">
+            <h4>Modal Footer</h4>
+        </div>
+
+    </div>    
+</div>
+
+<!-- PASSWORD POLICIES -->
+<div id="passwordPoliciesModal" class="modal">
+    <div class="modal-content">
+        
+        <div class="modal-header">
+            <h2>Password Policies</h2>
+            <span class="close">&times;</span>
+        </div>
+
+        <div class="modal-body">
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <p>
+            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            </p> 
+        </div>
+
+        <div class="modal-footer">
+            <h4>Modal Footer</h4>
+        </div>
+
+    </div>    
+</div>
+
+
+<!-- ACCOUNT LOCKOUT POLICIES -->
+<div id="accountLockoutPoliciesModal" class="modal">
+    <div class="modal-content">
+        
+        <div class="modal-header">
+            <h2>Account Lockout Policies</h2>
+            <span class="close">&times;</span>
+        </div>
+
+        <div class="modal-body">
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <p>
+            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            </p> 
+        </div>
+
+        <div class="modal-footer">
+            <h4>Modal Footer</h4>
+        </div>
+
+    </div>    
+</div>
+
+
+<!-- AUDIT POLICIES -->
+<div id="auditPoliciesModal" class="modal">
+    <div class="modal-content">
+        
+        <div class="modal-header">
+            <h2>Audit Policies</h2>
+            <span class="close">&times;</span>
+        </div>
+
+        <div class="modal-body">
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <p>
+            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            </p> 
+        </div>
+
+        <div class="modal-footer">
+            <h4>Modal Footer</h4>
+        </div>
+
+    </div>    
+</div>
+
+
+<!-- SECURITY OPTIONS -->
+<div id="securityOptionsPoliciesModal" class="modal">
+    <div class="modal-content">
+        
+        <div class="modal-header">
+            <h2>Security Options Policies</h2>
+            <span class="close">&times;</span>
+        </div>
+
+        <div class="modal-body">
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <p>
+            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            </p> 
+        </div>
+
+        <div class="modal-footer">
+            <h4>Modal Footer</h4>
+        </div>
+
+    </div>    
+</div>
+
+<!-- SECURITY OPTIONS (RAW DATA FULL) -->
+<div id="rawSecurityOptionsPoliciesModal" class="modal">
+    <div class="modal-content">
+        
+        <div class="modal-header">
+            <h2>Security Options Policies</h2>
+            <span class="close">&times;</span>
+        </div>
+
+        <div class="modal-body">
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <p>
+            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            </p> 
+        </div>
+
+        <div class="modal-footer">
+            <h4>Modal Footer</h4>
+        </div>
+
+    </div>    
+</div>
+
+
+
+<!-- PRIVILEGE RIGHTS POLICIES -->
+<div id="privilegeRightsPoliciesModal" class="modal">
+    <div class="modal-content">
+        
+        <div class="modal-header">
+            <h2>Privilege Rights Policies</h2>
+            <span class="close">&times;</span>
+        </div>
+
+        <div class="modal-body">
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <p>
+            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            </p> 
+        </div>
+
+        <div class="modal-footer">
+            <h4>Modal Footer</h4>
+        </div>
+
+    </div>    
+</div>
+
+
+<!-- SECURITY UPDATES -->
+<div id="securityUpdatesModal" class="modal">
+    <div class="modal-content">
+        
+        <div class="modal-header">
+            <h2>Security Updates</h2>
+            <span class="close">&times;</span>
+        </div>
+
+        <div class="modal-body">
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <p>
+            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            </p> 
+        </div>
+
+        <div class="modal-footer">
+            <h4>Modal Footer</h4>
+        </div>
+
+    </div>    
+</div>
+
+
+<!-- TIME SETTINGS -->
+<div id="timeSettingsModal" class="modal">
+    <div class="modal-content">
+        
+        <div class="modal-header">
+            <h2>Time Settings</h2>
+            <span class="close">&times;</span>
+        </div>
+
+        <div class="modal-body">
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <p>
+            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            </p> 
+        </div>
+
+        <div class="modal-footer">
+            <h4>Modal Footer</h4>
+        </div>
+
+    </div>    
+</div>
+
+
+<!-- RDP SECURITY LEVEL -->
+<div id="rdpSecurityLevelModal" class="modal">
+    <div class="modal-content">
+        
+        <div class="modal-header">
+            <h2>RDP Security Level</h2>
+            <span class="close">&times;</span>
+        </div>
+
+        <div class="modal-body">
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <p>
+            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            </p> 
+        </div>
+
+        <div class="modal-footer">
+            <h4>Modal Footer</h4>
+        </div>
+
+    </div>    
+</div>
+
+
+<!-- SCREEN SAVER TIMEOUT -->
+<div id="screenSaverTimeoutModal" class="modal">
+    <div class="modal-content">
+        
+        <div class="modal-header">
+            <h2>Screen Saver Timeout</h2>
+            <span class="close">&times;</span>
+        </div>
+
+        <div class="modal-body">
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <p>
+            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            </p> 
+        </div>
+
+        <div class="modal-footer">
+            <h4>Modal Footer</h4>
+        </div>
+
+    </div>    
+</div>
+
+
+
+<!-- SHOWN VS HIDDEN HOST REPORT -->
+<div id="host-match-modal" class="modal">
+    <div id="host-match-modal-content" class="modal-content">
+
+        <div class="modal-header">
+            <span class="close">&times;</span>
+        </div>
+
+        <div class="modal-body">
+            <div class="row">
+                <div class="col">
+                    <h5>Host Search Results</h5>
+                    <ol id="host-match-ol">
+
+                    </ol>
+                </div>
+                <div class="col">
+                    <h5>Non-Matching Hosts</h5>
+                    <ol id="host-nonmatch-ol">
+
+                    </ol>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal-footer">
+            <h4></h4>
+        </div>
+
+    </div>    
+</div>

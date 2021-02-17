@@ -1,0 +1,1798 @@
+System Report for WA-VEEAMPROXY02 
+
+Microsoft Windows [Version 6.3.9600]
+This report was generated at 12:59:21.03 on Wed 01/13/2021 
+ 
+###################################################################################### 
+---- 1. SYSTEM SPECIFICATIONS ---- 
+###################################################################################### 
+
+Host Name:                 WA-VEEAMPROXY02
+OS Name:                   Microsoft Windows Server 2012 R2 Datacenter
+OS Version:                6.3.9600 N/A Build 9600
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Member Server
+OS Build Type:             Multiprocessor Free
+Registered Owner:          ERSAdmin
+Registered Organization:   ConvergentUSA
+Product ID:                00253-50000-00000-AA442
+Original Install Date:     11/27/2018, 9:59:30 AM
+System Boot Time:          10/27/2020, 11:54:27 AM
+System Manufacturer:       VMware, Inc.
+System Model:              VMware Virtual Platform
+System Type:               x64-based PC
+Processor(s):              2 Processor(s) Installed.
+                           [01]: Intel64 Family 6 Model 79 Stepping 1 GenuineIntel ~2197 Mhz
+                           [02]: Intel64 Family 6 Model 79 Stepping 1 GenuineIntel ~2197 Mhz
+BIOS Version:              Phoenix Technologies LTD 6.00, 12/12/2018
+Windows Directory:         C:\Windows
+System Directory:          C:\Windows\system32
+Boot Device:               \Device\HarddiskVolume1
+System Locale:             en-us;English (United States)
+Input Locale:              en-us;English (United States)
+Time Zone:                 (UTC-08:00) Pacific Time (US & Canada)
+Total Physical Memory:     8,191 MB
+Available Physical Memory: 5,823 MB
+Virtual Memory: Max Size:  9,471 MB
+Virtual Memory: Available: 6,710 MB
+Virtual Memory: In Use:    2,761 MB
+Page File Location(s):     C:\pagefile.sys
+Domain:                    e-r-solutions.com
+Logon Server:              \\WA-COLO-DC1
+Hotfix(s):                 235 Hotfix(s) Installed.
+                           [01]: KB2959936
+                           [02]: KB2894852
+                           [03]: KB2894856
+                           [04]: KB2896496
+                           [05]: KB2919355
+                           [06]: KB2928120
+                           [07]: KB2933826
+                           [08]: KB2934520
+                           [09]: KB2938066
+                           [10]: KB2938772
+                           [11]: KB2949621
+                           [12]: KB2954879
+                           [13]: KB2962806
+                           [14]: KB2965500
+                           [15]: KB2966407
+                           [16]: KB2966826
+                           [17]: KB2966828
+                           [18]: KB2967917
+                           [19]: KB2968296
+                           [20]: KB2971203
+                           [21]: KB2971850
+                           [22]: KB2972103
+                           [23]: KB2973114
+                           [24]: KB2973351
+                           [25]: KB2973448
+                           [26]: KB2975061
+                           [27]: KB2976627
+                           [28]: KB2977629
+                           [29]: KB2977765
+                           [30]: KB2978041
+                           [31]: KB2978126
+                           [32]: KB2987107
+                           [33]: KB2989647
+                           [34]: KB2989930
+                           [35]: KB3000483
+                           [36]: KB3000850
+                           [37]: KB3003057
+                           [38]: KB3004361
+                           [39]: KB3004365
+                           [40]: KB3004545
+                           [41]: KB3012702
+                           [42]: KB3013172
+                           [43]: KB3013769
+                           [44]: KB3013791
+                           [45]: KB3013816
+                           [46]: KB3014442
+                           [47]: KB3019978
+                           [48]: KB3022777
+                           [49]: KB3023219
+                           [50]: KB3023222
+                           [51]: KB3023266
+                           [52]: KB3024751
+                           [53]: KB3024755
+                           [54]: KB3029603
+                           [55]: KB3030377
+                           [56]: KB3030947
+                           [57]: KB3031044
+                           [58]: KB3032663
+                           [59]: KB3033446
+                           [60]: KB3035126
+                           [61]: KB3036612
+                           [62]: KB3037576
+                           [63]: KB3037579
+                           [64]: KB3037924
+                           [65]: KB3038002
+                           [66]: KB3042085
+                           [67]: KB3044374
+                           [68]: KB3044673
+                           [69]: KB3045634
+                           [70]: KB3045685
+                           [71]: KB3045717
+                           [72]: KB3045719
+                           [73]: KB3045755
+                           [74]: KB3045992
+                           [75]: KB3045999
+                           [76]: KB3046017
+                           [77]: KB3046737
+                           [78]: KB3048043
+                           [79]: KB3054169
+                           [80]: KB3054203
+                           [81]: KB3054256
+                           [82]: KB3054464
+                           [83]: KB3055323
+                           [84]: KB3055343
+                           [85]: KB3055642
+                           [86]: KB3059317
+                           [87]: KB3060681
+                           [88]: KB3060793
+                           [89]: KB3061512
+                           [90]: KB3063843
+                           [91]: KB3071756
+                           [92]: KB3072307
+                           [93]: KB3074228
+                           [94]: KB3074545
+                           [95]: KB3074548
+                           [96]: KB3075220
+                           [97]: KB3077715
+                           [98]: KB3078405
+                           [99]: KB3078676
+                           [100]: KB3080042
+                           [101]: KB3080149
+                           [102]: KB3082089
+                           [103]: KB3084135
+                           [104]: KB3084905
+                           [105]: KB3086255
+                           [106]: KB3087041
+                           [107]: KB3087137
+                           [108]: KB3091297
+                           [109]: KB3092601
+                           [110]: KB3092627
+                           [111]: KB3094486
+                           [112]: KB3095701
+                           [113]: KB3097992
+                           [114]: KB3097997
+                           [115]: KB3098779
+                           [116]: KB3099834
+                           [117]: KB3100473
+                           [118]: KB3102429
+                           [119]: KB3103616
+                           [120]: KB3103696
+                           [121]: KB3103709
+                           [122]: KB3109103
+                           [123]: KB3109976
+                           [124]: KB3110329
+                           [125]: KB3115224
+                           [126]: KB3118401
+                           [127]: KB3121261
+                           [128]: KB3121461
+                           [129]: KB3122651
+                           [130]: KB3123245
+                           [131]: KB3126033
+                           [132]: KB3126434
+                           [133]: KB3126587
+                           [134]: KB3127222
+                           [135]: KB3128650
+                           [136]: KB3133043
+                           [137]: KB3133690
+                           [138]: KB3134179
+                           [139]: KB3134815
+                           [140]: KB3137728
+                           [141]: KB3138602
+                           [142]: KB3139164
+                           [143]: KB3139398
+                           [144]: KB3139914
+                           [145]: KB3140219
+                           [146]: KB3140234
+                           [147]: KB3145384
+                           [148]: KB3145432
+                           [149]: KB3146604
+                           [150]: KB3146723
+                           [151]: KB3146751
+                           [152]: KB3147071
+                           [153]: KB3153704
+                           [154]: KB3155784
+                           [155]: KB3156059
+                           [156]: KB3159398
+                           [157]: KB3161949
+                           [158]: KB3161958
+                           [159]: KB3162343
+                           [160]: KB3162835
+                           [161]: KB3169704
+                           [162]: KB3172614
+                           [163]: KB3172729
+                           [164]: KB3173424
+                           [165]: KB3175024
+                           [166]: KB3178539
+                           [167]: KB3179574
+                           [168]: KB3185319
+                           [169]: KB3186539
+                           [170]: KB4033428
+                           [171]: KB4040972
+                           [172]: KB4040981
+                           [173]: KB4041777
+                           [174]: KB4043763
+                           [175]: KB4054566
+                           [176]: KB4054999
+                           [177]: KB4095875
+                           [178]: KB4339284
+                           [179]: KB4457034
+                           [180]: KB4457045
+                           [181]: KB4459935
+                           [182]: KB4459941
+                           [183]: KB4462901
+                           [184]: KB4467087
+                           [185]: KB4468323
+                           [186]: KB4483450
+                           [187]: KB4483459
+                           [188]: KB4486459
+                           [189]: KB4486474
+                           [190]: KB4487028
+                           [191]: KB4488665
+                           [192]: KB4490128
+                           [193]: KB4501226
+                           [194]: KB4512938
+                           [195]: KB4514338
+                           [196]: KB4514364
+                           [197]: KB4514371
+                           [198]: KB4516046
+                           [199]: KB4516064
+                           [200]: KB4519108
+                           [201]: KB4519571
+                           [202]: KB4524445
+                           [203]: KB4525106
+                           [204]: KB4525250
+                           [205]: KB4530677
+                           [206]: KB4530730
+                           [207]: KB4532931
+                           [208]: KB4532946
+                           [209]: KB4532961
+                           [210]: KB4532970
+                           [211]: KB4533011
+                           [212]: KB4534117
+                           [213]: KB4534251
+                           [214]: KB4534309
+                           [215]: KB4537488
+                           [216]: KB4537503
+                           [217]: KB4540671
+                           [218]: KB4540725
+                           [219]: KB4541505
+                           [220]: KB4550905
+                           [221]: KB4550970
+                           [222]: KB4561673
+                           [223]: KB4565479
+                           [224]: KB4565540
+                           [225]: KB4565580
+                           [226]: KB4565585
+                           [227]: KB4565613
+                           [228]: KB4565622
+                           [229]: KB4566371
+                           [230]: KB4566425
+                           [231]: KB4569768
+                           [232]: KB4576614
+                           [233]: KB4577010
+                           [234]: KB4577071
+                           [235]: KB4577066
+Network Card(s):           1 NIC(s) Installed.
+                           [01]: vmxnet3 Ethernet Adapter
+                                 Connection Name: Ethernet0
+                                 DHCP Enabled:    No
+                                 IP address(es)
+                                 [01]: 10.3.21.121
+Hyper-V Requirements:      A hypervisor has been detected. Features required for Hyper-V will not be displayed.
+ 
+###################################################################################### 
+---- 2. NETWORK INFORMATION ---- 
+###################################################################################### 
+  
+---- 2.1 running netstat -rn:  
+===========================================================================
+Interface List
+ 12...00 50 56 95 ae dd ......vmxnet3 Ethernet Adapter
+  1...........................Software Loopback Interface 1
+ 13...00 00 00 00 00 00 00 e0 Microsoft ISATAP Adapter
+===========================================================================
+
+IPv4 Route Table
+===========================================================================
+Active Routes:
+Network Destination        Netmask          Gateway       Interface  Metric
+          0.0.0.0          0.0.0.0        10.3.21.1      10.3.21.121    261
+        10.3.21.0    255.255.255.0         On-link       10.3.21.121    261
+      10.3.21.121  255.255.255.255         On-link       10.3.21.121    261
+      10.3.21.255  255.255.255.255         On-link       10.3.21.121    261
+        127.0.0.0        255.0.0.0         On-link         127.0.0.1    306
+        127.0.0.1  255.255.255.255         On-link         127.0.0.1    306
+  127.255.255.255  255.255.255.255         On-link         127.0.0.1    306
+        224.0.0.0        240.0.0.0         On-link         127.0.0.1    306
+        224.0.0.0        240.0.0.0         On-link       10.3.21.121    261
+  255.255.255.255  255.255.255.255         On-link         127.0.0.1    306
+  255.255.255.255  255.255.255.255         On-link       10.3.21.121    261
+===========================================================================
+Persistent Routes:
+  Network Address          Netmask  Gateway Address  Metric
+          0.0.0.0          0.0.0.0        10.3.21.1  Default 
+===========================================================================
+
+IPv6 Route Table
+===========================================================================
+Active Routes:
+ If Metric Network Destination      Gateway
+  1    306 ::1/128                  On-link
+  1    306 ff00::/8                 On-link
+===========================================================================
+Persistent Routes:
+  None
+ 
+---- 2.2 running ipconfig: 
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet0:
+
+   Connection-specific DNS Suffix  . : 
+   IPv4 Address. . . . . . . . . . . : 10.3.21.121
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 10.3.21.1
+
+Tunnel adapter isatap.{F943F1B1-1133-48AD-AF32-3F2FC3C31D47}:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+ 
+---- 2.3 running netsh wlan show networks mode=bssi 
+The following command was not found: wlan show networks mode=bssi.
+ 
+###################################################################################### 
+---- 3. LOCAL USERS [REQ - 2.1, 7.2] ---- 
+###################################################################################### 
+---- 3.1 running net user: 
+
+User accounts for \\WA-VEEAMPROXY02
+
+-------------------------------------------------------------------------------
+ERSADMIN                 nonaccount               SophosSAUWA-VEEAMaaa     
+The command completed successfully.
+
+ 
+###################################################################################### 
+---- 4. LOCAL GROUPS INFORMATION [REQ - 2.1, 7.2] ---- 
+###################################################################################### 
+---- 4.1 running net localgroup: 
+
+Aliases for \\WA-VEEAMPROXY02
+
+-------------------------------------------------------------------------------
+*Access Control Assistance Operators
+*Administrators
+*Backup Operators
+*Certificate Service DCOM Access
+*Cryptographic Operators
+*Distributed COM Users
+*Event Log Readers
+*Guests
+*Hyper-V Administrators
+*IIS_IUSRS
+*Network Configuration Operators
+*Performance Log Users
+*Performance Monitor Users
+*Power Users
+*Print Operators
+*RDS Endpoint Servers
+*RDS Management Servers
+*RDS Remote Access Servers
+*Remote Desktop Users
+*Remote Management Users
+*Replicator
+*SophosAdministrator
+*SophosOnAccess
+*SophosPowerUser
+*SophosUser
+*Users
+*WinRMRemoteWMIUsers__
+The command completed successfully.
+
+ 
+---- 4.2 running net localgroup Administrators: 
+Alias name     Administrators
+Comment        Administrators have complete and unrestricted access to the computer/domain
+
+Members
+
+-------------------------------------------------------------------------------
+ERSADMIN
+E-R-SOLUTIONS\Admin_Level_4
+E-R-SOLUTIONS\AvamarBackupUser
+E-R-SOLUTIONS\Domain Admins
+E-R-SOLUTIONS\GP-SecGrp-DataCenter-Renton-Backup_Svrs-Administrators
+E-R-SOLUTIONS\StorageTeam
+The command completed successfully.
+
+ 
+###################################################################################### 
+---- 5. LOCAL User Administrator and Guest [REQ - 2.1] ---- 
+###################################################################################### 
+---- 5.1 running net user Administrator: 
+ 
+---- 5.2 running net user Guest: 
+ 
+---- 5.3 running net accounts: 
+Force user logoff how long after time expires?:       Never
+Minimum password age (days):                          10
+Maximum password age (days):                          60
+Minimum password length:                              8
+Length of password history maintained:                24
+Lockout threshold:                                    5
+Lockout duration (minutes):                           30
+Lockout observation window (minutes):                 30
+Computer role:                                        SERVER
+The command completed successfully.
+
+ 
+###################################################################################### 
+---- 6. List of Installed Programs [REQ - 2.2, 2.3, 5.1] ---- 
+###################################################################################### 
+---- 6.1 running wmic product get name,version /format:table: 
+Name                                                            Version          
+Microsoft Visual C++ 2019 X86 Minimum Runtime - 14.20.27508     14.20.27508      
+Sophos Anti-Virus                                               10.8.9.610       
+VMware Tools                                                    11.0.5.15389592  
+Microsoft Visual C++ 2019 X64 Minimum Runtime - 14.20.27508     14.20.27508      
+Java 8 Update 241                                               8.0.2410.7       
+Java 8 Update 241 (64-bit)                                      8.0.2410.7       
+Local Administrator Password Solution                           6.2.0.0          
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161  9.0.30729.6161   
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161  9.0.30729.6161   
+Veeam Backup Transport                                          10.0.1.4854      
+Microsoft Visual C++ 2019 X86 Additional Runtime - 14.20.27508  14.20.27508      
+Sophos AutoUpdate                                               5.16.37          
+Microsoft Visual C++ 2019 X64 Additional Runtime - 14.20.27508  14.20.27508      
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.4148  9.0.30729.4148   
+Sophos Remote Management System                                 4.1.2            
+Microsoft Silverlight                                           5.1.50918.0      
+ManageEngine AssetExplorer Agent                                1.0.29           
+
+
+ 
+###################################################################################### 
+---- 7. List of Running Services [REQ - 2.2, 2.3, 5.1, 5.3] ---- 
+###################################################################################### 
+---- 7.1 running wmic service where started=true get name,startname,displayname: 
+DisplayName                                       Name                              StartName                           
+Application Experience                            AeLookupSvc                       localSystem                         
+Application Information                           Appinfo                           LocalSystem                         
+App Readiness                                     AppReadiness                      LocalSystem                         
+Base Filtering Engine                             BFE                               NT AUTHORITY\LocalService           
+Background Intelligent Transfer Service           BITS                              LocalSystem                         
+Background Tasks Infrastructure Service           BrokerInfrastructure              LocalSystem                         
+Certificate Propagation                           CertPropSvc                       LocalSystem                         
+COM+ System Application                           COMSysApp                         LocalSystem                         
+Cryptographic Services                            CryptSvc                          NT Authority\NetworkService         
+DCOM Server Process Launcher                      DcomLaunch                        LocalSystem                         
+DHCP Client                                       Dhcp                              NT Authority\LocalService           
+Diagnostics Tracking Service                      DiagTrack                         LocalSystem                         
+DNS Client                                        Dnscache                          NT AUTHORITY\NetworkService         
+Diagnostic Policy Service                         DPS                               NT AUTHORITY\LocalService           
+Device Setup Manager                              DsmSvc                            LocalSystem                         
+Windows Event Log                                 EventLog                          NT AUTHORITY\LocalService           
+COM+ Event System                                 EventSystem                       NT AUTHORITY\LocalService           
+Windows Font Cache Service                        FontCache                         NT AUTHORITY\LocalService           
+Group Policy Client                               gpsvc                             LocalSystem                         
+HitmanPro.Alert service                           hmpalertsvc                       LocalSystem                         
+IKE and AuthIP IPsec Keying Modules               IKEEXT                            LocalSystem                         
+IP Helper                                         iphlpsvc                          LocalSystem                         
+CNG Key Isolation                                 KeyIso                            LocalSystem                         
+Server                                            LanmanServer                      LocalSystem                         
+Workstation                                       LanmanWorkstation                 NT AUTHORITY\NetworkService         
+TCP/IP NetBIOS Helper                             lmhosts                           NT AUTHORITY\LocalService           
+Local Session Manager                             LSM                               LocalSystem                         
+ManageEngine AssetExplorer Agent                  ManageEngine AssetExplorer Agent  LocalSystem                         
+Windows Firewall                                  MpsSvc                            NT Authority\LocalService           
+Distributed Transaction Coordinator               MSDTC                             NT AUTHORITY\NetworkService         
+Microsoft iSCSI Initiator Service                 MSiSCSI                           LocalSystem                         
+Windows Installer                                 msiserver                         LocalSystem                         
+Netlogon                                          Netlogon                          LocalSystem                         
+Network List Service                              netprofm                          NT AUTHORITY\LocalService           
+Network Location Awareness                        NlaSvc                            NT AUTHORITY\NetworkService         
+Network Store Interface Service                   nsi                               NT Authority\LocalService           
+Plug and Play                                     PlugPlay                          LocalSystem                         
+IPsec Policy Agent                                PolicyAgent                       NT Authority\NetworkService         
+Power                                             Power                             LocalSystem                         
+User Profile Service                              ProfSvc                           LocalSystem                         
+Remote Registry                                   RemoteRegistry                    NT AUTHORITY\LocalService           
+RPC Endpoint Mapper                               RpcEptMapper                      NT AUTHORITY\NetworkService         
+Remote Procedure Call (RPC)                       RpcSs                             NT AUTHORITY\NetworkService         
+Security Accounts Manager                         SamSs                             LocalSystem                         
+Sophos Anti-Virus status reporter                 SAVAdminService                   LocalSystem                         
+Sophos Anti-Virus                                 SAVService                        NT AUTHORITY\LocalService           
+Smart Card Device Enumeration Service             ScDeviceEnum                      LocalSystem                         
+Task Scheduler                                    Schedule                          LocalSystem                         
+System Event Notification Service                 SENS                              LocalSystem                         
+Remote Desktop Configuration                      SessionEnv                        localSystem                         
+Shell Hardware Detection                          ShellHWDetection                  LocalSystem                         
+SNMP Service                                      SNMP                              LocalSystem                         
+Sophos Agent                                      Sophos Agent                      LocalSystem                         
+Sophos AutoUpdate Service                         Sophos AutoUpdate Service         LocalSystem                         
+Sophos Device Control Service                     Sophos Device Control Service     NT AUTHORITY\LocalService           
+Sophos Endpoint Defense Service                   Sophos Endpoint Defense Service   LocalSystem                         
+Sophos Message Router                             Sophos Message Router             LocalSystem                         
+Sophos System Protection Service                  Sophos System Protection Service  LocalSystem                         
+Sophos Web Control Service                        Sophos Web Control Service        LocalSystem                         
+Print Spooler                                     Spooler                           LocalSystem                         
+Sophos Web Filter                                 swi_filter                        NT AUTHORITY\SYSTEM                 
+Sophos Web Intelligence Service                   swi_service                       LocalSystem                         
+System Events Broker                              SystemEventsBroker                LocalSystem                         
+Remote Desktop Services                           TermService                       NT Authority\NetworkService         
+Themes                                            Themes                            LocalSystem                         
+Distributed Link Tracking Client                  TrkWks                            LocalSystem                         
+Windows Modules Installer                         TrustedInstaller                  localSystem                         
+User Access Logging Service                       UALSVC                            LocalSystem                         
+Remote Desktop Services UserMode Port Redirector  UmRdpService                      localSystem                         
+Veeam Installer Service                           VeeamDeploySvc                    AvamarBackupUser@e-r-solutions.com  
+Veeam Data Mover Service                          VeeamTransportSvc                 LocalSystem                         
+VMware Alias Manager and Ticket Service           VGAuthService                     LocalSystem                         
+VMware Tools                                      VMTools                           LocalSystem                         
+Windows Time                                      W32Time                           NT AUTHORITY\LocalService           
+Windows Connection Manager                        Wcmsvc                            NT Authority\LocalService           
+WinHTTP Web Proxy Auto-Discovery Service          WinHttpAutoProxySvc               NT AUTHORITY\LocalService           
+Windows Management Instrumentation                Winmgmt                           localSystem                         
+Windows Remote Management (WS-Management)         WinRM                             NT AUTHORITY\NetworkService         
+Portable Device Enumerator Service                WPDBusEnum                        LocalSystem                         
+Windows Update                                    wuauserv                          LocalSystem                         
+Sophos Clean Service                              Sophos Clean Service              LocalSystem                         
+
+
+ 
+---- 7.1 running tasklist: 
+
+Image Name                     PID Session Name        Session#    Mem Usage
+========================= ======== ================ =========== ============
+System Idle Process              0 Services                   0          4 K
+System                           4 Services                   0        268 K
+smss.exe                       332 Services                   0      1,080 K
+csrss.exe                      428 Services                   0      4,640 K
+wininit.exe                    484 Services                   0      4,292 K
+csrss.exe                      492 Console                    1      3,468 K
+winlogon.exe                   520 Console                    1      5,956 K
+services.exe                   580 Services                   0     14,040 K
+lsass.exe                      588 Services                   0     29,600 K
+svchost.exe                    664 Services                   0     13,716 K
+svchost.exe                    696 Services                   0     11,428 K
+SEDService.exe                 776 Services                   0     14,340 K
+LogonUI.exe                    796 Console                    1     33,808 K
+dwm.exe                        808 Console                    1     42,396 K
+hmpalert.exe                   948 Services                   0     17,080 K
+svchost.exe                    648 Services                   0     19,488 K
+svchost.exe                    736 Services                   0     21,632 K
+svchost.exe                   1032 Services                   0     77,660 K
+svchost.exe                   1052 Services                   0     25,216 K
+SavService.exe                1104 Services                   0    326,672 K
+svchost.exe                   1436 Services                   0     23,440 K
+svchost.exe                   1604 Services                   0     12,344 K
+spoolsv.exe                   1928 Services                   0     15,368 K
+svchost.exe                   1984 Services                   0      8,916 K
+agentmonitor.exe              1636 Services                   0      4,396 K
+aeagent.exe                   1772 Services                   0     47,360 K
+conhost.exe                   1884 Services                   0      3,156 K
+SAVAdminService.exe           1640 Services                   0      3,876 K
+snmp.exe                      2108 Services                   0      7,244 K
+ManagementAgentNT.exe         2260 Services                   0     11,476 K
+SSPService.exe                2488 Services                   0     50,052 K
+swc_service.exe               2564 Services                   0      7,208 K
+swi_filter.exe                2672 Services                   0      4,600 K
+swi_fc.exe                    2684 Services                   0     43,476 K
+swi_service.exe               2748 Services                   0     20,304 K
+svchost.exe                   2848 Services                   0     16,284 K
+VGAuthService.exe             2892 Services                   0      9,108 K
+vmtoolsd.exe                  2960 Services                   0     20,700 K
+VeeamDeploymentSvc.exe        3216 Services                   0     19,648 K
+VeeamTransportSvc.exe         3252 Services                   0     13,872 K
+WmiPrvSE.exe                  3424 Services                   0     78,328 K
+Veeam.Guest.Interaction.P     3436 Services                   0      8,564 K
+conhost.exe                   3520 Services                   0      3,160 K
+svchost.exe                   2992 Services                   0     52,160 K
+sdcservice.exe                4104 Services                   0      4,264 K
+svchost.exe                   4160 Services                   0      4,836 K
+dllhost.exe                   4216 Services                   0     11,416 K
+msdtc.exe                     4372 Services                   0      7,620 K
+csrss.exe                     2588                            2     12,944 K
+winlogon.exe                  5000                            2      5,576 K
+dwm.exe                       1220                            2     31,628 K
+taskhostex.exe                4324                            2      8,592 K
+rdpclip.exe                   3100                            2      8,044 K
+explorer.exe                  4528                            2     82,616 K
+vm3dservice.exe               1140                            2      4,516 K
+RouterNT.exe                  5828 Services                   0      8,556 K
+SophosClean.exe              40264 Services                   0      4,184 K
+ALsvc.exe                    30844 Services                   0      1,000 K
+ALMon.exe                    36448                            2      1,840 K
+WmiPrvSE.exe                 49372 Services                   0     37,616 K
+WmiPrvSE.exe                 62360 Services                   0     14,164 K
+VeeamAgent.exe               59444 Services                   0     13,640 K
+conhost.exe                  66068 Services                   0      3,272 K
+WmiPrvSE.exe                 63112 Services                   0      9,800 K
+csrss.exe                    55048 RDP-Tcp#100                3     11,552 K
+winlogon.exe                 66388 RDP-Tcp#100                3      9,080 K
+dwm.exe                      66164 RDP-Tcp#100                3     28,844 K
+taskhostex.exe               62496 RDP-Tcp#100                3      9,784 K
+rdpclip.exe                  62788 RDP-Tcp#100                3      7,160 K
+explorer.exe                 61636 RDP-Tcp#100                3     99,716 K
+svchost.exe                  65004 Services                   0      8,732 K
+VeeamAgent.exe               65096 Services                   0     10,480 K
+conhost.exe                  58944 Services                   0      3,252 K
+vm3dservice.exe              64128 RDP-Tcp#100                3      4,456 K
+ALMon.exe                    63312 RDP-Tcp#100                3        456 K
+cmd.exe                      64192 RDP-Tcp#100                3      2,884 K
+conhost.exe                  55776 RDP-Tcp#100                3      5,796 K
+TrustedInstaller.exe         62800 Services                   0      5,452 K
+TiWorker.exe                 64416 Services                   0      7,728 K
+msiexec.exe                  64516 Services                   0      6,148 K
+tasklist.exe                 60992 RDP-Tcp#100                3      6,224 K
+ 
+###################################################################################### 
+---- 8. Listening Ports [REQ - 2.2, 2.3] ---- 
+###################################################################################### 
+---- 8.1 running netstat -anob: 
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State           PID
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING       696
+  RpcSs
+ [svchost.exe]
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING       4
+ Can not obtain ownership information
+  TCP    0.0.0.0:2500           0.0.0.0:0              LISTENING       59444
+ [VeeamAgent.exe]
+  TCP    0.0.0.0:2501           0.0.0.0:0              LISTENING       65096
+ [VeeamAgent.exe]
+  TCP    0.0.0.0:3389           0.0.0.0:0              LISTENING       2992
+  TermService
+ [svchost.exe]
+  TCP    0.0.0.0:5985           0.0.0.0:0              LISTENING       4
+ Can not obtain ownership information
+  TCP    0.0.0.0:6160           0.0.0.0:0              LISTENING       3216
+ [VeeamDeploymentSvc.exe]
+  TCP    0.0.0.0:6162           0.0.0.0:0              LISTENING       3252
+ [VeeamTransportSvc.exe]
+  TCP    0.0.0.0:6190           0.0.0.0:0              LISTENING       3436
+ [Veeam.Guest.Interaction.Proxy.exe]
+  TCP    0.0.0.0:6290           0.0.0.0:0              LISTENING       3436
+ [Veeam.Guest.Interaction.Proxy.exe]
+  TCP    0.0.0.0:8192           0.0.0.0:0              LISTENING       5828
+ [RouterNT.exe]
+  TCP    0.0.0.0:8193           0.0.0.0:0              LISTENING       5828
+ [RouterNT.exe]
+  TCP    0.0.0.0:8194           0.0.0.0:0              LISTENING       5828
+ [RouterNT.exe]
+  TCP    0.0.0.0:9000           0.0.0.0:0              LISTENING       1772
+ [aeagent.exe]
+  TCP    0.0.0.0:11731          0.0.0.0:0              LISTENING       3216
+ [VeeamDeploymentSvc.exe]
+  TCP    0.0.0.0:47001          0.0.0.0:0              LISTENING       4
+ Can not obtain ownership information
+  TCP    0.0.0.0:49156          0.0.0.0:0              LISTENING       484
+ [wininit.exe]
+  TCP    0.0.0.0:49157          0.0.0.0:0              LISTENING       648
+  EventLog
+ [svchost.exe]
+  TCP    0.0.0.0:49158          0.0.0.0:0              LISTENING       588
+ [lsass.exe]
+  TCP    0.0.0.0:49163          0.0.0.0:0              LISTENING       1032
+  Schedule
+ [svchost.exe]
+  TCP    0.0.0.0:51618          0.0.0.0:0              LISTENING       588
+ [lsass.exe]
+  TCP    0.0.0.0:51630          0.0.0.0:0              LISTENING       1928
+ [spoolsv.exe]
+  TCP    0.0.0.0:51671          0.0.0.0:0              LISTENING       580
+ Can not obtain ownership information
+  TCP    0.0.0.0:51673          0.0.0.0:0              LISTENING       4160
+  PolicyAgent
+ [svchost.exe]
+  TCP    10.3.21.121:139        0.0.0.0:0              LISTENING       4
+ Can not obtain ownership information
+  TCP    10.3.21.121:301        10.3.1.14:2049         ESTABLISHED     59444
+ [VeeamAgent.exe]
+  TCP    10.3.21.121:445        10.3.22.22:58831       ESTABLISHED     4
+ Can not obtain ownership information
+  TCP    10.3.21.121:2500       10.3.21.104:51097      ESTABLISHED     59444
+ [VeeamAgent.exe]
+  TCP    10.3.21.121:2501       10.3.21.104:57700      ESTABLISHED     65096
+ [VeeamAgent.exe]
+  TCP    10.3.21.121:3389       10.3.41.37:50522       ESTABLISHED     2992
+  TermService
+ [svchost.exe]
+  TCP    10.3.21.121:6162       10.3.21.104:51095      ESTABLISHED     3252
+ [VeeamTransportSvc.exe]
+  TCP    10.3.21.121:6162       10.3.21.104:57699      ESTABLISHED     3252
+ [VeeamTransportSvc.exe]
+  TCP    10.3.21.121:8194       10.3.21.121:51742      ESTABLISHED     5828
+ [RouterNT.exe]
+  TCP    10.3.21.121:49159      10.3.21.28:3260        ESTABLISHED     1032
+  MSiSCSI
+ [svchost.exe]
+  TCP    10.3.21.121:49160      10.3.21.29:3260        ESTABLISHED     1032
+  MSiSCSI
+ [svchost.exe]
+  TCP    10.3.21.121:49161      10.3.21.30:3260        ESTABLISHED     1032
+  MSiSCSI
+ [svchost.exe]
+  TCP    10.3.21.121:49162      10.3.21.31:3260        ESTABLISHED     1032
+  MSiSCSI
+ [svchost.exe]
+  TCP    10.3.21.121:49163      10.3.22.22:50626       ESTABLISHED     1032
+  Schedule
+ [svchost.exe]
+  TCP    10.3.21.121:51742      10.3.21.121:8194       ESTABLISHED     2260
+ [ManagementAgentNT.exe]
+  TCP    10.3.21.121:57066      10.3.21.79:65433       ESTABLISHED     1436
+  LanmanWorkstation
+ [svchost.exe]
+  TCP    10.3.21.121:58848      10.3.0.71:135          TIME_WAIT       0
+  TCP    10.3.21.121:58849      10.3.0.71:63673        TIME_WAIT       0
+  TCP    10.3.21.121:58857      10.3.0.70:445          ESTABLISHED     4
+ Can not obtain ownership information
+  TCP    10.3.21.121:58859      10.3.0.70:135          TIME_WAIT       0
+  TCP    10.3.21.121:58860      10.3.0.70:49156        ESTABLISHED     588
+ [lsass.exe]
+  TCP    10.3.21.121:58864      10.3.0.71:63673        TIME_WAIT       0
+  TCP    10.3.21.121:58870      10.3.21.82:445         ESTABLISHED     4
+ Can not obtain ownership information
+  TCP    10.3.21.121:58889      10.3.21.138:3260       TIME_WAIT       0
+  TCP    10.3.21.121:58892      10.3.21.138:3260       TIME_WAIT       0
+  TCP    10.3.21.121:58893      10.3.0.71:135          TIME_WAIT       0
+  TCP    10.3.21.121:58894      10.3.0.71:63673        TIME_WAIT       0
+  TCP    10.3.21.121:58895      10.3.21.138:3260       TIME_WAIT       0
+  TCP    10.3.21.121:58896      10.3.21.138:3260       TIME_WAIT       0
+  TCP    10.3.21.121:58897      10.3.21.138:3260       TIME_WAIT       0
+  TCP    10.3.21.121:58898      10.3.21.138:3260       TIME_WAIT       0
+  TCP    10.3.21.121:58899      10.3.0.71:135          TIME_WAIT       0
+  TCP    10.3.21.121:58900      10.3.0.71:63673        TIME_WAIT       0
+  TCP    10.3.21.121:58901      72.21.91.29:80         ESTABLISHED     49372
+ [wmiprvse.exe]
+  TCP    10.3.21.121:58902      10.3.21.138:3260       TIME_WAIT       0
+  TCP    10.3.21.121:58903      23.65.11.27:80         ESTABLISHED     49372
+ [wmiprvse.exe]
+  TCP    10.3.21.121:58904      23.65.11.27:80         ESTABLISHED     49372
+ [wmiprvse.exe]
+  TCP    10.3.21.121:58905      10.3.21.138:3260       TIME_WAIT       0
+  TCP    10.3.21.121:58906      23.65.11.27:80         ESTABLISHED     49372
+ [wmiprvse.exe]
+  TCP    10.3.21.121:58907      72.21.91.29:80         ESTABLISHED     49372
+ [wmiprvse.exe]
+  TCP    10.3.21.121:58908      10.3.21.138:3260       TIME_WAIT       0
+  TCP    10.3.21.121:58909      72.21.91.29:80         ESTABLISHED     49372
+ [wmiprvse.exe]
+  TCP    10.3.21.121:58910      151.139.128.14:80      ESTABLISHED     49372
+ [wmiprvse.exe]
+  TCP    10.3.21.121:58911      151.139.128.14:80      ESTABLISHED     49372
+ [wmiprvse.exe]
+  TCP    10.3.21.121:58912      151.139.128.14:80      ESTABLISHED     49372
+ [wmiprvse.exe]
+  TCP    10.3.21.121:58913      151.139.128.14:80      ESTABLISHED     49372
+ [wmiprvse.exe]
+  TCP    10.3.21.121:62132      10.3.22.100:8194       ESTABLISHED     5828
+ [RouterNT.exe]
+  TCP    127.0.0.1:2500         127.0.0.1:58755        ESTABLISHED     59444
+ [VeeamAgent.exe]
+  TCP    127.0.0.1:2501         127.0.0.1:58888        ESTABLISHED     65096
+ [VeeamAgent.exe]
+  TCP    127.0.0.1:6290         127.0.0.1:51670        ESTABLISHED     3436
+ [Veeam.Guest.Interaction.Proxy.exe]
+  TCP    127.0.0.1:51654        0.0.0.0:0              LISTENING       2684
+ [swi_fc.exe]
+  TCP    127.0.0.1:51670        127.0.0.1:6290         ESTABLISHED     3252
+ [VeeamTransportSvc.exe]
+  TCP    127.0.0.1:51735        127.0.0.1:51736        ESTABLISHED     5828
+ [RouterNT.exe]
+  TCP    127.0.0.1:51736        127.0.0.1:51735        ESTABLISHED     5828
+ [RouterNT.exe]
+  TCP    127.0.0.1:51740        127.0.0.1:51741        ESTABLISHED     2260
+ [ManagementAgentNT.exe]
+  TCP    127.0.0.1:51741        127.0.0.1:51740        ESTABLISHED     2260
+ [ManagementAgentNT.exe]
+  TCP    127.0.0.1:51743        0.0.0.0:0              LISTENING       2260
+ [ManagementAgentNT.exe]
+  TCP    127.0.0.1:51744        0.0.0.0:0              LISTENING       2260
+ [ManagementAgentNT.exe]
+  TCP    127.0.0.1:51744        127.0.0.1:51745        ESTABLISHED     2260
+ [ManagementAgentNT.exe]
+  TCP    127.0.0.1:51745        127.0.0.1:51744        ESTABLISHED     5828
+ [RouterNT.exe]
+  TCP    127.0.0.1:58755        127.0.0.1:2500         ESTABLISHED     3252
+ [VeeamTransportSvc.exe]
+  TCP    127.0.0.1:58888        127.0.0.1:2501         ESTABLISHED     3252
+ [VeeamTransportSvc.exe]
+  TCP    [::]:135               [::]:0                 LISTENING       696
+  RpcSs
+ [svchost.exe]
+  TCP    [::]:445               [::]:0                 LISTENING       4
+ Can not obtain ownership information
+  TCP    [::]:3389              [::]:0                 LISTENING       2992
+  TermService
+ [svchost.exe]
+  TCP    [::]:5985              [::]:0                 LISTENING       4
+ Can not obtain ownership information
+  TCP    [::]:6160              [::]:0                 LISTENING       3216
+ [VeeamDeploymentSvc.exe]
+  TCP    [::]:6162              [::]:0                 LISTENING       3252
+ [VeeamTransportSvc.exe]
+  TCP    [::]:6190              [::]:0                 LISTENING       3436
+ [Veeam.Guest.Interaction.Proxy.exe]
+  TCP    [::]:11731             [::]:0                 LISTENING       3216
+ [VeeamDeploymentSvc.exe]
+  TCP    [::]:47001             [::]:0                 LISTENING       4
+ Can not obtain ownership information
+  TCP    [::]:49156             [::]:0                 LISTENING       484
+ [wininit.exe]
+  TCP    [::]:49157             [::]:0                 LISTENING       648
+  EventLog
+ [svchost.exe]
+  TCP    [::]:49158             [::]:0                 LISTENING       588
+ [lsass.exe]
+  TCP    [::]:49163             [::]:0                 LISTENING       1032
+  Schedule
+ [svchost.exe]
+  TCP    [::]:51618             [::]:0                 LISTENING       588
+ [lsass.exe]
+  TCP    [::]:51630             [::]:0                 LISTENING       1928
+ [spoolsv.exe]
+  TCP    [::]:51671             [::]:0                 LISTENING       580
+ Can not obtain ownership information
+  TCP    [::]:51673             [::]:0                 LISTENING       4160
+  PolicyAgent
+ [svchost.exe]
+  UDP    0.0.0.0:123            *:*                                    1052
+  W32Time
+ [svchost.exe]
+  UDP    0.0.0.0:161            *:*                                    2108
+ [snmp.exe]
+  UDP    0.0.0.0:500            *:*                                    1032
+  IKEEXT
+ [svchost.exe]
+  UDP    0.0.0.0:3389           *:*                                    2992
+  TermService
+ [svchost.exe]
+  UDP    0.0.0.0:4500           *:*                                    1032
+  IKEEXT
+ [svchost.exe]
+  UDP    0.0.0.0:5355           *:*                                    1436
+  Dnscache
+ [svchost.exe]
+  UDP    0.0.0.0:51235          *:*                                    2260
+ [ManagementAgentNT.exe]
+  UDP    0.0.0.0:53432          *:*                                    1104
+ [SavService.exe]
+  UDP    0.0.0.0:55486          *:*                                    1104
+ [SavService.exe]
+  UDP    0.0.0.0:55487          *:*                                    2748
+ [swi_service.exe]
+  UDP    0.0.0.0:56230          *:*                                    1104
+ [SavService.exe]
+  UDP    0.0.0.0:60690          *:*                                    1104
+ [SavService.exe]
+  UDP    10.3.21.121:137        *:*                                    4
+ Can not obtain ownership information
+  UDP    10.3.21.121:138        *:*                                    4
+ Can not obtain ownership information
+  UDP    127.0.0.1:49996        *:*                                    1436
+  LanmanWorkstation
+ [svchost.exe]
+  UDP    127.0.0.1:50643        *:*                                    61636
+ [Explorer.EXE]
+  UDP    127.0.0.1:55203        *:*                                    736
+  gpsvc
+ [svchost.exe]
+  UDP    127.0.0.1:55488        *:*                                    2748
+ [swi_service.exe]
+  UDP    127.0.0.1:57735        *:*                                    1032
+  iphlpsvc
+ [svchost.exe]
+  UDP    127.0.0.1:58332        *:*                                    4528
+ [Explorer.EXE]
+  UDP    127.0.0.1:61021        *:*                                    3424
+ [wmiprvse.exe]
+  UDP    127.0.0.1:64112        *:*                                    588
+ [lsass.exe]
+  UDP    [::]:123               *:*                                    1052
+  W32Time
+ [svchost.exe]
+  UDP    [::]:161               *:*                                    2108
+ [snmp.exe]
+  UDP    [::]:500               *:*                                    1032
+  IKEEXT
+ [svchost.exe]
+  UDP    [::]:3389              *:*                                    2992
+  TermService
+ [svchost.exe]
+  UDP    [::]:4500              *:*                                    1032
+  IKEEXT
+ [svchost.exe]
+ 
+###################################################################################### 
+---- 9. Domain Policies Applied [REQ - 2.3, 7.2, 8.1, 8.2] ---- 
+###################################################################################### 
+---- 9.1 running Gpresult /R: 
+
+Microsoft (R) Windows (R) Operating System Group Policy Result tool v2.0
+c 2013 Microsoft Corporation. All rights reserved.
+
+Created on 1/13/2021 at 12:59:52 PM
+
+
+RSOP data for E-R-SOLUTIONS\pichatterjee on WA-VEEAMPROXY02 : Logging Mode
+---------------------------------------------------------------------------
+
+OS Configuration:            Member Server
+OS Version:                  6.3.9600
+Site Name:                   RENTONSITE
+Roaming Profile:             N/A
+Local Profile:               C:\Users\pichatterjee
+Connected over a slow link?: No
+
+
+COMPUTER SETTINGS
+------------------
+    CN=WA-VEEAMPROXY02,OU=Backup Servers,OU=Servers,DC=e-r-solutions,DC=com
+    Last time Group Policy was applied: 1/13/2021 at 11:49:01 AM
+    Group Policy was applied from:      Wa-Colo-Dc1.e-r-solutions.com
+    Group Policy slow link threshold:   500 kbps
+    Domain Name:                        E-R-SOLUTIONS
+    Domain Type:                        Windows 2008 or later
+
+    Applied Group Policy Objects
+    -----------------------------
+        SophosXGCerts
+        C-All-Server-InteractiveLogon-AuditPolicy
+        CP | Servers | :::Configure::: Enforce Digitaly signed communication
+        WSUS-DoNotReboot
+        SP | Renton | Backup Servers | :::Configure::: General Settings
+        Default Domain Policy
+        C-Servers-ItemLevelGroups-All
+        CP | Enterprise | :::Configure::: Network Level Authentication
+        Local Group Policy
+
+    The following GPOs were not applied because they were filtered out
+    -------------------------------------------------------------------
+        C-Servers-ItemLevelGroups-All
+            Filtering:  Not Applied (Unknown Reason)
+
+        e-r-solutions.com_ADAuditPlusPolicy
+            Filtering:  Denied (Security)
+
+        Default Domain Policy
+            Filtering:  Not Applied (Unknown Reason)
+
+        CP | Enterprise | :::Configure::: Network Level Authentication
+            Filtering:  Not Applied (Unknown Reason)
+
+    The computer is a part of the following security groups
+    -------------------------------------------------------
+        BUILTIN\Administrators
+        Everyone
+        SophosUser
+        BUILTIN\Users
+        NT AUTHORITY\NETWORK
+        NT AUTHORITY\Authenticated Users
+        This Organization
+        WA-VEEAMPROXY02$
+        Domain Computers
+        GP-ERS-Servers-DigitallySignedEnforced
+        WSUS-DoNotReboot
+        Authentication authority asserted identity
+        GP-ERS-Network Level Authentication
+        System Mandatory Level
+        
+
+USER SETTINGS
+--------------
+    CN=Piyush Chatterjee,OU=Users,OU=Offshore,OU=Sites,DC=e-r-solutions,DC=com
+    Last time Group Policy was applied: 1/13/2021 at 12:58:32 PM
+    Group Policy was applied from:      Wa-Colo-Dc1.e-r-solutions.com
+    Group Policy slow link threshold:   500 kbps
+    Domain Name:                        E-R-SOLUTIONS
+    Domain Type:                        Windows 2008 or later
+    
+    Applied Group Policy Objects
+    -----------------------------
+        U-ChromeADIntegration
+        CP | Enterprise | :::Configure::: IE TrustedSites
+        UP | Enterprise | :::Deploy::: Favorites / Shortcuts
+        Default Domain Policy
+
+    The following GPOs were not applied because they were filtered out
+    -------------------------------------------------------------------
+        UP | Enterprise | :::Configure::: IE TrustedSites V2
+            Filtering:  Denied (Security)
+
+        Local Group Policy
+            Filtering:  Not Applied (Empty)
+
+    The user is a part of the following security groups
+    ---------------------------------------------------
+        Domain Users
+        Everyone
+        SophosUser
+        SophosAdministrator
+        BUILTIN\Users
+        BUILTIN\Administrators
+        REMOTE INTERACTIVE LOGON
+        NT AUTHORITY\INTERACTIVE
+        NT AUTHORITY\Authenticated Users
+        This Organization
+        LOCAL
+        ERS-EMM-System-Admins
+        ERS-RentonWorkstations-Remote_Assistance
+        Local_Project Teams_Clients (Change)
+        Global_Collections_Cingular (Change)
+        Global_Renton_CreditOne_Sharepoint_Managers
+        Global_Collections_TXU_EOP (Change)
+        ERS-SanAntonio-Procurve_Access
+        Global_Collections_T-Mobile (Change)
+        Global_Project Teams_Automation_Internal (Change)
+        Global_Collections_RPC IVR (Change)
+        Global_Project Teams_Star Installer (Change)
+        GP-ERS-Printer-ERS_Systems_3600
+        GP-Renton-Map_G_DFS
+        ISAaccessPriv
+        Global_Desknet Sysadmin Group (Change)
+        ISAaccessBasic
+        Global_Augusta_ProjectTeams_Sprint (Change)
+        ReadWriteAccess
+        Global-Allowed-Email_Certificates
+        Dashboard_Users
+        TerminalServerUsers
+        Global_Payment Processing_Processing (Change)
+        Global_Accounting_EOM (Read)
+        Global_WAFiles01-Project_Teams-EBO (Change)
+        MontgomerySprintShareManagers
+        ERS-Allow-VPN_Client_Download
+        Global_Collections_ASB Management (Change)
+        GP-ERS-Agents-Macro_Scheduler
+        Global_Project Teams_Audit (Change)
+        ERS-Renton-Tape-Tech
+        ERS-Network-Engineers
+        Global_Atlanta_Project Teams_Sprint ACD (Change)
+        Global_Collections_Genesis (Change)
+        Global_UP-Sites-Renton-SysAdmin-HelpDesk-Users-SysAdmin
+        Global_VZNDMZSrv-MultiApp (Read)
+        RentonSysAdmins
+        APP-Openfire-Users
+        Global_Renton_NAS1_Bookkeeping (Modify)
+        Global_Project Teams_Clients (Change)
+        GP-ERS-Win7-Avaya_Config
+        Global_Payment Processing_Bookkeeping (Change)
+        WAGenesisAgents
+        ERS-Renton-Wireless_Access
+        SG_OffShore_O365_MFAOK
+        ERS-AZ_KVM-Admins
+        ERSFTPusers
+        Developers
+        GP-ERS-My_Documents_Redirect-WaFiles01
+        DocuwareUsers
+        ERS-SanAntonio-Procurve_Core
+        GP-ERS-Agents-Avaya_Config
+        GP-Renton-RentonWorkstations-FileServices-SysAdmin
+        Global_Atlanta_Contact_Solutions (Change)
+        Global_WACREDPROC_OrionTransProcessor (Change)
+        ERS-Renton-Tape-Admin
+        ERS-Avamar-Admins
+        GP-ERS-WA_Genesis_Agents
+        Global_Collections_Qwest (Change)
+        Global-ConvergentERS-Unrestricted_Internet_Access
+        Global_UP-Sites-Renton-SysAdmin-Development-Users-SysAdmin
+        ERS-Docuware-Bookkeeping-Full_Access
+        Global_Collections_TXU_Agent_Help (Change)
+        Global_Client Services
+        GP-Renton-RentonServers-Web-SysAdmin
+        Global-ConvergentERS-vCenter_Admin_Level_3
+        Global_Dynamo-Intranet_Access
+        Group Policy Creator Owners
+        Global_Project Teams_Comcast Management (Change)
+        Global_MoveIT-CENTRAL_FICO
+        Global_Information Technology (Read)
+        SCCM-BitlockerAdmins
+        Global_ERS-Renton-Workstations-Remote Desktop Users
+        MontgomerySprintShare
+        QwestReportingShare
+        Global_VZNDMZSrv-MultiApp (Change)
+        Global_Augusta_ProjectTeams_Sprint (Management)
+        Global_Project Teams_Compliance (Change)
+        Global_Project Teams_Manual Invoices (Change)
+        Global_Watomaton01_OrionTransProocessor (Change)
+        Global_Atlanta_Collections (Change)
+        SysaidUsers
+        ERS-GP-Phoenix_Printer-Map_HP_4100n_2
+        ERS-PhoenixWorkstations-Remote_Assistance
+        Domain Admins
+        HoustonMGMTAccess
+        READSOFT_Users
+        APP-Openfire-Groups
+        Global-ConvergentERS-Collector_Internet_Access
+        ERS-MontgomeryWorkstations-Remote_Assistance
+        SCCM-BitlockerReportUsers
+        Global_Augusta_Departments-Attendance (Change)
+        Global_Collections_BOA (Change)
+        Citrix Administrators
+        FileProcessing
+        ERS-AtlantaWorkstations-Remote_Assistance
+        Global_Houston_Collections (Change)
+        ERS-HoustonWorkstations-Remote_Assistance
+        Global_Project Teams_Automation_Processing (Change)
+        Global_Project Teams_Automation_Archive (Change)
+        Global_Enterprise Resource Center (Change)
+        ERS-Atlanta-TV-Management
+        ERS-Docuware-Admins_Full
+        Global_Information Technology (Change)
+        Global_AZFiles01_PhoenixShare (Change)
+        RSA-People
+        UNIX-WARHEL-Dave_Access
+        ERS-RealVNC-Control
+        GP-SecGrp-DataCenter-Renton-App_Servers-Administrators
+        VTConvert
+        UG-ERS-Defender-RASusers
+        VDI-WA-Generic_Agent_Pool
+        UG-VDI-ConvergentUSA-GUVDI-Sprint_Agents
+        Global_File Services (Change)
+        RTCUniversalUserAdmins
+        UG-ERS-SPS-Helpdesk-Members
+        UG-AHC-Dallas-Lowerbuck-Owners
+        Global_ConvergentERS-Crystal_Reports
+        UG-VDI-ConvergentUSA-WAVDI-COE_Users
+        Duo-People
+        SophosXGIT
+        CSAdministrator
+        O365-E3-COI
+        UG-ERS-SPS-SysAdmin-Members
+        UG-ERS-RSA_Groups-Full_Employees
+        GP-Enable-Windows_Messenger
+        Crystal Enterprise
+        UG-VDI-ConvergentUSA-WAVDI-IT_Users
+        UG-ERS-SPS-SysAdmin-Engineering_Docs-Access
+        UG-ConvergentUSA-Allow_Remote_Assistance
+        MPOR
+        RTCUniversalGlobalReadOnlyGroup
+        UNIX-WARHEL06-Reporting_Server_Logon_Access
+        Duo-RDP-Admins
+        #SystemsTeam
+        UG-ERS-Defender_Enhanced_Helpdesk
+        UG-NAS2FS2-IT-FullAccess
+        UG-VDI-ConvergentUSA-WAVDI-Managed_Users
+        UG-ERS-vCenter_Admins
+        RTCUniversalServerAdmins
+        GP-SecGrp-DC-Renton-Ops_Svrs-IT-Administrators
+        CSUserAdministrator
+        CSServerAdministrator
+        GP-Deny-Security_Icon_Push
+        RTCUniversalReadOnlyAdmins
+        GP-ERS-Renton-Allow_IE_Admin_Access (User)
+        RTCUniversalServerReadOnlyGroup
+        UG-NAS2FS2-Installs-FullAccess
+        O365-EntMobilityE3-COI
+        High bandwidth Sites Access
+        GP-SecGrp-DC-Renton-APP_Servers-PCI-Administrators
+        GP-Deny-BGinfo_Script
+        HelpdeskAdmins
+        UG-ConvergentUSA-Unrestricted_Internet_Access
+        RTCUniversalGlobalWriteGroup
+        WindowsAdmins
+        UNIX-WARHEL-Dave_Coldstore_Access
+        UNIX-WARHEL06-WAFiles01_Dave_Reports-Full_Access
+        UNIX-WARHEL-WCITest_Access
+        ALL
+        GP-SecGrp-DataCenter-Renton-Backup_Svrs-Administrators
+        Global_Project Teams_Data Processing (Change)
+        UNIX-WARHEL-Dave_Output_Access
+        GP-SecGrp-DC-Renton-Dev_Servers-Automation-Administrators
+        PasswordManager-Users
+        UG-VDI-ConvergentUSA-GAVDI-Prog_Agents
+        FACStools
+        Duo-AnyConnectUsers
+        GP-ERS-Bypass-Outlook_Deleted_Items
+        PFA
+        GP-SecGrp-DC-Renton-APP_Servers-Docuware-Administrators
+        HelpdeskWksAdmins
+        UG-ERS-SPS-Helpdesk-Visitors
+        UG-ERS-EMM-IT_Policy
+        UNIX-WARHEL06-Logon_Access
+        GP-SecGrp-DC-Renton-APP_Servers-PCI-Power_Users
+        PublicFolderAdmins
+        UNIX-WARHEL-Logon_Access
+        WAMON-SWAdmin
+        ConvergentERS-iLO_Admins
+        UG-ConvergentUSA-vCenter_Admin_Level_2
+        UG-ERS-Defender-iPhone_Token
+        VMwareEngineers
+        NAS2-FS2-UC4-Archivefolder
+        Local_Project Teams_Data Processing (Change)
+        sysadmin
+        UG-ConvergentUSA-vCenter_Admin_Level_3
+        SophosXGDefault
+        UG-AHC-Dallas-Home-Owners
+        UG-ConvergentUSA-Domain_Users
+        Global_India_VDI_ITGroup
+        AHC-Gainesville-Procurve_Core-Enable
+        RTCUniversalUserReadOnlyGroup
+        UG-ConvergentUSA-MoveIT-Central-Admins
+        UG-ConvergentUSA-Collector_Internet_Access
+        UG-ERS-SPS-Home-Visitors
+        UNIX-WARHEL-Dave_Credcard_Access
+        UG-ERS-SPS-SysAdmin-Owners
+        UG-ConvergentUSA-GA-VDI_Admins
+        UG-ERS-Defender-Windows_Desktop_Token
+        UGVDIConvergentUSAWAVDIVZWTest
+        UG-ConvergentUSA-VTConvert_Access
+        UG-VDI-ConvergentUSA-WAVDI-Sprint_Agents
+        AHC-Gainesville-Procurve_Core-Enable
+        Crystal Enterprise
+        Authentication authority asserted identity
+        Local_GP-Remote_Assistance-Peoria
+        Local_Payment Processing_Processing (Change)
+        Local_Collections_Genesis (Change)
+        $DUPLICATE-1ed3
+        Local_Accounting_EOM (Read)
+        $DUPLICATE-300d
+        Local_Atlanta_Contact_Solutions (Change)
+        SCCM-Report-Access
+        Sophos_Administrators
+        Local_Collections_RPC IVR (Change)
+        Local_Atlanta_Project Teams_Sprint ACD (Change)
+        $DUPLICATE-1955
+        $DUPLICATE-3b17
+        $DUPLICATE-1fcd
+        Local_Watomaton01_OrionTransProocessor (Change)
+        Local_Project Teams_Automation_Internal (Change)
+        Local_MoveIT-CENTRAL_FICO
+        Local_Project Teams_Manual Invoices (Change)
+        Local_Project Teams_Automation_Processing (Change)
+        Sophos_Helpdesk
+        Local_Accounting
+        Local_Collections_T-Mobile (Change)
+        Local_Project Teams_Compliance (Change)
+        Local_Information Technology (Change)
+        Local_Collections_ASB Management (Change)
+        Local_AZFiles01_PhoenixShare (Change)
+        Local_Project Teams_Automation_Archive (Change)
+        Local_ERS-Renton-Workstations-Remote Desktop Users
+        Local_GP-Remote_Assistance-Peoria
+        DHCP Administrators
+        Local_Augusta_ProjectTeams_Sprint (Change)
+        Local_Collections_Qwest (Change)
+        Local_VZNDMZ_Svr-MultiApp (Change)
+        Local_Collections_TXU_EOP (Change)
+        Local_Atlanta_Collections (Change)
+        SophosUser
+        Local_Collections (Change)
+        Local_Collections_Cingular (Change)
+        Local_Project Teams_Audit (Change)
+        Local_Project Teams_Star Installer (Change)
+        Denied RODC Password Replication Group
+        Local_Payment Processing
+        SophosAdministrator
+        Local_Project Teams_Automation
+        Local_Information Technology (Read)
+        Local_Dynamo-Intranet_Access
+        Local_Desknet Sysadmin Group (Change)
+        Local_Collections_TXU_Agent_Help (Change)
+        Local_Augusta_Departments-Attendance (Change)
+        Local_Houston_Collections (Change)
+        Local_Payment Processing_Bookkeeping (Change)
+        Local_Collections_BOA (Change)
+        Local_Collections
+        Local_Enterprise Resource Center (Change)
+        Local_File Services (Change)
+        Local_WAFiles01-Project_Teams-EBO (Change)
+        Local_WACREDPROC_OrionTransProcessor (Change)
+        Sophos_Users
+        High Mandatory Level
+         
+###################################################################################### 
+---- 10. Local Security Policies [REQ - 2.3, 8.1, 8.2, 10.2] ---- 
+###################################################################################### 
+---- 10.1 running Secedit /export /cfg "C:\Users\pichatterjee\Desktop\WA-VEEAMPROXY02-audit-report.txt" : 
+[System Access]
+MinimumPasswordAge = 10
+MaximumPasswordAge = 60
+MinimumPasswordLength = 8
+PasswordComplexity = 1
+PasswordHistorySize = 24
+LockoutBadCount = 5
+ResetLockoutCount = 30
+LockoutDuration = 30
+RequireLogonToChangePassword = 0
+ForceLogoffWhenHourExpire = 0
+NewAdministratorName = "ERSADMIN"
+NewGuestName = "nonaccount"
+ClearTextPassword = 0
+LSAAnonymousNameLookup = 0
+EnableAdminAccount = 1
+EnableGuestAccount = 0
+[Event Audit]
+AuditSystemEvents = 0
+AuditLogonEvents = 0
+AuditObjectAccess = 0
+AuditPrivilegeUse = 0
+AuditPolicyChange = 0
+AuditAccountManage = 0
+AuditProcessTracking = 0
+AuditDSAccess = 0
+AuditAccountLogon = 0
+[Registry Values]
+MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Setup\RecoveryConsole\SecurityLevel=4,0
+MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Setup\RecoveryConsole\SetCommand=4,0
+MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\CachedLogonsCount=1,"10"
+MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\ForceUnlockLogon=4,0
+MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\PasswordExpiryWarning=4,14
+MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\ScRemoveOption=1,"0"
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\ConsentPromptBehaviorAdmin=4,5
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\ConsentPromptBehaviorUser=4,3
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\DisableCAD=4,0
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\DontDisplayLastUserName=4,1
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\DontDisplayLockedUserId=4,2
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableInstallerDetection=4,1
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableLUA=4,1
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableSecureUIAPaths=4,1
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableUIADesktopToggle=4,0
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableVirtualization=4,1
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\FilterAdministratorToken=4,0
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\InactivityTimeoutSecs=4,300
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\LegalNoticeCaption=1,"NOTICE TO USERS"
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\LegalNoticeText=7,This computer system is the property of Convergent. It is for authorized use only.  Users (authorized or unauthorized) have no explicit or implicit expectation of privacy.,Any and all uses of this system as well as all files on this system may be intercepted monitored recorded copied audited inspected and disclosed to authorized site Convergent and law enforcement personnel as well as authorized officials of other agencies both domestic and foreign.,By using this system the user consents to such interception monitoring recording copying auditing inspection and disclosure at the discretion of authorized site or Convergent personnel.  Unauthorized or improper use of this system may result in administrative disciplinary action and civil and criminal penalties.,By continuing to use this system you indicate your awareness of and consent to these terms and conditions of use.  If you do not agree to these conditions YOU MUST LOG OFF IMMEDIATELY.
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\PromptOnSecureDesktop=4,1
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\ScForceOption=4,0
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\ShutdownWithoutLogon=4,0
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\UndockWithoutLogon=4,1
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\ValidateAdminCodeSignatures=4,0
+MACHINE\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\AuthenticodeEnabled=4,0
+MACHINE\System\CurrentControlSet\Control\Lsa\AuditBaseObjects=4,0
+MACHINE\System\CurrentControlSet\Control\Lsa\CrashOnAuditFail=4,0
+MACHINE\System\CurrentControlSet\Control\Lsa\DisableDomainCreds=4,0
+MACHINE\System\CurrentControlSet\Control\Lsa\EveryoneIncludesAnonymous=4,0
+MACHINE\System\CurrentControlSet\Control\Lsa\FIPSAlgorithmPolicy\Enabled=4,0
+MACHINE\System\CurrentControlSet\Control\Lsa\ForceGuest=4,0
+MACHINE\System\CurrentControlSet\Control\Lsa\FullPrivilegeAuditing=3,0
+MACHINE\System\CurrentControlSet\Control\Lsa\LimitBlankPasswordUse=4,1
+MACHINE\System\CurrentControlSet\Control\Lsa\LmCompatibilityLevel=4,5
+MACHINE\System\CurrentControlSet\Control\Lsa\MSV1_0\NTLMMinClientSec=4,20000000
+MACHINE\System\CurrentControlSet\Control\Lsa\MSV1_0\NTLMMinServerSec=4,20000000
+MACHINE\System\CurrentControlSet\Control\Lsa\NoLMHash=4,1
+MACHINE\System\CurrentControlSet\Control\Lsa\RestrictAnonymous=4,0
+MACHINE\System\CurrentControlSet\Control\Lsa\RestrictAnonymousSAM=4,1
+MACHINE\System\CurrentControlSet\Control\Lsa\SCENoApplyLegacyAuditPolicy=4,1
+MACHINE\System\CurrentControlSet\Control\Print\Providers\LanMan Print Services\Servers\AddPrinterDrivers=4,1
+MACHINE\System\CurrentControlSet\Control\SecurePipeServers\Winreg\AllowedExactPaths\Machine=7,System\CurrentControlSet\Control\ProductOptions,System\CurrentControlSet\Control\Server Applications,Software\Microsoft\Windows NT\CurrentVersion
+MACHINE\System\CurrentControlSet\Control\SecurePipeServers\Winreg\AllowedPaths\Machine=7,System\CurrentControlSet\Control\Print\Printers,System\CurrentControlSet\Services\Eventlog,Software\Microsoft\OLAP Server,Software\Microsoft\Windows NT\CurrentVersion\Print,Software\Microsoft\Windows NT\CurrentVersion\Windows,System\CurrentControlSet\Control\ContentIndex,System\CurrentControlSet\Control\Terminal Server,System\CurrentControlSet\Control\Terminal Server\UserConfig,System\CurrentControlSet\Control\Terminal Server\DefaultUserConfiguration,Software\Microsoft\Windows NT\CurrentVersion\Perflib,System\CurrentControlSet\Services\SysmonLog
+MACHINE\System\CurrentControlSet\Control\Session Manager\Kernel\ObCaseInsensitive=4,1
+MACHINE\System\CurrentControlSet\Control\Session Manager\Memory Management\ClearPageFileAtShutdown=4,0
+MACHINE\System\CurrentControlSet\Control\Session Manager\ProtectionMode=4,1
+MACHINE\System\CurrentControlSet\Control\Session Manager\SubSystems\optional=7,
+MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters\AutoDisconnect=4,15
+MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters\EnableForcedLogOff=4,1
+MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters\EnableSecuritySignature=4,0
+MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters\NullSessionPipes=7,
+MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters\RequireSecuritySignature=4,1
+MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters\RestrictNullSessAccess=4,1
+MACHINE\System\CurrentControlSet\Services\LanmanWorkstation\Parameters\EnablePlainTextPassword=4,0
+MACHINE\System\CurrentControlSet\Services\LanmanWorkstation\Parameters\EnableSecuritySignature=4,0
+MACHINE\System\CurrentControlSet\Services\LanmanWorkstation\Parameters\RequireSecuritySignature=4,1
+MACHINE\System\CurrentControlSet\Services\LDAP\LDAPClientIntegrity=4,0
+MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters\DisablePasswordChange=4,0
+MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters\MaximumPasswordAge=4,30
+MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters\RequireSignOrSeal=4,0
+MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters\RequireStrongKey=4,1
+MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters\SealSecureChannel=4,1
+MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters\SignSecureChannel=4,1
+MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\LDAPServerIntegrity=4,1
+[Privilege Rights]
+SeNetworkLogonRight = *S-1-1-0,*S-1-5-32-544,*S-1-5-32-545,*S-1-5-32-551
+SeBackupPrivilege = *S-1-5-32-544,*S-1-5-32-551
+SeChangeNotifyPrivilege = *S-1-1-0,*S-1-5-19,*S-1-5-20,*S-1-5-32-544,*S-1-5-32-545,*S-1-5-32-551,*S-1-5-90-0
+SeSystemtimePrivilege = *S-1-1-0,*S-1-5-19
+SeCreatePagefilePrivilege = *S-1-5-32-544
+SeDebugPrivilege = *S-1-5-32-544
+SeRemoteShutdownPrivilege = *S-1-5-32-544
+SeAuditPrivilege = *S-1-5-19,*S-1-5-20
+SeIncreaseQuotaPrivilege = *S-1-5-19,*S-1-5-20,*S-1-5-32-544
+SeIncreaseBasePriorityPrivilege = *S-1-5-32-544
+SeLoadDriverPrivilege = *S-1-5-32-544
+SeBatchLogonRight = *S-1-5-32-544,*S-1-5-32-551,*S-1-5-32-559
+SeServiceLogonRight = *S-1-5-19,*S-1-5-2,*S-1-5-20,*S-1-5-21-3807083552-2096751793-3218073065-40947,*S-1-5-21-3807083552-2096751793-3218073065-44359,*S-1-5-21-3807083552-2096751793-3218073065-500,SophosSAUWA-VEEAMaaa,*S-1-5-32-544,*S-1-5-6
+SeInteractiveLogonRight = *S-1-5-32-544,*S-1-5-32-545,*S-1-5-32-551
+SeSecurityPrivilege = *S-1-5-32-544
+SeSystemEnvironmentPrivilege = *S-1-5-32-544
+SeProfileSingleProcessPrivilege = *S-1-5-32-544
+SeSystemProfilePrivilege = *S-1-5-32-544,*S-1-5-80-3139157870-2983391045-3678747466-658725712-1809340420
+SeAssignPrimaryTokenPrivilege = *S-1-5-19,*S-1-5-20
+SeRestorePrivilege = *S-1-5-32-544,*S-1-5-32-551
+SeShutdownPrivilege = *S-1-5-32-544,*S-1-5-32-551
+SeTakeOwnershipPrivilege = *S-1-5-32-544
+SeDenyNetworkLogonRight = *S-1-5-21-3807083552-2096751793-3218073065-32921
+SeDenyServiceLogonRight = *S-1-5-21-3807083552-2096751793-3218073065-32922
+SeDenyInteractiveLogonRight = *S-1-5-21-3807083552-2096751793-3218073065-23623
+SeUndockPrivilege = *S-1-5-32-544
+SeManageVolumePrivilege = *S-1-5-32-544
+SeRemoteInteractiveLogonRight = *S-1-5-32-544,*S-1-5-32-555
+SeDenyRemoteInteractiveLogonRight = *S-1-5-21-3807083552-2096751793-3218073065-25417
+SeImpersonatePrivilege = *S-1-5-19,*S-1-5-20,*S-1-5-32-544,*S-1-5-6
+SeCreateGlobalPrivilege = *S-1-5-19,*S-1-5-20,*S-1-5-32-544,*S-1-5-6
+SeIncreaseWorkingSetPrivilege = *S-1-5-32-545,*S-1-5-90-0
+SeTimeZonePrivilege = *S-1-5-19,*S-1-5-32-544
+SeCreateSymbolicLinkPrivilege = *S-1-5-32-544
+[Version]
+signature="$CHICAGO$"
+Revision=1
+ 
+###################################################################################### 
+---- 11. List of Updates Installed [REQ - 6.2] ---- 
+###################################################################################### 
+---- 11.1 running Wmic qfe list full /format:table: 
+Caption                                     CSName           Description      FixComments  HotFixID   InstallDate  InstalledBy               InstalledOn  Name  ServicePackInEffect  Status  
+                                            WA-VEEAMPROXY02  Update                        KB2959936               WA-VEEAMPROXY02\ERSADMIN  11/22/2014                                      
+http://support.microsoft.com/?kbid=2894852  WA-VEEAMPROXY02  Security Update               KB2894852               WA-VEEAMPROXY02\ERSADMIN  11/28/2017                                      
+http://support.microsoft.com/?kbid=2894856  WA-VEEAMPROXY02  Security Update               KB2894856               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=2896496  WA-VEEAMPROXY02  Update                        KB2896496               WA-VEEAMPROXY02\ERSADMIN  11/22/2014                                      
+http://support.microsoft.com/?kbid=2919355  WA-VEEAMPROXY02  Update                        KB2919355               WA-VEEAMPROXY02\ERSADMIN  11/22/2014                                      
+http://support.microsoft.com/?kbid=2928120  WA-VEEAMPROXY02  Security Update               KB2928120               WA-VEEAMPROXY02\ERSADMIN  11/22/2014                                      
+http://support.microsoft.com/?kbid=2933826  WA-VEEAMPROXY02  Security Update               KB2933826               WA-VEEAMPROXY02\ERSADMIN  11/22/2014                                      
+http://support.microsoft.com/?kbid=2934520  WA-VEEAMPROXY02  Update                        KB2934520               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=2938066  WA-VEEAMPROXY02  Update                        KB2938066               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=2938772  WA-VEEAMPROXY02  Update                        KB2938772               WA-VEEAMPROXY02\ERSADMIN  11/22/2014                                      
+http://support.microsoft.com/?kbid=2949621  WA-VEEAMPROXY02  Hotfix                        KB2949621               WA-VEEAMPROXY02\ERSADMIN  11/22/2014                                      
+http://support.microsoft.com/?kbid=2954879  WA-VEEAMPROXY02  Update                        KB2954879               WA-VEEAMPROXY02\ERSADMIN  11/22/2014                                      
+http://support.microsoft.com/?kbid=2962806  WA-VEEAMPROXY02  Update                        KB2962806               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=2965500  WA-VEEAMPROXY02  Update                        KB2965500               WA-VEEAMPROXY02\ERSADMIN  11/22/2014                                      
+http://support.microsoft.com/?kbid=2966407  WA-VEEAMPROXY02  Update                        KB2966407               WA-VEEAMPROXY02\ERSADMIN  11/22/2014                                      
+http://support.microsoft.com/?kbid=2966826  WA-VEEAMPROXY02  Security Update               KB2966826               WA-VEEAMPROXY02\ERSADMIN  11/28/2017                                      
+http://support.microsoft.com/?kbid=2966828  WA-VEEAMPROXY02  Security Update               KB2966828               NT AUTHORITY\SYSTEM       11/30/2017                                      
+http://support.microsoft.com/?kbid=2967917  WA-VEEAMPROXY02  Update                        KB2967917               WA-VEEAMPROXY02\ERSADMIN  11/22/2014                                      
+http://support.microsoft.com/?kbid=2968296  WA-VEEAMPROXY02  Security Update               KB2968296               WA-VEEAMPROXY02\ERSADMIN  11/28/2017                                      
+http://support.microsoft.com/?kbid=2971203  WA-VEEAMPROXY02  Update                        KB2971203               WA-VEEAMPROXY02\ERSADMIN  11/22/2014                                      
+http://support.microsoft.com/?kbid=2971850  WA-VEEAMPROXY02  Security Update               KB2971850               WA-VEEAMPROXY02\ERSADMIN  11/22/2014                                      
+http://support.microsoft.com/?kbid=2972103  WA-VEEAMPROXY02  Security Update               KB2972103               WA-VEEAMPROXY02\ERSADMIN  11/28/2017                                      
+http://support.microsoft.com/?kbid=2973114  WA-VEEAMPROXY02  Security Update               KB2973114               WA-VEEAMPROXY02\ERSADMIN  11/28/2017                                      
+http://support.microsoft.com/?kbid=2973351  WA-VEEAMPROXY02  Security Update               KB2973351               WA-VEEAMPROXY02\ERSADMIN  11/22/2014                                      
+http://support.microsoft.com/?kbid=2973448  WA-VEEAMPROXY02  Update                        KB2973448               WA-VEEAMPROXY02\ERSADMIN  11/22/2014                                      
+http://support.microsoft.com/?kbid=2975061  WA-VEEAMPROXY02  Update                        KB2975061               WA-VEEAMPROXY02\ERSADMIN  11/22/2014                                      
+http://support.microsoft.com/?kbid=2976627  WA-VEEAMPROXY02  Security Update               KB2976627               WA-VEEAMPROXY02\ERSADMIN  11/22/2014                                      
+http://support.microsoft.com/?kbid=2977629  WA-VEEAMPROXY02  Security Update               KB2977629               WA-VEEAMPROXY02\ERSADMIN  11/22/2014                                      
+http://support.microsoft.com/?kbid=2977765  WA-VEEAMPROXY02  Security Update               KB2977765               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=2978041  WA-VEEAMPROXY02  Security Update               KB2978041               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=2978126  WA-VEEAMPROXY02  Security Update               KB2978126               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=2987107  WA-VEEAMPROXY02  Security Update               KB2987107               WA-VEEAMPROXY02\ERSADMIN  11/22/2014                                      
+http://support.microsoft.com/?kbid=2989647  WA-VEEAMPROXY02  Update                        KB2989647               NT AUTHORITY\SYSTEM       11/22/2014                                      
+http://support.microsoft.com/?kbid=2989930  WA-VEEAMPROXY02  Update                        KB2989930               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3000483  WA-VEEAMPROXY02  Security Update               KB3000483               NT AUTHORITY\SYSTEM       11/27/2018                                      
+http://support.microsoft.com/?kbid=3000850  WA-VEEAMPROXY02  Update                        KB3000850               WA-VEEAMPROXY02\ERSADMIN  11/22/2014                                      
+http://support.microsoft.com/?kbid=3003057  WA-VEEAMPROXY02  Security Update               KB3003057               WA-VEEAMPROXY02\ERSADMIN  11/22/2014                                      
+http://support.microsoft.com/?kbid=3004361  WA-VEEAMPROXY02  Security Update               KB3004361               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3004365  WA-VEEAMPROXY02  Security Update               KB3004365               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3004545  WA-VEEAMPROXY02  Hotfix                        KB3004545               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3012702  WA-VEEAMPROXY02  Update                        KB3012702               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3013172  WA-VEEAMPROXY02  Update                        KB3013172               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3013769  WA-VEEAMPROXY02  Update                        KB3013769               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3013791  WA-VEEAMPROXY02  Update                        KB3013791               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3013816  WA-VEEAMPROXY02  Update                        KB3013816               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3014442  WA-VEEAMPROXY02  Update                        KB3014442               WA-VEEAMPROXY02\ERSADMIN  11/22/2014                                      
+http://support.microsoft.com/?kbid=3019978  WA-VEEAMPROXY02  Security Update               KB3019978               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3022777  WA-VEEAMPROXY02  Security Update               KB3022777               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3023219  WA-VEEAMPROXY02  Security Update               KB3023219               WA-VEEAMPROXY02\ERSADMIN  11/28/2017                                      
+http://support.microsoft.com/?kbid=3023222  WA-VEEAMPROXY02  Security Update               KB3023222               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3023266  WA-VEEAMPROXY02  Security Update               KB3023266               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3024751  WA-VEEAMPROXY02  Update                        KB3024751               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3024755  WA-VEEAMPROXY02  Update                        KB3024755               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3029603  WA-VEEAMPROXY02  Update                        KB3029603               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3030377  WA-VEEAMPROXY02  Security Update               KB3030377               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3030947  WA-VEEAMPROXY02  Update                        KB3030947               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3031044  WA-VEEAMPROXY02  Update                        KB3031044               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3032663  WA-VEEAMPROXY02  Security Update               KB3032663               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3033446  WA-VEEAMPROXY02  Update                        KB3033446               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3035126  WA-VEEAMPROXY02  Security Update               KB3035126               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3036612  WA-VEEAMPROXY02  Update                        KB3036612               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3037576  WA-VEEAMPROXY02  Security Update               KB3037576               WA-VEEAMPROXY02\ERSADMIN  11/28/2017                                      
+http://support.microsoft.com/?kbid=3037579  WA-VEEAMPROXY02  Security Update               KB3037579               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3037924  WA-VEEAMPROXY02  Update                        KB3037924               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3038002  WA-VEEAMPROXY02  Update                        KB3038002               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3042085  WA-VEEAMPROXY02  Update                        KB3042085               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3044374  WA-VEEAMPROXY02  Update                        KB3044374               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3044673  WA-VEEAMPROXY02  Update                        KB3044673               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3045634  WA-VEEAMPROXY02  Update                        KB3045634               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3045685  WA-VEEAMPROXY02  Security Update               KB3045685               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3045717  WA-VEEAMPROXY02  Update                        KB3045717               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3045719  WA-VEEAMPROXY02  Update                        KB3045719               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3045755  WA-VEEAMPROXY02  Security Update               KB3045755               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3045992  WA-VEEAMPROXY02  Update                        KB3045992               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3045999  WA-VEEAMPROXY02  Security Update               KB3045999               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3046017  WA-VEEAMPROXY02  Security Update               KB3046017               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3046737  WA-VEEAMPROXY02  Hotfix                        KB3046737               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3048043  WA-VEEAMPROXY02  Update                        KB3048043               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3054169  WA-VEEAMPROXY02  Update                        KB3054169               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3054203  WA-VEEAMPROXY02  Update                        KB3054203               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3054256  WA-VEEAMPROXY02  Update                        KB3054256               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3054464  WA-VEEAMPROXY02  Update                        KB3054464               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3055323  WA-VEEAMPROXY02  Update                        KB3055323               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3055343  WA-VEEAMPROXY02  Update                        KB3055343               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3055642  WA-VEEAMPROXY02  Security Update               KB3055642               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3059317  WA-VEEAMPROXY02  Security Update               KB3059317               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3060681  WA-VEEAMPROXY02  Update                        KB3060681               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3060793  WA-VEEAMPROXY02  Update                        KB3060793               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3061512  WA-VEEAMPROXY02  Security Update               KB3061512               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3063843  WA-VEEAMPROXY02  Update                        KB3063843               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3071756  WA-VEEAMPROXY02  Security Update               KB3071756               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3072307  WA-VEEAMPROXY02  Security Update               KB3072307               WA-VEEAMPROXY02\ERSADMIN  11/28/2017                                      
+http://support.microsoft.com/?kbid=3074228  WA-VEEAMPROXY02  Security Update               KB3074228               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3074545  WA-VEEAMPROXY02  Security Update               KB3074545               WA-VEEAMPROXY02\ERSADMIN  11/28/2017                                      
+http://support.microsoft.com/?kbid=3074548  WA-VEEAMPROXY02  Security Update               KB3074548               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3075220  WA-VEEAMPROXY02  Security Update               KB3075220               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3077715  WA-VEEAMPROXY02  Update                        KB3077715               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3078405  WA-VEEAMPROXY02  Update                        KB3078405               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3078676  WA-VEEAMPROXY02  Update                        KB3078676               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3080042  WA-VEEAMPROXY02  Update                        KB3080042               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3080149  WA-VEEAMPROXY02  Update                        KB3080149               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3082089  WA-VEEAMPROXY02  Security Update               KB3082089               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3084135  WA-VEEAMPROXY02  Security Update               KB3084135               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3084905  WA-VEEAMPROXY02  Update                        KB3084905               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3086255  WA-VEEAMPROXY02  Security Update               KB3086255               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3087041  WA-VEEAMPROXY02  Update                        KB3087041               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3087137  WA-VEEAMPROXY02  Update                        KB3087137               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3091297  WA-VEEAMPROXY02  Update                        KB3091297               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3092601  WA-VEEAMPROXY02  Security Update               KB3092601               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3092627  WA-VEEAMPROXY02  Update                        KB3092627               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3094486  WA-VEEAMPROXY02  Update                        KB3094486               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3095701  WA-VEEAMPROXY02  Update                        KB3095701               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3097992  WA-VEEAMPROXY02  Security Update               KB3097992               WA-VEEAMPROXY02\ERSADMIN  11/28/2017                                      
+http://support.microsoft.com/?kbid=3097997  WA-VEEAMPROXY02  Security Update               KB3097997               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3098779  WA-VEEAMPROXY02  Security Update               KB3098779               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3099834  WA-VEEAMPROXY02  Update                        KB3099834               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3100473  WA-VEEAMPROXY02  Update                        KB3100473               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3102429  WA-VEEAMPROXY02  Update                        KB3102429               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3103616  WA-VEEAMPROXY02  Update                        KB3103616               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3103696  WA-VEEAMPROXY02  Update                        KB3103696               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3103709  WA-VEEAMPROXY02  Update                        KB3103709               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3109103  WA-VEEAMPROXY02  Security Update               KB3109103               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3109976  WA-VEEAMPROXY02  Update                        KB3109976               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3110329  WA-VEEAMPROXY02  Security Update               KB3110329               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3115224  WA-VEEAMPROXY02  Update                        KB3115224               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3118401  WA-VEEAMPROXY02  Update                        KB3118401               NT AUTHORITY\SYSTEM       11/28/2017                                      
+http://support.microsoft.com/?kbid=3121261  WA-VEEAMPROXY02  Update                        KB3121261               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3121461  WA-VEEAMPROXY02  Security Update               KB3121461               NT AUTHORITY\SYSTEM       11/27/2017                                      
+http://support.microsoft.com/?kbid=3122651  WA-VEEAMPROXY02  Security Update               KB3122651               WA-VEEAMPROXY02\ERSADMIN  11/28/2017                                      
+http://support.microsoft.com/?kbid=3123245  WA-VEEAMPROXY02  Update                        KB3123245               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3126033  WA-VEEAMPROXY02  Update                        KB3126033               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3126434  WA-VEEAMPROXY02  Security Update               KB3126434               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3126587  WA-VEEAMPROXY02  Security Update               KB3126587               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3127222  WA-VEEAMPROXY02  Security Update               KB3127222               WA-VEEAMPROXY02\ERSADMIN  11/28/2017                                      
+http://support.microsoft.com/?kbid=3128650  WA-VEEAMPROXY02  Update                        KB3128650               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3133043  WA-VEEAMPROXY02  Security Update               KB3133043               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3133690  WA-VEEAMPROXY02  Update                        KB3133690               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3134179  WA-VEEAMPROXY02  Update                        KB3134179               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3134815  WA-VEEAMPROXY02  Update                        KB3134815               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3137728  WA-VEEAMPROXY02  Update                        KB3137728               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3138602  WA-VEEAMPROXY02  Update                        KB3138602               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3139164  WA-VEEAMPROXY02  Update                        KB3139164               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3139398  WA-VEEAMPROXY02  Security Update               KB3139398               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3139914  WA-VEEAMPROXY02  Security Update               KB3139914               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3140219  WA-VEEAMPROXY02  Update                        KB3140219               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3140234  WA-VEEAMPROXY02  Update                        KB3140234               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3145384  WA-VEEAMPROXY02  Update                        KB3145384               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3145432  WA-VEEAMPROXY02  Update                        KB3145432               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3146604  WA-VEEAMPROXY02  Update                        KB3146604               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3146723  WA-VEEAMPROXY02  Security Update               KB3146723               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3146751  WA-VEEAMPROXY02  Update                        KB3146751               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3147071  WA-VEEAMPROXY02  Update                        KB3147071               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3153704  WA-VEEAMPROXY02  Security Update               KB3153704               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3155784  WA-VEEAMPROXY02  Security Update               KB3155784               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3156059  WA-VEEAMPROXY02  Security Update               KB3156059               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3159398  WA-VEEAMPROXY02  Security Update               KB3159398               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3161949  WA-VEEAMPROXY02  Security Update               KB3161949               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3161958  WA-VEEAMPROXY02  Security Update               KB3161958               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3162343  WA-VEEAMPROXY02  Security Update               KB3162343               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3162835  WA-VEEAMPROXY02  Update                        KB3162835               NT AUTHORITY\SYSTEM       11/28/2017                                      
+http://support.microsoft.com/?kbid=3169704  WA-VEEAMPROXY02  Security Update               KB3169704               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3172614  WA-VEEAMPROXY02  Update                        KB3172614               NT AUTHORITY\SYSTEM       11/27/2017                                      
+http://support.microsoft.com/?kbid=3172729  WA-VEEAMPROXY02  Security Update               KB3172729               NT AUTHORITY\SYSTEM       11/25/2017                                      
+http://support.microsoft.com/?kbid=3173424  WA-VEEAMPROXY02  Update                        KB3173424               NT AUTHORITY\SYSTEM       11/25/2017                                      
+http://support.microsoft.com/?kbid=3175024  WA-VEEAMPROXY02  Security Update               KB3175024               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3178539  WA-VEEAMPROXY02  Security Update               KB3178539               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3179574  WA-VEEAMPROXY02  Update                        KB3179574               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=3185319  WA-VEEAMPROXY02  Security Update               KB3185319               NT AUTHORITY\SYSTEM       11/28/2017                                      
+http://support.microsoft.com/?kbid=3186539  WA-VEEAMPROXY02  Update                        KB3186539               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=4033428  WA-VEEAMPROXY02  Update                        KB4033428               WA-VEEAMPROXY02\ERSADMIN  11/25/2017                                      
+http://support.microsoft.com/?kbid=4040972  WA-VEEAMPROXY02  Update                        KB4040972               NT AUTHORITY\SYSTEM       11/27/2017                                      
+http://support.microsoft.com/?kbid=4040981  WA-VEEAMPROXY02  Update                        KB4040981               WA-VEEAMPROXY02\ERSADMIN  11/28/2017                                      
+http://support.microsoft.com/?kbid=4041777  WA-VEEAMPROXY02  Update                        KB4041777               NT AUTHORITY\SYSTEM       11/27/2017                                      
+http://support.microsoft.com/?kbid=4043763  WA-VEEAMPROXY02  Update                        KB4043763               NT AUTHORITY\SYSTEM       11/27/2017                                      
+http://support.microsoft.com/?kbid=4054566  WA-VEEAMPROXY02  Update                        KB4054566               NT AUTHORITY\SYSTEM       11/27/2018                                      
+http://support.microsoft.com/?kbid=4054999  WA-VEEAMPROXY02  Update                        KB4054999               NT AUTHORITY\SYSTEM       10/11/2019                                      
+http://support.microsoft.com/?kbid=4095875  WA-VEEAMPROXY02  Update                        KB4095875               NT AUTHORITY\SYSTEM       10/11/2019                                      
+http://support.microsoft.com/?kbid=4339284  WA-VEEAMPROXY02  Update                        KB4339284               NT AUTHORITY\SYSTEM       10/11/2019                                      
+http://support.microsoft.com/?kbid=4457034  WA-VEEAMPROXY02  Update                        KB4457034               NT AUTHORITY\SYSTEM       11/27/2018                                      
+http://support.microsoft.com/?kbid=4457045  WA-VEEAMPROXY02  Update                        KB4457045               NT AUTHORITY\SYSTEM       11/27/2018                                      
+http://support.microsoft.com/?kbid=4459935  WA-VEEAMPROXY02  Update                        KB4459935               NT AUTHORITY\SYSTEM       11/27/2018                                      
+http://support.microsoft.com/?kbid=4459941  WA-VEEAMPROXY02  Update                        KB4459941               NT AUTHORITY\SYSTEM       11/27/2018                                      
+http://support.microsoft.com/?kbid=4462901  WA-VEEAMPROXY02  Update                        KB4462901               NT AUTHORITY\SYSTEM       10/11/2019                                      
+http://support.microsoft.com/?kbid=4467087  WA-VEEAMPROXY02  Update                        KB4467087               NT AUTHORITY\SYSTEM       11/27/2018                                      
+http://support.microsoft.com/?kbid=4468323  WA-VEEAMPROXY02  Update                        KB4468323               NT AUTHORITY\SYSTEM       10/11/2019                                      
+http://support.microsoft.com/?kbid=4483450  WA-VEEAMPROXY02  Update                        KB4483450               NT AUTHORITY\SYSTEM       2/26/2019                                       
+http://support.microsoft.com/?kbid=4483459  WA-VEEAMPROXY02  Update                        KB4483459               NT AUTHORITY\SYSTEM       2/26/2019                                       
+http://support.microsoft.com/?kbid=4486459  WA-VEEAMPROXY02  Update                        KB4486459               NT AUTHORITY\SYSTEM       10/11/2019                                      
+http://support.microsoft.com/?kbid=4486474  WA-VEEAMPROXY02  Security Update               KB4486474               NT AUTHORITY\SYSTEM       2/26/2019                                       
+http://support.microsoft.com/?kbid=4487028  WA-VEEAMPROXY02  Security Update               KB4487028               NT AUTHORITY\SYSTEM       2/26/2019                                       
+http://support.microsoft.com/?kbid=4488665  WA-VEEAMPROXY02  Update                        KB4488665               NT AUTHORITY\SYSTEM       10/11/2019                                      
+http://support.microsoft.com/?kbid=4490128  WA-VEEAMPROXY02  Update                        KB4490128               NT AUTHORITY\SYSTEM       10/11/2019                                      
+http://support.microsoft.com/?kbid=4501226  WA-VEEAMPROXY02  Update                        KB4501226               NT AUTHORITY\SYSTEM       10/11/2019                                      
+http://support.microsoft.com/?kbid=4512938  WA-VEEAMPROXY02  Security Update               KB4512938               NT AUTHORITY\SYSTEM       10/11/2019                                      
+http://support.microsoft.com/?kbid=4514338  WA-VEEAMPROXY02  Security Update               KB4514338               NT AUTHORITY\SYSTEM       10/11/2019                                      
+http://support.microsoft.com/?kbid=4514364  WA-VEEAMPROXY02  Update                        KB4514364               NT AUTHORITY\SYSTEM       10/11/2019                                      
+http://support.microsoft.com/?kbid=4514371  WA-VEEAMPROXY02  Update                        KB4514371               NT AUTHORITY\SYSTEM       10/11/2019                                      
+http://support.microsoft.com/?kbid=4516046  WA-VEEAMPROXY02  Security Update               KB4516046               NT AUTHORITY\SYSTEM       10/11/2019                                      
+http://support.microsoft.com/?kbid=4516064  WA-VEEAMPROXY02  Security Update               KB4516064               NT AUTHORITY\SYSTEM       10/11/2019                                      
+http://support.microsoft.com/?kbid=4519108  WA-VEEAMPROXY02  Update                        KB4519108               NT AUTHORITY\SYSTEM       11/29/2019                                      
+http://support.microsoft.com/?kbid=4519571  WA-VEEAMPROXY02  Update                        KB4519571               NT AUTHORITY\SYSTEM       11/29/2019                                      
+http://support.microsoft.com/?kbid=4524445  WA-VEEAMPROXY02  Security Update               KB4524445               NT AUTHORITY\SYSTEM       2/7/2020                                        
+http://support.microsoft.com/?kbid=4525106  WA-VEEAMPROXY02  Security Update               KB4525106               NT AUTHORITY\SYSTEM       11/29/2019                                      
+http://support.microsoft.com/?kbid=4525250  WA-VEEAMPROXY02  Security Update               KB4525250               NT AUTHORITY\SYSTEM       11/29/2019                                      
+http://support.microsoft.com/?kbid=4530677  WA-VEEAMPROXY02  Security Update               KB4530677               NT AUTHORITY\SYSTEM       1/14/2020                                       
+http://support.microsoft.com/?kbid=4530730  WA-VEEAMPROXY02  Security Update               KB4530730               NT AUTHORITY\SYSTEM       1/14/2020                                       
+http://support.microsoft.com/?kbid=4532931  WA-VEEAMPROXY02  Update                        KB4532931               NT AUTHORITY\SYSTEM       1/29/2020                                       
+http://support.microsoft.com/?kbid=4532946  WA-VEEAMPROXY02  Update                        KB4532946               NT AUTHORITY\SYSTEM       1/29/2020                                       
+http://support.microsoft.com/?kbid=4532961  WA-VEEAMPROXY02  Security Update               KB4532961               NT AUTHORITY\SYSTEM       1/29/2020                                       
+http://support.microsoft.com/?kbid=4532970  WA-VEEAMPROXY02  Security Update               KB4532970               NT AUTHORITY\SYSTEM       1/29/2020                                       
+http://support.microsoft.com/?kbid=4533011  WA-VEEAMPROXY02  Update                        KB4533011               NT AUTHORITY\SYSTEM       1/14/2020                                       
+http://support.microsoft.com/?kbid=4534117  WA-VEEAMPROXY02  Update                        KB4534117               NT AUTHORITY\SYSTEM       2/7/2020                                        
+http://support.microsoft.com/?kbid=4534251  WA-VEEAMPROXY02  Security Update               KB4534251               NT AUTHORITY\SYSTEM       1/29/2020                                       
+http://support.microsoft.com/?kbid=4534309  WA-VEEAMPROXY02  Security Update               KB4534309               NT AUTHORITY\SYSTEM       1/29/2020                                       
+http://support.microsoft.com/?kbid=4537488  WA-VEEAMPROXY02  Update                        KB4537488               NT AUTHORITY\SYSTEM       6/9/2020                                        
+http://support.microsoft.com/?kbid=4537503  WA-VEEAMPROXY02  Update                        KB4537503               NT AUTHORITY\SYSTEM       6/9/2020                                        
+http://support.microsoft.com/?kbid=4540671  WA-VEEAMPROXY02  Security Update               KB4540671               NT AUTHORITY\SYSTEM       4/14/2020                                       
+http://support.microsoft.com/?kbid=4540725  WA-VEEAMPROXY02  Security Update               KB4540725               NT AUTHORITY\SYSTEM       6/9/2020                                        
+http://support.microsoft.com/?kbid=4541505  WA-VEEAMPROXY02  Security Update               KB4541505               NT AUTHORITY\SYSTEM       4/14/2020                                       
+http://support.microsoft.com/?kbid=4550905  WA-VEEAMPROXY02  Security Update               KB4550905               NT AUTHORITY\SYSTEM       6/9/2020                                        
+http://support.microsoft.com/?kbid=4550970  WA-VEEAMPROXY02  Security Update               KB4550970               NT AUTHORITY\SYSTEM       6/9/2020                                        
+http://support.microsoft.com/?kbid=4561673  WA-VEEAMPROXY02  Security Update               KB4561673               NT AUTHORITY\SYSTEM       7/30/2020                                       
+http://support.microsoft.com/?kbid=4565479  WA-VEEAMPROXY02  Security Update               KB4565479               NT AUTHORITY\SYSTEM       7/30/2020                                       
+http://support.microsoft.com/?kbid=4565540  WA-VEEAMPROXY02  Security Update               KB4565540               NT AUTHORITY\SYSTEM       7/30/2020                                       
+http://support.microsoft.com/?kbid=4565580  WA-VEEAMPROXY02  Security Update               KB4565580               NT AUTHORITY\SYSTEM       7/30/2020                                       
+http://support.microsoft.com/?kbid=4565585  WA-VEEAMPROXY02  Security Update               KB4565585               NT AUTHORITY\SYSTEM       7/30/2020                                       
+http://support.microsoft.com/?kbid=4565613  WA-VEEAMPROXY02  Update                        KB4565613               NT AUTHORITY\SYSTEM       7/30/2020                                       
+http://support.microsoft.com/?kbid=4565622  WA-VEEAMPROXY02  Update                        KB4565622               NT AUTHORITY\SYSTEM       7/30/2020                                       
+http://support.microsoft.com/?kbid=4566371  WA-VEEAMPROXY02  Update                        KB4566371               NT AUTHORITY\SYSTEM       10/27/2020                                      
+http://support.microsoft.com/?kbid=4566425  WA-VEEAMPROXY02  Security Update               KB4566425               NT AUTHORITY\SYSTEM       10/27/2020                                      
+http://support.microsoft.com/?kbid=4569768  WA-VEEAMPROXY02  Update                        KB4569768               NT AUTHORITY\SYSTEM       10/27/2020                                      
+http://support.microsoft.com/?kbid=4576614  WA-VEEAMPROXY02  Update                        KB4576614               NT AUTHORITY\SYSTEM       10/27/2020                                      
+http://support.microsoft.com/?kbid=4577010  WA-VEEAMPROXY02  Security Update               KB4577010               NT AUTHORITY\SYSTEM       10/27/2020                                      
+http://support.microsoft.com/?kbid=4577071  WA-VEEAMPROXY02  Security Update               KB4577071               NT AUTHORITY\SYSTEM       10/27/2020                                      
+http://support.microsoft.com/?kbid=4577066  WA-VEEAMPROXY02  Security Update               KB4577066               NT AUTHORITY\SYSTEM       10/27/2020                                      
+
+
+ 
+###################################################################################### 
+---- 12. Time Synchronization Configurations - NTP Server [REQ - 10.2] ---- 
+###################################################################################### 
+ 
+---- Audit Information ---- 
+If this computer is a member of a domain it will be obtaining its time sync from a domain server
+However if this device is a domain server the value should be set to something other than 
+Time.windows.com and should be pointing to its primary or secondary NTP services
+  
+W32Time must be enabled to synch with the domain. Finding "W32Time" in running services list
+ 
+    NtpServer    REG_SZ    time.windows.com,0x9
+ 
+---- 12.2 running w32tm /query /status: 
+Leap Indicator: 0(no warning)
+Stratum: 3 (secondary reference - syncd by (S)NTP)
+Precision: -6 (15.625ms per tick)
+Root Delay: 0.2547760s
+Root Dispersion: 0.3282471s
+ReferenceId: 0x0A030047 (source IP:  10.3.0.71)
+Last Successful Sync Time: 1/13/2021 12:22:00 PM
+Source: WA-COLO-DC2.e-r-solutions.com 
+Poll Interval: 15 (32768s)
+
+ 
+---- 12.3 running w32tm /query /configuration: 
+[Configuration]
+
+EventLogFlags: 2 (Local)
+AnnounceFlags: 10 (Local)
+TimeJumpAuditOffset: 28800 (Local)
+MinPollInterval: 10 (Local)
+MaxPollInterval: 15 (Local)
+MaxNegPhaseCorrection: 4294967295 (Local)
+MaxPosPhaseCorrection: 4294967295 (Local)
+MaxAllowedPhaseOffset: 300 (Local)
+
+FrequencyCorrectRate: 4 (Local)
+PollAdjustFactor: 5 (Local)
+LargePhaseOffset: 50000000 (Local)
+SpikeWatchPeriod: 900 (Local)
+LocalClockDispersion: 10 (Local)
+HoldPeriod: 5 (Local)
+PhaseCorrectRate: 1 (Local)
+UpdateInterval: 30000 (Local)
+
+
+[TimeProviders]
+
+NtpClient (Local)
+DllName: C:\Windows\system32\w32time.dll (Local)
+Enabled: 1 (Local)
+InputProvider: 1 (Local)
+CrossSiteSyncFlags: 2 (Local)
+AllowNonstandardModeCombinations: 1 (Local)
+ResolvePeerBackoffMinutes: 15 (Local)
+ResolvePeerBackoffMaxTimes: 7 (Local)
+CompatibilityFlags: 2147483648 (Local)
+EventLogFlags: 1 (Local)
+LargeSampleSkew: 3 (Local)
+SpecialPollInterval: 3600 (Local)
+Type: NT5DS (Local)
+
+VMICTimeProvider (Local)
+DllName: C:\Windows\System32\vmictimeprovider.dll (Local)
+Enabled: 1 (Local)
+InputProvider: 1 (Local)
+NtpServer (Local)
+DllName: C:\Windows\system32\w32time.dll (Local)
+Enabled: 0 (Local)
+InputProvider: 0 (Local)
+
+ 
+---- 12.4 running w32tm /query /peers: 
+#Peers: 1
+
+Peer: WA-COLO-DC2.e-r-solutions.com
+State: Active
+Time Remaining: 30481.0327761s
+Mode: 3 (Client)
+Stratum: 2 (secondary reference - syncd by (S)NTP)
+PeerPoll Interval: 15 (32768s)
+HostPoll Interval: 15 (32768s)
+ 
+---- 12.5 running w32tm /query /source: 
+WA-COLO-DC2.e-r-solutions.com 
+  
+###################################################################################### 
+---- 13. ScreenSaver/Session Timeout [REQ - 8.1.8] ---- 
+###################################################################################### 
+  
+---- Audit Information ---- 
+ Screensaver values must be: 
+ ScreenSaverActive=1  (Screensaver is active) 
+ ScreenSaverIsSecure=1 (Requires a password to  in after timeout) 
+ ScreenSaverTimeOut=900 (Number may be no larger than 900 (900 seconds=15 min) 
+  
+ All items must have a value associated or the item is not set
+  
+  
+---- 13.1 running reg query "HKCU\Control Panel\Desktop" /s: 
+    ScreenSaveActive    REG_SZ    1
+---- 13.2 reg query "HKEY_CURRENT_USER\Control Panel\Desktop" /v ScreenSaveTimeout: 
+
+
+ 
+###################################################################################### 
+---- 14. RDP Security Level [REQ - 2.3] ---- 
+###################################################################################### 
+ 
+---- Audit Information ---- 
+ Value should be 3. If value is not found, Minimum Encryption Level is not configured 
+ 
+ 
+--- 14.1 running "reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" /v MinEncryptionLevel": 
+
+
+ 
+###################################################################################### 
+---- 15. Inactive and Disabled Users [REQ 8.1.4 - Domain Controller] ---- 
+###################################################################################### 
+---- 15.1 running dsquery user -disabled: 
+ 
+---- 15.2 dsquery user -limit 0 -inactive 12: 
+ 
+---- 15.3 dsquery user -limit 0: 
+ 

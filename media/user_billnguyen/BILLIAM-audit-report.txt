@@ -1,0 +1,1832 @@
+System Report for BILLIAM 
+
+Microsoft Windows [Version 10.0.18363.1139]
+This report was generated at 13:31:16.27 on Fri 10/23/2020 
+ 
+###################################################################################### 
+---- 1. SYSTEM SPECIFICATIONS ---- 
+###################################################################################### 
+
+Host Name:                 BILLIAM
+OS Name:                   Microsoft Windows 10 Home
+OS Version:                10.0.18363 N/A Build 18363
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Standalone Workstation
+OS Build Type:             Multiprocessor Free
+Registered Owner:          N/A
+Registered Organization:   N/A
+Product ID:                00325-95800-00000-AAOEM
+Original Install Date:     8/5/2019, 2:01:23 PM
+System Boot Time:          10/20/2020, 4:00:55 PM
+System Manufacturer:       Dell Inc.
+System Model:              Inspiron 5579
+System Type:               x64-based PC
+Processor(s):              1 Processor(s) Installed.
+                           [01]: Intel64 Family 6 Model 142 Stepping 10 GenuineIntel ~2001 Mhz
+BIOS Version:              Dell Inc. 1.13.0, 3/5/2020
+Windows Directory:         C:\WINDOWS
+System Directory:          C:\WINDOWS\system32
+Boot Device:               \Device\HarddiskVolume1
+System Locale:             en-us;English (United States)
+Input Locale:              en-us;English (United States)
+Time Zone:                 (UTC-08:00) Pacific Time (US & Canada)
+Total Physical Memory:     16,217 MB
+Available Physical Memory: 7,755 MB
+Virtual Memory: Max Size:  18,649 MB
+Virtual Memory: Available: 7,884 MB
+Virtual Memory: In Use:    10,765 MB
+Page File Location(s):     C:\pagefile.sys
+Domain:                    WORKGROUP
+Logon Server:              \\BILLIAM
+Hotfix(s):                 22 Hotfix(s) Installed.
+                           [01]: KB4578974
+                           [02]: KB4503308
+                           [03]: KB4508433
+                           [04]: KB4515383
+                           [05]: KB4516115
+                           [06]: KB4517245
+                           [07]: KB4521863
+                           [08]: KB4524569
+                           [09]: KB4528759
+                           [10]: KB4537759
+                           [11]: KB4538674
+                           [12]: KB4541338
+                           [13]: KB4552152
+                           [14]: KB4559309
+                           [15]: KB4560959
+                           [16]: KB4561600
+                           [17]: KB4565554
+                           [18]: KB4569073
+                           [19]: KB4576751
+                           [20]: KB4577670
+                           [21]: KB4580325
+                           [22]: KB4577671
+Network Card(s):           4 NIC(s) Installed.
+                           [01]: Qualcomm QCA61x4A 802.11ac Wireless Adapter
+                                 Connection Name: Wi-Fi
+                                 DHCP Enabled:    Yes
+                                 DHCP Server:     192.168.0.1
+                                 IP address(es)
+                                 [01]: 192.168.0.14
+                                 [02]: fe80::7471:ffcb:bc28:6431
+                                 [03]: ::52e:3603:bfc9:618
+                                 [04]: ::7471:ffcb:bc28:6431
+                           [02]: VirtualBox Host-Only Ethernet Adapter
+                                 Connection Name: Ethernet 3
+                                 DHCP Enabled:    No
+                                 IP address(es)
+                                 [01]: 192.168.56.1
+                                 [02]: fe80::fd97:4743:655d:d835
+                           [03]: VirtualBox Host-Only Ethernet Adapter
+                                 Connection Name: Ethernet 4
+                                 DHCP Enabled:    No
+                                 IP address(es)
+                                 [01]: 192.168.99.1
+                                 [02]: fe80::6c7d:5b86:57c1:b120
+                           [04]: Bluetooth Device (Personal Area Network)
+                                 Connection Name: Bluetooth Network Connection 3
+                                 Status:          Media disconnected
+Hyper-V Requirements:      VM Monitor Mode Extensions: Yes
+                           Virtualization Enabled In Firmware: Yes
+                           Second Level Address Translation: Yes
+                           Data Execution Prevention Available: Yes
+ 
+###################################################################################### 
+---- 2. NETWORK INFORMATION ---- 
+###################################################################################### 
+  
+---- 2.1 running netstat -rn:  
+===========================================================================
+Interface List
+ 18...0a 00 27 00 00 12 ......VirtualBox Host-Only Ethernet Adapter
+ 10...0a 00 27 00 00 0a ......VirtualBox Host-Only Ethernet Adapter #2
+  4...80 3f 5d 05 70 fa ......USB Gigabit Ethernet
+ 22...fe 01 7c 19 74 b5 ......Microsoft Wi-Fi Direct Virtual Adapter #7
+ 27...0e 01 7c 19 74 b5 ......Microsoft Wi-Fi Direct Virtual Adapter #8
+ 16...fc 01 7c 19 74 b5 ......Qualcomm QCA61x4A 802.11ac Wireless Adapter
+  8...fc 01 7c 19 74 b6 ......Bluetooth Device (Personal Area Network) #3
+  1...........................Software Loopback Interface 1
+===========================================================================
+
+IPv4 Route Table
+===========================================================================
+Active Routes:
+Network Destination        Netmask          Gateway       Interface  Metric
+          0.0.0.0          0.0.0.0      192.168.0.1     192.168.0.14     35
+        127.0.0.0        255.0.0.0         On-link         127.0.0.1    331
+        127.0.0.1  255.255.255.255         On-link         127.0.0.1    331
+  127.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+      192.168.0.0    255.255.255.0         On-link      192.168.0.14    291
+     192.168.0.14  255.255.255.255         On-link      192.168.0.14    291
+    192.168.0.255  255.255.255.255         On-link      192.168.0.14    291
+     192.168.56.0    255.255.255.0         On-link      192.168.56.1    281
+     192.168.56.1  255.255.255.255         On-link      192.168.56.1    281
+   192.168.56.255  255.255.255.255         On-link      192.168.56.1    281
+     192.168.99.0    255.255.255.0         On-link      192.168.99.1    281
+     192.168.99.1  255.255.255.255         On-link      192.168.99.1    281
+   192.168.99.255  255.255.255.255         On-link      192.168.99.1    281
+        224.0.0.0        240.0.0.0         On-link         127.0.0.1    331
+        224.0.0.0        240.0.0.0         On-link      192.168.56.1    281
+        224.0.0.0        240.0.0.0         On-link      192.168.99.1    281
+        224.0.0.0        240.0.0.0         On-link      192.168.0.14    291
+  255.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+  255.255.255.255  255.255.255.255         On-link      192.168.56.1    281
+  255.255.255.255  255.255.255.255         On-link      192.168.99.1    281
+  255.255.255.255  255.255.255.255         On-link      192.168.0.14    291
+===========================================================================
+Persistent Routes:
+  None
+
+IPv6 Route Table
+===========================================================================
+Active Routes:
+ If Metric Network Destination      Gateway
+ 16    291 ::/64                    On-link
+  1    331 ::1/128                  On-link
+ 16    291 ::52e:3603:bfc9:618/128  On-link
+ 16    291 ::7471:ffcb:bc28:6431/128
+                                    On-link
+ 18    281 fe80::/64                On-link
+ 10    281 fe80::/64                On-link
+ 16    291 fe80::/64                On-link
+ 10    281 fe80::6c7d:5b86:57c1:b120/128
+                                    On-link
+ 16    291 fe80::7471:ffcb:bc28:6431/128
+                                    On-link
+ 18    281 fe80::fd97:4743:655d:d835/128
+                                    On-link
+  1    331 ff00::/8                 On-link
+ 18    281 ff00::/8                 On-link
+ 10    281 ff00::/8                 On-link
+ 16    291 ff00::/8                 On-link
+===========================================================================
+Persistent Routes:
+  None
+ 
+---- 2.2 running ipconfig: 
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet 3:
+
+   Connection-specific DNS Suffix  . : 
+   Link-local IPv6 Address . . . . . : fe80::fd97:4743:655d:d835%18
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 
+
+Ethernet adapter Ethernet 4:
+
+   Connection-specific DNS Suffix  . : 
+   Link-local IPv6 Address . . . . . : fe80::6c7d:5b86:57c1:b120%10
+   IPv4 Address. . . . . . . . . . . : 192.168.99.1
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 
+
+Ethernet adapter Ethernet 5:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+Wireless LAN adapter Local Area Connection* 11:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+Wireless LAN adapter Local Area Connection* 16:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . : 
+   IPv6 Address. . . . . . . . . . . : ::7471:ffcb:bc28:6431
+   Temporary IPv6 Address. . . . . . : ::52e:3603:bfc9:618
+   Link-local IPv6 Address . . . . . : fe80::7471:ffcb:bc28:6431%16
+   IPv4 Address. . . . . . . . . . . : 192.168.0.14
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.0.1
+
+Ethernet adapter Bluetooth Network Connection 3:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+ 
+---- 2.3 running netsh wlan show networks mode=bssi 
+ 
+Interface name : Wi-Fi 
+There are 1 networks currently visible. 
+
+SSID 1 : VillaSHB5ghz_5GEXT
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 58:d9:d5:6e:37:75
+         Signal             : 100%  
+         Radio type         : 802.11ac
+         Channel            : 157 
+         Basic rates (Mbps) : 6 12
+
+ 
+###################################################################################### 
+---- 3. LOCAL USERS [REQ - 2.1, 7.2] ---- 
+###################################################################################### 
+---- 3.1 running net user: 
+
+User accounts for \\BILLIAM
+
+-------------------------------------------------------------------------------
+Administrator            Bill Nguyen              DefaultAccount           
+Guest                    WDAGUtilityAccount       
+The command completed successfully.
+
+ 
+###################################################################################### 
+---- 4. LOCAL GROUPS INFORMATION [REQ - 2.1, 7.2] ---- 
+###################################################################################### 
+---- 4.1 running net localgroup: 
+
+Aliases for \\BILLIAM
+
+-------------------------------------------------------------------------------
+*Administrators
+*Distributed COM Users
+*Event Log Readers
+*Guests
+*Hyper-V Administrators
+*IIS_IUSRS
+*Performance Log Users
+*Performance Monitor Users
+*Remote Management Users
+*System Managed Accounts Group
+*Users
+The command completed successfully.
+
+ 
+---- 4.2 running net localgroup Administrators: 
+Alias name     Administrators
+Comment        Administrators have complete and unrestricted access to the computer/domain
+
+Members
+
+-------------------------------------------------------------------------------
+Administrator
+Bill Nguyen
+The command completed successfully.
+
+ 
+###################################################################################### 
+---- 5. LOCAL User Administrator and Guest [REQ - 2.1] ---- 
+###################################################################################### 
+---- 5.1 running net user Administrator: 
+User name                    Administrator
+Full Name                    
+Comment                      Built-in account for administering the computer/domain
+User's comment               
+Country/region code          000 (System Default)
+Account active               No
+Account expires              Never
+
+Password last set            10/21/2020 3:52:39 PM
+Password expires             Never
+Password changeable          10/21/2020 3:52:39 PM
+Password required            Yes
+User may change password     Yes
+
+Workstations allowed         All
+Logon script                 
+User profile                 
+Home directory               
+Last logon                   4/17/2018 9:37:35 AM
+
+Logon hours allowed          All
+
+Local Group Memberships      *Administrators       
+Global Group memberships     *None                 
+The command completed successfully.
+
+ 
+---- 5.2 running net user Guest: 
+User name                    Guest
+Full Name                    
+Comment                      Built-in account for guest access to the computer/domain
+User's comment               
+Country/region code          000 (System Default)
+Account active               Yes
+Account expires              Never
+
+Password last set            10/21/2020 3:52:39 PM
+Password expires             Never
+Password changeable          10/21/2020 3:52:39 PM
+Password required            No
+User may change password     No
+
+Workstations allowed         All
+Logon script                 
+User profile                 
+Home directory               
+Last logon                   Never
+
+Logon hours allowed          All
+
+Local Group Memberships      *Guests               
+Global Group memberships     *None                 
+The command completed successfully.
+
+ 
+---- 5.3 running net accounts: 
+Force user logoff how long after time expires?:       Never
+Minimum password age (days):                          0
+Maximum password age (days):                          42
+Minimum password length:                              0
+Length of password history maintained:                None
+Lockout threshold:                                    Never
+Lockout duration (minutes):                           30
+Lockout observation window (minutes):                 30
+Computer role:                                        WORKSTATION
+The command completed successfully.
+
+ 
+###################################################################################### 
+---- 6. List of Installed Programs [REQ - 2.2, 2.3, 5.1] ---- 
+###################################################################################### 
+---- 6.1 running wmic product get name,version /format:table: 
+Name                                                            Version         
+
+Python 3.6.5 Executables (64-bit)                               3.6.5150.0      
+
+Python 3.6.5 Test Suite (64-bit)                                3.6.5150.0      
+
+Python 3.6.5 Standard Library (64-bit)                          3.6.5150.0      
+
+Python 3.6.5 Tcl/Tk Support (64-bit)                            3.6.5150.0      
+
+Python 3.6.5 Core Interpreter (64-bit)                          3.6.5150.0      
+
+Python 3.6.5 Documentation (64-bit)                             3.6.5150.0      
+
+Python 3.6.5 Utility Scripts (64-bit)                           3.6.5150.0      
+
+Python 3.6.5 pip Bootstrap (64-bit)                             3.6.5150.0      
+
+Python 3.6.5 Development Libraries (64-bit)                     3.6.5150.0      
+
+DSC/AA Factory Installer                                        2.0.6875.402    
+
+MSI Development Tools                                           10.1.17763.132  
+
+Windows SDK for Windows Store Apps DirectX x86 Remote           10.1.17763.132  
+
+WinRT Intellisense Mobile - en-us                               10.1.17763.132  
+
+Windows SDK EULA                                                10.1.17763.132  
+
+Microsoft VC++ redistributables repacked.                       12.0.0.0        
+
+WinRT Intellisense PPI - en-us                                  10.1.17763.132  
+
+Dell Mobile Connect Drivers                                     1.1.3750        
+
+Windows App Certification Kit SupportedApiList x86              10.1.17763.132  
+
+Windows SDK Desktop Headers arm                                 10.1.17763.132  
+
+Python 3.8.3 Core Interpreter (64-bit)                          3.8.3150.0      
+
+Windows SDK for Windows Store Managed Apps Libs                 10.1.17763.132  
+
+Intel(R) Management Engine Components                           1.0.0.0         
+
+Windows IoT Extension SDK                                       10.1.17763.132  
+
+Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.21005      12.0.21005      
+
+Fresco Logic USB Display Driver                                 2.1.34054.0     
+
+Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.21005   12.0.21005      
+
+Universal CRT Headers Libraries and Sources                     10.1.17763.132  
+
+Bonjour                                                         3.0.0.10        
+
+Maxx Audio Installer (x64)                                      2.7.9233.1      
+
+Microsoft VC++ redistributables repacked.                       12.0.0.0        
+
+Windows SDK DirectX x86 Remote                                  10.1.17763.132  
+
+WinAppDeploy                                                    10.1.17763.132  
+
+Windows SDK DirectX x64 Remote                                  10.1.17763.132  
+
+Python 3.8.3 pip Bootstrap (64-bit)                             3.8.3150.0      
+
+Universal CRT Extension SDK                                     10.1.17763.132  
+
+Windows SDK for Windows Store Apps Contracts                    10.1.17763.132  
+
+WinRT Intellisense IoT - en-us                                  10.1.17763.132  
+
+Windows SDK Modern Non-Versioned Developer Tools                10.1.17763.132  
+
+Windows IoT Extension SDK Contracts                             10.1.17763.132  
+
+vcpp_crt.redist.clickonce                                       14.16.27033     
+
+Intel(R) Management Engine Driver                               1.0.0.0         
+
+Windows SDK Desktop Tools x86                                   10.1.17763.132  
+
+Windows SDK for Windows Store Apps                              10.1.17763.132  
+
+Python 3.8.3 Add to Path (64-bit)                               3.8.3150.0      
+
+Intelr OptaneT Pinning Explorer Extensions                     17.5.9.1040     
+
+Python 3.8.3 Development Libraries (64-bit)                     3.8.3150.0      
+
+Epson Event Manager                                             3.10.0061       
+
+SDK ARM Redistributables                                        10.1.17763.132  
+
+WinRT Intellisense UAP - Other Languages                        10.1.17763.132  
+
+Windows SDK Desktop Tools arm64                                 10.1.17763.132  
+
+                                                                10.0.0.916      
+
+Apple Software Update                                           2.6.3.1         
+
+Intel(R) Trusted Connect Service Client x86                     1.50.638.1      
+
+Intel(R) Trusted Connect Service Client x64                     1.50.638.1      
+
+Universal CRT Redistributable                                   10.1.17763.132  
+
+Windows SDK Facade Windows WinMD Versioned                      10.1.17763.132  
+
+Intel(R) ME UninstallLegacy                                     1.0.1.0         
+
+Intel(R) Rapid Storage Technology                               17.5.9.1040     
+
+Windows Desktop Extension SDK Contracts                         10.1.17763.132  
+
+Windows SDK Desktop Libs arm64                                  10.1.17763.132  
+
+Windows Desktop Extension SDK                                   10.1.17763.132  
+
+Windows Team Extension SDK                                      10.1.17763.132  
+
+WinRT Intellisense UAP - en-us                                  10.1.17763.132  
+
+Windows App Certification Kit Native Components                 10.1.17763.132  
+
+Adobe Refresh Manager                                           1.8.0           
+
+Adobe Acrobat Reader DC                                         20.012.20048    
+
+Epson Customer Research Participation                           1.83.0000       
+
+Intel(R) Management Engine Components                           1.0.0.0         
+
+Windows SDK ARM Desktop Tools                                   10.1.17763.132  
+
+Qualcomm Atheros Setup                                          1.00.0000       
+
+Python 3.8.3 Test Suite (64-bit)                                3.8.3150.0      
+
+Dell Update - SupportAssist Update Plugin                       5.1.0.11858     
+
+Windows SDK AddOn                                               10.1.0.0        
+
+SDK ARM Additions                                               10.1.17763.132  
+
+Dell Digital Delivery Services                                  4.0.52.0        
+
+Python 3.8.3 Executables (64-bit)                               3.8.3150.0      
+
+Windows SDK Desktop Libs x86                                    10.1.17763.132  
+
+Intel(R) Chipset Device Software                                10.1.1.44       
+
+Windows Team Extension SDK Contracts                            10.1.17763.132  
+
+Python 3.8.3 Standard Library (64-bit)                          3.8.3150.0      
+
+EpsonNet Print                                                  3.1.4.0         
+
+Microsoft Visual Studio Setup WMI Provider                      2.5.2141.57745  
+
+DisplayLink Graphics Driver                                     9.3.3324.0      
+
+Backup and Sync from Google                                     3.51.3307.8076  
+
+Windows SDK Desktop Libs arm                                    10.1.17763.132  
+
+Windows Mobile Extension SDK Contracts                          10.1.17763.132  
+
+Dell Power Manager Service                                      3.6.0           
+
+Windows SDK for Windows Store Apps Libs                         10.1.17763.132  
+
+WinRT Intellisense IoT - Other Languages                        10.1.17763.132  
+
+Windows SDK Desktop Headers arm64                               10.1.17763.132  
+
+Microsoft Visual C++ 2017 X86 Debug Runtime - 14.16.27033       14.16.27033     
+
+Windows SDK Desktop Tools x64                                   10.1.17763.132  
+
+                                                                                
+
+WinRT Intellisense Desktop - en-us                              10.1.17763.132  
+
+Microsoft Visual C++ 2017 X64 Debug Runtime - 14.16.27033       14.16.27033     
+
+Google Update Helper                                            1.3.36.31       
+
+Windows SDK Modern Versioned Developer Tools                    10.1.17763.132  
+
+Apple Application Support (64-bit)                              8.5             
+
+Microsoft Visual C++ 2019 X86 Minimum Runtime - 14.26.28720     14.26.28720     
+
+Windows SDK Desktop Headers x86                                 10.1.17763.132  
+
+Windows SDK Desktop Headers x64                                 10.1.17763.132  
+
+Python 3.8.3 Utility Scripts (64-bit)                           3.8.3150.0      
+
+Epson Software Updater                                          4.4.4           
+
+Node.js                                                         12.17.0         
+
+Update for Windows 10 for x64-based Systems (KB4023057)         2.59.0.0        
+
+Microsoft Update Health Tools                                   2.68.0.0        
+
+Dell Update                                                     3.1.3           
+
+Dell SupportAssist Remediation                                  5.1.3.11985     
+
+Windows SDK for Windows Store Apps Headers                      10.1.17763.132  
+
+Microsoft Visual C++ 2019 X86 Additional Runtime - 14.26.28720  14.26.28720     
+
+Apple Application Support (32-bit)                              8.5             
+
+Universal CRT Redistributable                                   10.0.26624      
+
+Windows App Certification Kit x64                               10.1.17763.132  
+
+Microsoft Visual Studio Setup Configuration                     2.5.2141.57745  
+
+Windows SDK for Windows Store Apps Tools                        10.1.17763.132  
+
+Oracle VM VirtualBox 6.0.12                                     6.0.12          
+
+WinRT Intellisense Desktop - Other Languages                    10.1.17763.132  
+
+Application Verifier x64 External Package                       10.1.17763.132  
+
+iCloud                                                          7.19.0.10       
+
+Windows SDK Redistributables                                    10.1.17763.132  
+
+Universal General MIDI DLS Extension SDK                        10.1.17763.132  
+
+Windows SDK                                                     10.1.17763.132  
+
+Microsoft Visual C++ 2019 X64 Minimum Runtime - 14.26.28720     14.26.28720     
+
+SmartByte Drivers and Services                                  3.0.863         
+
+QuickSet64                                                      11.1.40         
+
+Kits Configuration Installer                                    10.1.17763.132  
+
+Universal CRT Tools x64                                         10.1.17763.132  
+
+Windows SDK for Windows Store Apps Metadata                     10.1.17763.132  
+
+ISS_Drivers_x64                                                 3.10.100.3429   
+
+Microsoft Visual C++ 2019 X64 Additional Runtime - 14.26.28720  14.26.28720     
+
+Python Launcher                                                 3.8.7072.0      
+
+Python 3.8.3 Tcl/Tk Support (64-bit)                            3.8.3150.0      
+
+Windows SDK Desktop Libs x64                                    10.1.17763.132  
+
+PuTTY release 0.70 (64-bit)                                     0.70.0.0        
+
+Windows SDK Signing Tools                                       10.1.17763.132  
+
+vs_FileTracker_Singleton                                        15.9.28128      
+
+Python 3.8.3 Documentation (64-bit)                             3.8.3150.0      
+
+Universal CRT Tools x86                                         10.1.17763.132  
+
+WinRT Intellisense PPI - Other Languages                        10.1.17763.132  
+
+Windows Mobile Extension SDK                                    10.1.17763.132  
+
+
+
+
+ 
+###################################################################################### 
+---- 7. List of Running Services [REQ - 2.2, 2.3, 5.1, 5.3] ---- 
+###################################################################################### 
+---- 7.1 running wmic service where started=true get name,startname,displayname: 
+DisplayName                                                            Name                                                    StartName                    
+
+Adobe Acrobat Update Service                                           AdobeARMservice                                         LocalSystem                  
+
+Intelr SGX AESM                                                        AESMService                                             LocalSystem                  
+
+Application Information                                                Appinfo                                                 LocalSystem                  
+
+AppX Deployment Service (AppXSVC)                                      AppXSvc                                                 LocalSystem                  
+
+AtherosSvc                                                             AtherosSvc                                              LocalSystem                  
+
+Windows Audio Endpoint Builder                                         AudioEndpointBuilder                                    LocalSystem                  
+
+Windows Audio                                                          Audiosrv                                                NT AUTHORITY\LocalService    
+
+BitLocker Drive Encryption Service                                     BDESVC                                                  localSystem                  
+
+Base Filtering Engine                                                  BFE                                                     NT AUTHORITY\LocalService    
+
+Background Intelligent Transfer Service                                BITS                                                    LocalSystem                  
+
+Bonjour Service                                                        Bonjour Service                                         LocalSystem                  
+
+Background Tasks Infrastructure Service                                BrokerInfrastructure                                    LocalSystem                  
+
+Bluetooth Audio Gateway Service                                        BTAGService                                             NT AUTHORITY\LocalService    
+
+AVCTP service                                                          BthAvctpSvc                                             NT AUTHORITY\LocalService    
+
+Bluetooth Support Service                                              bthserv                                                 NT AUTHORITY\LocalService    
+
+Capability Access Manager Service                                      camsvc                                                  LocalSystem                  
+
+Connected Devices Platform Service                                     CDPSvc                                                  NT AUTHORITY\LocalService    
+
+Client License Service (ClipSVC)                                       ClipSVC                                                 LocalSystem                  
+
+CoreMessaging                                                          CoreMessagingRegistrar                                  NT AUTHORITY\LocalService    
+
+Intel(R) Content Protection HECI Service                               cphs                                                    LocalSystem                  
+
+Intel(R) Content Protection HDCP Service                               cplspcon                                                LocalSystem                  
+
+Cryptographic Services                                                 CryptSvc                                                NT Authority\NetworkService  
+
+DCOM Server Process Launcher                                           DcomLaunch                                              LocalSystem                  
+
+Dell Digital Delivery Services                                         Dell Digital Delivery Services                          LocalSystem                  
+
+Dell SupportAssist Remediation                                         Dell SupportAssist Remediation                          LocalSystem                  
+
+Dell Client Management Service                                         DellClientManagementService                             LocalSystem                  
+
+Device Association Service                                             DeviceAssociationService                                LocalSystem                  
+
+Device Install Service                                                 DeviceInstall                                           LocalSystem                  
+
+DevQuery Background Discovery Broker                                   DevQueryBroker                                          LocalSystem                  
+
+DHCP Client                                                            Dhcp                                                    NT Authority\LocalService    
+
+Connected User Experiences and Telemetry                               DiagTrack                                               LocalSystem                  
+
+Display Policy Service                                                 DispBrokerDesktopSvc                                    NT AUTHORITY\LocalService    
+
+Display Enhancement Service                                            DisplayEnhancementService                               LocalSystem                  
+
+DNS Client                                                             Dnscache                                                NT AUTHORITY\NetworkService  
+
+Delivery Optimization                                                  DoSvc                                                   NT Authority\NetworkService  
+
+Diagnostic Policy Service                                              DPS                                                     NT AUTHORITY\LocalService    
+
+Data Sharing Service                                                   DsSvc                                                   LocalSystem                  
+
+Data Usage                                                             DusmSvc                                                 NT Authority\LocalService    
+
+EpsonCustomerResearchParticipation                                     EpsonCustomerResearchParticipation                      LocalSystem                  
+
+Epson Scanner Service                                                  EpsonScanSvc                                            LocalSystem                  
+
+Intel(R) Dynamic Platform and Thermal Framework service                esifsvc                                                 LocalSystem                  
+
+Windows Event Log                                                      EventLog                                                NT AUTHORITY\LocalService    
+
+COM+ Event System                                                      EventSystem                                             NT AUTHORITY\LocalService    
+
+Windows Font Cache Service                                             FontCache                                               NT AUTHORITY\LocalService    
+
+Windows Presentation Foundation Font Cache 3.0.0.0                     FontCache3.0.0.0                                        NT Authority\LocalService    
+
+Human Interface Device Service                                         hidserv                                                 LocalSystem                  
+
+Intel(R) Rapid Storage Technology                                      IAStorDataMgrSvc                                        LocalSystem                  
+
+Intel(R) HD Graphics Control Panel Service                             igfxCUIService2.0.0.0                                   LocalSystem                  
+
+Microsoft Store Install Service                                        InstallService                                          LocalSystem                  
+
+Intel(R) Capability Licensing Service TCP IP Interface                 Intel(R) Capability Licensing Service TCP IP Interface  LocalSystem                  
+
+IP Helper                                                              iphlpsvc                                                LocalSystem                  
+
+Intel(R) Dynamic Application Loader Host Interface Service             jhi_service                                             LocalSystem                  
+
+CNG Key Isolation                                                      KeyIso                                                  LocalSystem                  
+
+Server                                                                 LanmanServer                                            LocalSystem                  
+
+Workstation                                                            LanmanWorkstation                                       NT AUTHORITY\NetworkService  
+
+Geolocation Service                                                    lfsvc                                                   LocalSystem                  
+
+Windows License Manager Service                                        LicenseManager                                          NT Authority\LocalService    
+
+TCP/IP NetBIOS Helper                                                  lmhosts                                                 NT AUTHORITY\LocalService    
+
+Intel(R) Management and Security Application Local Management Service  LMS                                                     LocalSystem                  
+
+Local Session Manager                                                  LSM                                                     LocalSystem                  
+
+McAfee WebAdvisor                                                      McAfee WebAdvisor                                       LocalSystem                  
+
+Windows Defender Firewall                                              mpssvc                                                  NT Authority\LocalService    
+
+Distributed Transaction Coordinator                                    MSDTC                                                   NT AUTHORITY\NetworkService  
+
+Windows Installer                                                      msiserver                                               LocalSystem                  
+
+Network Connection Broker                                              NcbService                                              LocalSystem                  
+
+Network Connections                                                    Netman                                                  LocalSystem                  
+
+Network List Service                                                   netprofm                                                NT AUTHORITY\LocalService    
+
+Microsoft Passport Container                                           NgcCtnrSvc                                              NT AUTHORITY\LocalService    
+
+Microsoft Passport                                                     NgcSvc                                                  LocalSystem                  
+
+Network Location Awareness                                             NlaSvc                                                  NT AUTHORITY\NetworkService  
+
+Network Store Interface Service                                        nsi                                                     NT Authority\LocalService    
+
+Program Compatibility Assistant Service                                PcaSvc                                                  LocalSystem                  
+
+Phone Service                                                          PhoneSvc                                                NT Authority\LocalService    
+
+Plug and Play                                                          PlugPlay                                                LocalSystem                  
+
+Power                                                                  Power                                                   LocalSystem                  
+
+User Profile Service                                                   ProfSvc                                                 LocalSystem                  
+
+Qualcomm Atheros WLAN Driver Service                                   QcomWlanSrv                                             LocalSystem                  
+
+Rivet AP Selector Service                                              RAPSService                                             LocalSystem                  
+
+Remote Access Connection Manager                                       RasMan                                                  localSystem                  
+
+Radio Management Service                                               RmSvc                                                   NT AUTHORITY\LocalService    
+
+RPC Endpoint Mapper                                                    RpcEptMapper                                            NT AUTHORITY\NetworkService  
+
+Remote Procedure Call (RPC)                                            RpcSs                                                   NT AUTHORITY\NetworkService  
+
+Intel(R) Storage Middleware Service                                    RstMwService                                            LocalSystem                  
+
+Realtek Audio Service                                                  RtkAudioService                                         LocalSystem                  
+
+Security Accounts Manager                                              SamSs                                                   LocalSystem                  
+
+Task Scheduler                                                         Schedule                                                LocalSystem                  
+
+Windows Backup                                                         SDRSVC                                                  localSystem                  
+
+Windows Security Service                                               SecurityHealthService                                   LocalSystem                  
+
+Payments and NFC/SE Manager                                            SEMgrSvc                                                NT AUTHORITY\LocalService    
+
+System Event Notification Service                                      SENS                                                    LocalSystem                  
+
+Sensor Service                                                         SensorService                                           LocalSystem                  
+
+Sensor Monitoring Service                                              SensrSvc                                                NT AUTHORITY\LocalService    
+
+System Guard Runtime Monitor Broker                                    SgrmBroker                                              LocalSystem                  
+
+Shell Hardware Detection                                               ShellHWDetection                                        LocalSystem                  
+
+SmartByte Network Service                                              SmartByte Network Service x64                           LocalSystem                  
+
+Print Spooler                                                          Spooler                                                 LocalSystem                  
+
+SSDP Discovery                                                         SSDPSRV                                                 NT AUTHORITY\LocalService    
+
+Secure Socket Tunneling Protocol Service                               SstpSvc                                                 NT Authority\LocalService    
+
+State Repository Service                                               StateRepository                                         LocalSystem                  
+
+Windows Image Acquisition (WIA)                                        stisvc                                                  NT Authority\LocalService    
+
+Storage Service                                                        StorSvc                                                 LocalSystem                  
+
+SysMain                                                                SysMain                                                 LocalSystem                  
+
+System Events Broker                                                   SystemEventsBroker                                      LocalSystem                  
+
+Touch Keyboard and Handwriting Panel Service                           TabletInputService                                      LocalSystem                  
+
+Telephony                                                              TapiSrv                                                 NT AUTHORITY\NetworkService  
+
+Themes                                                                 Themes                                                  LocalSystem                  
+
+Time Broker                                                            TimeBrokerSvc                                           NT AUTHORITY\LocalService    
+
+Web Account Manager                                                    TokenBroker                                             LocalSystem                  
+
+Distributed Link Tracking Client                                       TrkWks                                                  LocalSystem                  
+
+Windows Modules Installer                                              TrustedInstaller                                        localSystem                  
+
+User Manager                                                           UserManager                                             LocalSystem                  
+
+Update Orchestrator Service                                            UsoSvc                                                  LocalSystem                  
+
+Credential Manager                                                     VaultSvc                                                LocalSystem                  
+
+Waves Audio Services                                                   WavesSysSvc                                             LocalSystem                  
+
+Windows Biometric Service                                              WbioSrvc                                                LocalSystem                  
+
+Windows Connection Manager                                             Wcmsvc                                                  NT Authority\LocalService    
+
+Diagnostic Service Host                                                WdiServiceHost                                          NT AUTHORITY\LocalService    
+
+Diagnostic System Host                                                 WdiSystemHost                                           LocalSystem                  
+
+Windows Defender Antivirus Network Inspection Service                  WdNisSvc                                                NT AUTHORITY\LocalService    
+
+Windows Defender Antivirus Service                                     WinDefend                                               LocalSystem                  
+
+WinHTTP Web Proxy Auto-Discovery Service                               WinHttpAutoProxySvc                                     NT AUTHORITY\LocalService    
+
+Windows Management Instrumentation                                     Winmgmt                                                 localSystem                  
+
+WLAN AutoConfig                                                        WlanSvc                                                 LocalSystem                  
+
+Windows Push Notifications System Service                              WpnService                                              LocalSystem                  
+
+Security Center                                                        wscsvc                                                  NT AUTHORITY\LocalService    
+
+Windows Search                                                         WSearch                                                 LocalSystem                  
+
+Windows Update                                                         wuauserv                                                LocalSystem                  
+
+Bluetooth User Support Service_24b1f309                                BluetoothUserService_24b1f309                                                        
+
+Clipboard User Service_24b1f309                                        cbdhsvc_24b1f309                                                                     
+
+Connected Devices Platform User Service_24b1f309                       CDPUserSvc_24b1f309                                                                  
+
+Sync Host_24b1f309                                                     OneSyncSvc_24b1f309                                                                  
+
+Contact Data_24b1f309                                                  PimIndexMaintenanceSvc_24b1f309                                                      
+
+User Data Storage_24b1f309                                             UnistoreSvc_24b1f309                                                                 
+
+User Data Access_24b1f309                                              UserDataSvc_24b1f309                                                                 
+
+Windows Push Notifications User Service_24b1f309                       WpnUserService_24b1f309                                                              
+
+
+
+
+ 
+---- 7.1 running tasklist: 
+
+Image Name                     PID Session Name        Session#    Mem Usage
+========================= ======== ================ =========== ============
+System Idle Process              0 Services                   0          8 K
+System                           4 Services                   0      6,524 K
+Registry                       120 Services                   0     40,532 K
+smss.exe                       512 Services                   0        912 K
+csrss.exe                      768 Services                   0      4,644 K
+wininit.exe                    852 Services                   0      5,108 K
+services.exe                  1000 Services                   0      9,892 K
+lsass.exe                     1016 Services                   0     18,976 K
+svchost.exe                    584 Services                   0      2,824 K
+svchost.exe                    560 Services                   0     34,496 K
+fontdrvhost.exe               1040 Services                   0      2,364 K
+WUDFHost.exe                  1056 Services                   0     11,168 K
+svchost.exe                   1180 Services                   0     18,944 K
+WUDFHost.exe                  1220 Services                   0      8,064 K
+svchost.exe                   1296 Services                   0      7,440 K
+svchost.exe                   1468 Services                   0      5,932 K
+svchost.exe                   1520 Services                   0      5,676 K
+svchost.exe                   1528 Services                   0      7,976 K
+svchost.exe                   1544 Services                   0      9,780 K
+svchost.exe                   1704 Services                   0      8,256 K
+svchost.exe                   1712 Services                   0      9,032 K
+svchost.exe                   1768 Services                   0     13,932 K
+svchost.exe                   1884 Services                   0      6,264 K
+svchost.exe                   1936 Services                   0      4,616 K
+svchost.exe                   1948 Services                   0      6,976 K
+svchost.exe                   2032 Services                   0      6,620 K
+svchost.exe                    996 Services                   0      6,420 K
+svchost.exe                   2176 Services                   0      6,052 K
+svchost.exe                   2192 Services                   0      8,160 K
+svchost.exe                   2200 Services                   0      6,268 K
+svchost.exe                   2212 Services                   0      6,216 K
+svchost.exe                   2324 Services                   0      6,320 K
+svchost.exe                   2364 Services                   0     10,044 K
+igfxCUIService.exe            2372 Services                   0      6,680 K
+svchost.exe                   2544 Services                   0      4,384 K
+svchost.exe                   2552 Services                   0     10,484 K
+svchost.exe                   2572 Services                   0     10,520 K
+svchost.exe                   2636 Services                   0      7,464 K
+svchost.exe                   2736 Services                   0      9,036 K
+svchost.exe                   2748 Services                   0     12,676 K
+svchost.exe                   2808 Services                   0      7,072 K
+svchost.exe                   2832 Services                   0      6,496 K
+svchost.exe                   2884 Services                   0      7,868 K
+Memory Compression            2952 Services                   0    978,800 K
+svchost.exe                   2320 Services                   0      8,012 K
+svchost.exe                   3172 Services                   0     16,504 K
+svchost.exe                   3288 Services                   0      6,360 K
+svchost.exe                   3348 Services                   0      6,140 K
+dasHost.exe                   3476 Services                   0      3,280 K
+svchost.exe                   3648 Services                   0     10,304 K
+svchost.exe                   3808 Services                   0     14,944 K
+svchost.exe                   3892 Services                   0      5,692 K
+RtkAudioService64.exe         2716 Services                   0      5,588 K
+svchost.exe                   2260 Services                   0     20,524 K
+svchost.exe                   4144 Services                   0      7,860 K
+svchost.exe                   4152 Services                   0      5,240 K
+svchost.exe                   4312 Services                   0     15,116 K
+svchost.exe                   4388 Services                   0     10,356 K
+spoolsv.exe                   4448 Services                   0     10,860 K
+WmiPrvSE.exe                  4476 Services                   0     28,528 K
+svchost.exe                   4516 Services                   0    178,592 K
+svchost.exe                   4576 Services                   0     12,072 K
+svchost.exe                   4644 Services                   0      5,752 K
+svchost.exe                   4856 Services                   0      4,656 K
+mDNSResponder.exe             4864 Services                   0      5,908 K
+AdminService.exe              4872 Services                   0      5,632 K
+svchost.exe                   4880 Services                   0     27,612 K
+svchost.exe                   4892 Services                   0     18,244 K
+svchost.exe                   4900 Services                   0     37,520 K
+armsvc.exe                    4908 Services                   0      3,876 K
+IntelCpHDCPSvc.exe            4916 Services                   0      5,112 K
+escsvc64.exe                  4924 Services                   0      4,028 K
+EPCP.exe                      4936 Services                   0     12,164 K
+esif_uf.exe                   4956 Services                   0      4,652 K
+svchost.exe                   5112 Services                   0      9,408 K
+servicehost.exe               5156 Services                   0      5,000 K
+QcomWlanSrvx64.exe            5168 Services                   0      4,132 K
+svchost.exe                   5184 Services                   0      5,876 K
+svchost.exe                   5196 Services                   0      5,676 K
+RstMwService.exe              5204 Services                   0      4,452 K
+SmartByteNetworkService.e     5216 Services                   0     39,184 K
+svchost.exe                   5236 Services                   0      4,236 K
+svchost.exe                   5244 Services                   0      4,144 K
+svchost.exe                   5280 Services                   0     18,488 K
+svchost.exe                   5292 Services                   0      7,116 K
+svchost.exe                   5416 Services                   0      4,708 K
+MsMpEng.exe                   5448 Services                   0    314,296 K
+WavesSysSvc64.exe             5476 Services                   0      7,268 K
+svchost.exe                   5600 Services                   0      3,684 K
+svchost.exe                   5864 Services                   0      9,272 K
+svchost.exe                   5940 Services                   0      3,880 K
+IntelCpHeciSvc.exe            5948 Services                   0      4,616 K
+RAPSService.exe               6032 Services                   0      8,560 K
+svchost.exe                   6408 Services                   0      4,780 K
+RAPS.exe                      6644 Services                   0     11,968 K
+conhost.exe                   6668 Services                   0      5,900 K
+NisSrv.exe                    7276 Services                   0     13,080 K
+PresentationFontCache.exe     7796 Services                   0      9,056 K
+svchost.exe                   8016 Services                   0     16,108 K
+svchost.exe                   8116 Services                   0     16,252 K
+svchost.exe                   8292 Services                   0     15,612 K
+svchost.exe                   8500 Services                   0      8,400 K
+GoogleCrashHandler.exe        9180 Services                   0      1,132 K
+GoogleCrashHandler64.exe      9208 Services                   0        952 K
+SearchIndexer.exe             8776 Services                   0     74,056 K
+svchost.exe                  10472 Services                   0     18,120 K
+SecurityHealthService.exe    10848 Services                   0     10,356 K
+svchost.exe                  12152 Services                   0      9,072 K
+svchost.exe                  11684 Services                   0      9,596 K
+svchost.exe                   2348 Services                   0     11,800 K
+svchost.exe                   1008 Services                   0     13,408 K
+aesm_service.exe             14136 Services                   0      7,516 K
+jhi_service.exe              10284 Services                   0      5,072 K
+svchost.exe                   3076 Services                   0     17,200 K
+Dell.D3.WinSvc.exe           13756 Services                   0    122,044 K
+DellSupportAssistRemedati     4324 Services                   0     49,376 K
+ServiceShell.exe             14472 Services                   0     46,452 K
+SocketHeciServer.exe         14580 Services                   0      5,288 K
+msdtc.exe                    14464 Services                   0      5,416 K
+svchost.exe                   3732 Services                   0     14,296 K
+svchost.exe                  14936 Services                   0      9,220 K
+IAStorDataMgrSvc.exe         12872 Services                   0     51,632 K
+LMS.exe                       1652 Services                   0      7,124 K
+SgrmBroker.exe               15308 Services                   0      5,328 K
+svchost.exe                   4948 Services                   0      8,656 K
+svchost.exe                  13840 Services                   0      5,896 K
+svchost.exe                  10160 Services                   0      9,388 K
+dasHost.exe                  10500 Services                   0      2,584 K
+svchost.exe                   4544 Services                   0      6,640 K
+dllhost.exe                   2164 Services                   0      7,236 K
+svchost.exe                   9788 Services                   0     30,920 K
+svchost.exe                   5908 Services                   0      4,288 K
+WUDFHost.exe                 13584 Services                   0     62,128 K
+csrss.exe                    20288 Console                    7      4,596 K
+winlogon.exe                 16468 Console                    7      8,924 K
+fontdrvhost.exe              16024 Console                    7      5,936 K
+dwm.exe                      11488 Console                    7    212,204 K
+svchost.exe                   9608 Services                   0      5,132 K
+dptf_helper.exe              11388 Console                    7      3,708 K
+RAVBg64.exe                   9424 Console                    7     11,424 K
+sihost.exe                   18976 Console                    7     26,248 K
+svchost.exe                  20136 Console                    7     24,168 K
+svchost.exe                   9704 Console                    7      7,396 K
+svchost.exe                  19224 Console                    7     46,268 K
+taskhostw.exe                19624 Console                    7     15,600 K
+explorer.exe                  4436 Console                    7    206,248 K
+svchost.exe                  11820 Console                    7     19,592 K
+svchost.exe                   3608 Services                   0      6,720 K
+ctfmon.exe                   19612 Console                    7     12,904 K
+StartMenuExperienceHost.e    11900 Console                    7     59,916 K
+RuntimeBroker.exe            12220 Console                    7     17,584 K
+SearchUI.exe                 17728 Console                    7     73,712 K
+RuntimeBroker.exe             8892 Console                    7     36,192 K
+YourPhone.exe                10020 Console                    7        136 K
+SettingSyncHost.exe           7228 Console                    7      5,308 K
+TabTip.exe                   10080 Console                    7     12,420 K
+LockApp.exe                   6692 Console                    7     49,380 K
+SecurityHealthSystray.exe     7676 Console                    7      7,076 K
+RuntimeBroker.exe             6388 Console                    7     29,424 K
+RuntimeBroker.exe             2772 Console                    7     19,348 K
+quickset.exe                  6524 Console                    7     11,592 K
+RtkNGUI64.exe                 6612 Console                    7     10,580 K
+RAVBg64.exe                  20268 Console                    7     10,700 K
+RuntimeBroker.exe            13760 Console                    7     14,712 K
+WavesSvc64.exe               10144 Console                    7     11,432 K
+flvga_tray.exe                2428 Console                    7      6,068 K
+DisplayLinkTrayApp.exe       15796 Console                    7      6,224 K
+OneDrive.exe                 11536 Console                    7    901,440 K
+flux.exe                     12020 Console                    7     13,900 K
+E_IATILBE.EXE                 6312 Console                    7      8,100 K
+googledrivesync.exe           3800 Console                    7      2,872 K
+iCloudServices.exe            8796 Console                    7     31,456 K
+APSDaemon.exe                 9764 Console                    7     10,400 K
+AppleMobileDeviceProcess.    15620 Console                    7      8,588 K
+EEventManager.exe             8032 Console                    7      8,512 K
+googledrivesync.exe          18024 Console                    7    146,104 K
+ApplicationFrameHost.exe     16156 Console                    7     28,796 K
+WinStore.App.exe             17432 Console                    7        656 K
+RuntimeBroker.exe             3100 Console                    7     20,644 K
+IAStorIcon.exe                3368 Console                    7     22,624 K
+SystemSettings.exe            3232 Console                    7        148 K
+UserOOBEBroker.exe           17616 Console                    7      6,360 K
+RuntimeBroker.exe             3576 Console                    7     12,024 K
+DellMobileConnectClient.e    12352 Console                    7     53,256 K
+DellMobileConnectUniversa    18896 Console                    7     29,224 K
+RuntimeBroker.exe             1032 Console                    7     12,460 K
+svchost.exe                  10332 Console                    7     27,788 K
+Time.exe                      4424 Console                    7        440 K
+SmartByteTelemetry.exe        4044 Console                    7      9,380 K
+Code.exe                     15540 Console                    7     85,316 K
+Code.exe                     19716 Console                    7      8,508 K
+Code.exe                       624 Console                    7    191,320 K
+Code.exe                     10872 Console                    7     18,864 K
+Code.exe                      1388 Console                    7    216,156 K
+conhost.exe                   7292 Console                    7      5,100 K
+cmd.exe                      13896 Console                    7      3,356 K
+Code.exe                      9584 Console                    7     70,144 K
+CodeHelper.exe               15680 Console                    7     11,068 K
+chrome.exe                   10244 Console                    7    266,716 K
+conhost.exe                  19580 Console                    7      4,468 K
+chrome.exe                   19232 Console                    7      4,992 K
+chrome.exe                   19136 Console                    7    218,616 K
+chrome.exe                     280 Console                    7     55,768 K
+Code.exe                     18460 Console                    7     43,640 K
+chrome.exe                    1912 Console                    7     26,464 K
+chrome.exe                   10292 Console                    7     47,360 K
+chrome.exe                   17040 Console                    7    103,988 K
+chrome.exe                   15812 Console                    7     43,268 K
+chrome.exe                   20164 Console                    7     58,624 K
+chrome.exe                   20264 Console                    7     19,644 K
+python.exe                   11876 Console                    7     50,444 K
+conhost.exe                   4652 Console                    7      4,484 K
+chrome.exe                   15760 Console                    7     13,456 K
+WindowsInternal.Composabl    18120 Console                    7     32,304 K
+ShellExperienceHost.exe      19652 Console                    7     59,284 K
+RuntimeBroker.exe            10204 Console                    7     16,640 K
+Code.exe                     10620 Console                    7     15,872 K
+chrome.exe                    7684 Console                    7     50,060 K
+chrome.exe                   17112 Console                    7    144,756 K
+dllhost.exe                  13048 Console                    7      9,472 K
+Microsoft.Photos.exe         20000 Console                    7     60,196 K
+RuntimeBroker.exe             2764 Console                    7     36,552 K
+dllhost.exe                   4844 Console                    7      7,208 K
+audiodg.exe                  14036 Services                   0     15,180 K
+chrome.exe                   18192 Console                    7    283,088 K
+chrome.exe                    3036 Console                    7    348,232 K
+smartscreen.exe              19268 Console                    7     25,520 K
+CompPkgSrv.exe               16564 Console                    7      7,052 K
+chrome.exe                    6064 Console                    7     21,644 K
+svchost.exe                   3696 Services                   0      8,284 K
+svchost.exe                   8112 Services                   0      9,208 K
+SearchProtocolHost.exe       19060 Services                   0     13,848 K
+python.exe                   11920 Console                    7     22,940 K
+conhost.exe                  11248 Console                    7     11,080 K
+SearchFilterHost.exe          2756 Services                   0      9,504 K
+RuntimeBroker.exe              144 Console                    7     20,116 K
+cmd.exe                       9244 Console                    7      4,316 K
+conhost.exe                   5224 Console                    7     18,472 K
+WmiPrvSE.exe                 13940 Services                   0     16,224 K
+WmiPrvSE.exe                 20260 Services                   0      8,360 K
+TrustedInstaller.exe          9528 Services                   0      7,072 K
+TiWorker.exe                 11316 Services                   0     10,852 K
+msiexec.exe                  10008 Services                   0     10,048 K
+svchost.exe                  16640 Services                   0      5,848 K
+tasklist.exe                 18124 Console                    7      8,596 K
+ 
+###################################################################################### 
+---- 8. Listening Ports [REQ - 2.2, 2.3] ---- 
+###################################################################################### 
+---- 8.1 running netstat -anob: 
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State           PID
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING       1180
+  RpcSs
+ [svchost.exe]
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING       4
+ Can not obtain ownership information
+  TCP    0.0.0.0:2968           0.0.0.0:0              LISTENING       8032
+ [EEventManager.exe]
+  TCP    0.0.0.0:5040           0.0.0.0:0              LISTENING       8116
+  CDPSvc
+ [svchost.exe]
+  TCP    0.0.0.0:7680           0.0.0.0:0              LISTENING       3732
+ Can not obtain ownership information
+  TCP    0.0.0.0:49664          0.0.0.0:0              LISTENING       1016
+ [lsass.exe]
+  TCP    0.0.0.0:49665          0.0.0.0:0              LISTENING       852
+ Can not obtain ownership information
+  TCP    0.0.0.0:49666          0.0.0.0:0              LISTENING       1768
+  EventLog
+ [svchost.exe]
+  TCP    0.0.0.0:49667          0.0.0.0:0              LISTENING       2748
+  Schedule
+ [svchost.exe]
+  TCP    0.0.0.0:49668          0.0.0.0:0              LISTENING       4448
+ [spoolsv.exe]
+  TCP    0.0.0.0:49669          0.0.0.0:0              LISTENING       1000
+ Can not obtain ownership information
+  TCP    127.0.0.1:5354         0.0.0.0:0              LISTENING       4864
+ [mDNSResponder.exe]
+  TCP    127.0.0.1:5354         127.0.0.1:51319        ESTABLISHED     4864
+ [mDNSResponder.exe]
+  TCP    127.0.0.1:5354         127.0.0.1:51320        ESTABLISHED     4864
+ [mDNSResponder.exe]
+  TCP    127.0.0.1:27015        0.0.0.0:0              LISTENING       15620
+ [AppleMobileDeviceProcess.exe]
+  TCP    127.0.0.1:49839        0.0.0.0:0              LISTENING       14580
+ [SocketHeciServer.exe]
+  TCP    127.0.0.1:51319        127.0.0.1:5354         ESTABLISHED     15620
+ [AppleMobileDeviceProcess.exe]
+  TCP    127.0.0.1:51320        127.0.0.1:5354         ESTABLISHED     15620
+ [AppleMobileDeviceProcess.exe]
+  TCP    127.0.0.1:51375        127.0.0.1:51376        ESTABLISHED     12352
+ [DellMobileConnectClient.exe]
+  TCP    127.0.0.1:51376        127.0.0.1:51375        ESTABLISHED     12352
+ [DellMobileConnectClient.exe]
+  TCP    127.0.0.1:51377        127.0.0.1:51378        ESTABLISHED     12352
+ [DellMobileConnectClient.exe]
+  TCP    127.0.0.1:51378        127.0.0.1:51377        ESTABLISHED     12352
+ [DellMobileConnectClient.exe]
+  TCP    127.0.0.1:51379        127.0.0.1:51380        ESTABLISHED     18896
+ [DellMobileConnectUniversalClient.exe]
+  TCP    127.0.0.1:51380        127.0.0.1:51379        ESTABLISHED     18896
+ [DellMobileConnectUniversalClient.exe]
+  TCP    127.0.0.1:51384        127.0.0.1:51385        ESTABLISHED     12352
+ [DellMobileConnectClient.exe]
+  TCP    127.0.0.1:51385        127.0.0.1:51384        ESTABLISHED     12352
+ [DellMobileConnectClient.exe]
+  TCP    127.0.0.1:51469        127.0.0.1:51470        ESTABLISHED     9584
+ [Code.exe]
+  TCP    127.0.0.1:51470        127.0.0.1:51469        ESTABLISHED     9584
+ [Code.exe]
+  TCP    192.168.0.14:139       0.0.0.0:0              LISTENING       4
+ Can not obtain ownership information
+  TCP    192.168.0.14:51318     17.248.129.232:443     CLOSE_WAIT      8796
+ [iCloudServices.exe]
+  TCP    192.168.0.14:51323     17.57.144.22:5223      ESTABLISHED     9764
+ [APSDaemon.exe]
+  TCP    192.168.0.14:51337     172.217.14.106:443     CLOSE_WAIT      18024
+ [googledrivesync.exe]
+  TCP    192.168.0.14:51340     172.217.14.106:443     CLOSE_WAIT      18024
+ [googledrivesync.exe]
+  TCP    192.168.0.14:51352     184.85.75.109:443      CLOSE_WAIT      17432
+ [WinStore.App.exe]
+  TCP    192.168.0.14:51353     184.85.75.109:443      CLOSE_WAIT      17432
+ [WinStore.App.exe]
+  TCP    192.168.0.14:51360     23.208.65.246:80       CLOSE_WAIT      17432
+ [WinStore.App.exe]
+  TCP    192.168.0.14:51361     23.208.65.246:80       CLOSE_WAIT      17432
+ [WinStore.App.exe]
+  TCP    192.168.0.14:51362     23.208.65.246:80       CLOSE_WAIT      17432
+ [WinStore.App.exe]
+  TCP    192.168.0.14:51363     23.208.65.246:80       CLOSE_WAIT      17432
+ [WinStore.App.exe]
+  TCP    192.168.0.14:51364     23.208.65.246:80       ESTABLISHED     17432
+ [WinStore.App.exe]
+  TCP    192.168.0.14:51365     23.208.65.246:80       CLOSE_WAIT      17432
+ [WinStore.App.exe]
+  TCP    192.168.0.14:51369     13.91.194.79:443       CLOSE_WAIT      3232
+ [SystemSettings.exe]
+  TCP    192.168.0.14:51460     192.168.0.3:8008       ESTABLISHED     280
+ [chrome.exe]
+  TCP    192.168.0.14:51480     192.168.0.3:8009       ESTABLISHED     280
+ [chrome.exe]
+  TCP    192.168.0.14:52051     54.149.94.178:443      ESTABLISHED     280
+ [chrome.exe]
+  TCP    192.168.0.14:52520     74.125.137.188:5228    ESTABLISHED     280
+ [chrome.exe]
+  TCP    192.168.0.14:57793     172.217.11.170:443     CLOSE_WAIT      18024
+ [googledrivesync.exe]
+  TCP    192.168.0.14:57798     172.217.11.170:443     CLOSE_WAIT      18024
+ [googledrivesync.exe]
+  TCP    192.168.0.14:59119     52.230.222.68:443      ESTABLISHED     5280
+  WpnService
+ [svchost.exe]
+  TCP    192.168.0.14:59255     142.250.68.106:443     ESTABLISHED     18024
+ [googledrivesync.exe]
+  TCP    192.168.0.14:59262     192.168.0.2:8009       ESTABLISHED     280
+ [chrome.exe]
+  TCP    192.168.0.14:59284     142.250.68.106:443     CLOSE_WAIT      18024
+ [googledrivesync.exe]
+  TCP    192.168.0.14:59459     52.242.211.89:443      ESTABLISHED     11536
+ [OneDrive.exe]
+  TCP    192.168.0.14:59865     13.107.42.12:443       ESTABLISHED     11536
+ [OneDrive.exe]
+  TCP    192.168.0.14:59866     52.225.136.36:443      TIME_WAIT       0
+  TCP    192.168.0.14:59873     13.107.42.12:443       ESTABLISHED     11536
+ [OneDrive.exe]
+  TCP    192.168.0.14:59874     13.107.42.12:443       ESTABLISHED     11536
+ [OneDrive.exe]
+  TCP    192.168.0.14:59875     13.107.42.12:443       ESTABLISHED     11536
+ [OneDrive.exe]
+  TCP    192.168.0.14:59876     13.107.42.12:443       ESTABLISHED     11536
+ [OneDrive.exe]
+  TCP    192.168.0.14:59877     13.107.42.12:443       ESTABLISHED     11536
+ [OneDrive.exe]
+  TCP    192.168.0.14:59878     13.107.42.12:443       ESTABLISHED     11536
+ [OneDrive.exe]
+  TCP    192.168.0.14:59879     52.167.88.112:443      TIME_WAIT       0
+  TCP    192.168.0.14:59883     52.114.128.43:443      TIME_WAIT       0
+  TCP    192.168.0.14:59884     52.114.128.43:443      ESTABLISHED     11536
+ [OneDrive.exe]
+  TCP    192.168.0.14:59887     52.239.177.36:443      ESTABLISHED     11536
+ [OneDrive.exe]
+  TCP    192.168.0.14:59892     52.225.136.36:443      ESTABLISHED     11536
+ [OneDrive.exe]
+  TCP    192.168.0.14:59893     52.114.128.43:443      ESTABLISHED     11536
+ [OneDrive.exe]
+  TCP    192.168.0.14:59894     35.186.224.25:443      TIME_WAIT       0
+  TCP    192.168.0.14:59895     35.186.224.25:443      TIME_WAIT       0
+  TCP    192.168.0.14:59896     35.186.224.25:443      TIME_WAIT       0
+  TCP    192.168.0.14:59897     35.186.224.25:443      TIME_WAIT       0
+  TCP    192.168.0.14:59900     54.203.112.76:443      ESTABLISHED     280
+ [chrome.exe]
+  TCP    192.168.0.14:59901     54.203.112.76:443      ESTABLISHED     280
+ [chrome.exe]
+  TCP    192.168.0.14:59903     96.17.68.112:80        ESTABLISHED     4476
+ [wmiprvse.exe]
+  TCP    192.168.0.14:59904     96.17.68.72:80         ESTABLISHED     4476
+ [wmiprvse.exe]
+  TCP    192.168.56.1:139       0.0.0.0:0              LISTENING       4
+ Can not obtain ownership information
+  TCP    192.168.99.1:139       0.0.0.0:0              LISTENING       4
+ Can not obtain ownership information
+  TCP    [::]:135               [::]:0                 LISTENING       1180
+  RpcSs
+ [svchost.exe]
+  TCP    [::]:445               [::]:0                 LISTENING       4
+ Can not obtain ownership information
+  TCP    [::]:7680              [::]:0                 LISTENING       3732
+ Can not obtain ownership information
+  TCP    [::]:49664             [::]:0                 LISTENING       1016
+ [lsass.exe]
+  TCP    [::]:49665             [::]:0                 LISTENING       852
+ Can not obtain ownership information
+  TCP    [::]:49666             [::]:0                 LISTENING       1768
+  EventLog
+ [svchost.exe]
+  TCP    [::]:49667             [::]:0                 LISTENING       2748
+  Schedule
+ [svchost.exe]
+  TCP    [::]:49668             [::]:0                 LISTENING       4448
+ [spoolsv.exe]
+  TCP    [::]:49669             [::]:0                 LISTENING       1000
+ Can not obtain ownership information
+  TCP    [::1]:49828            [::]:0                 LISTENING       10284
+ [jhi_service.exe]
+  UDP    0.0.0.0:2968           *:*                                    8032
+ [EEventManager.exe]
+  UDP    0.0.0.0:5050           *:*                                    8116
+  CDPSvc
+ [svchost.exe]
+  UDP    0.0.0.0:5353           *:*                                    280
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*                                    10244
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*                                    280
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*                                    280
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*                                    10244
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*                                    280
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*                                    10244
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*                                    280
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*                                    10244
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*                                    2636
+  Dnscache
+ [svchost.exe]
+  UDP    0.0.0.0:5353           *:*                                    10244
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*                                    280
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*                                    10244
+ [chrome.exe]
+  UDP    0.0.0.0:5355           *:*                                    2636
+  Dnscache
+ [svchost.exe]
+  UDP    0.0.0.0:56259          *:*                                    280
+ [chrome.exe]
+  UDP    0.0.0.0:56261          *:*                                    280
+ [chrome.exe]
+  UDP    0.0.0.0:56933          *:*                                    280
+ [chrome.exe]
+  UDP    0.0.0.0:64120          *:*                                    280
+ [chrome.exe]
+  UDP    0.0.0.0:64490          *:*                                    4864
+ [mDNSResponder.exe]
+  UDP    127.0.0.1:1900         *:*                                    3892
+  SSDPSRV
+ [svchost.exe]
+  UDP    127.0.0.1:56012        *:*                                    8796
+ [iCloudServices.exe]
+  UDP    127.0.0.1:56013        *:*                                    8796
+ [iCloudServices.exe]
+  UDP    127.0.0.1:56014        *:*                                    15620
+ [AppleMobileDeviceProcess.exe]
+  UDP    127.0.0.1:56015        *:*                                    15620
+ [AppleMobileDeviceProcess.exe]
+  UDP    127.0.0.1:57695        *:*                                    9764
+ [APSDaemon.exe]
+  UDP    127.0.0.1:57696        *:*                                    9764
+ [APSDaemon.exe]
+  UDP    127.0.0.1:57790        *:*                                    3892
+  SSDPSRV
+ [svchost.exe]
+  UDP    127.0.0.1:64492        *:*                                    5112
+  iphlpsvc
+ [svchost.exe]
+  UDP    192.168.0.14:137       *:*                                    4
+ Can not obtain ownership information
+  UDP    192.168.0.14:138       *:*                                    4
+ Can not obtain ownership information
+  UDP    192.168.0.14:1900      *:*                                    3892
+  SSDPSRV
+ [svchost.exe]
+  UDP    192.168.0.14:2968      *:*                                    8032
+ [EEventManager.exe]
+  UDP    192.168.0.14:5353      *:*                                    4864
+ [mDNSResponder.exe]
+  UDP    192.168.0.14:57789     *:*                                    3892
+  SSDPSRV
+ [svchost.exe]
+  UDP    192.168.56.1:137       *:*                                    4
+ Can not obtain ownership information
+  UDP    192.168.56.1:138       *:*                                    4
+ Can not obtain ownership information
+  UDP    192.168.56.1:1900      *:*                                    3892
+  SSDPSRV
+ [svchost.exe]
+  UDP    192.168.56.1:2968      *:*                                    8032
+ [EEventManager.exe]
+  UDP    192.168.56.1:5353      *:*                                    4864
+ [mDNSResponder.exe]
+  UDP    192.168.56.1:57787     *:*                                    3892
+  SSDPSRV
+ [svchost.exe]
+  UDP    192.168.99.1:137       *:*                                    4
+ Can not obtain ownership information
+  UDP    192.168.99.1:138       *:*                                    4
+ Can not obtain ownership information
+  UDP    192.168.99.1:1900      *:*                                    3892
+  SSDPSRV
+ [svchost.exe]
+  UDP    192.168.99.1:2968      *:*                                    8032
+ [EEventManager.exe]
+  UDP    192.168.99.1:5353      *:*                                    4864
+ [mDNSResponder.exe]
+  UDP    192.168.99.1:57788     *:*                                    3892
+  SSDPSRV
+ [svchost.exe]
+  UDP    [::]:5353              *:*                                    10244
+ [chrome.exe]
+  UDP    [::]:5353              *:*                                    280
+ [chrome.exe]
+  UDP    [::]:5353              *:*                                    10244
+ [chrome.exe]
+  UDP    [::]:5353              *:*                                    280
+ [chrome.exe]
+  UDP    [::]:5353              *:*                                    280
+ [chrome.exe]
+  UDP    [::]:5353              *:*                                    2636
+  Dnscache
+ [svchost.exe]
+  UDP    [::]:5353              *:*                                    10244
+ [chrome.exe]
+  UDP    [::]:5355              *:*                                    2636
+  Dnscache
+ [svchost.exe]
+  UDP    [::]:64491             *:*                                    4864
+ [mDNSResponder.exe]
+  UDP    [::1]:1900             *:*                                    3892
+  SSDPSRV
+ [svchost.exe]
+  UDP    [::1]:5353             *:*                                    4864
+ [mDNSResponder.exe]
+  UDP    [::1]:57786            *:*                                    3892
+  SSDPSRV
+ [svchost.exe]
+  UDP    [fe80::6c7d:5b86:57c1:b120%10]:1900  *:*                                    3892
+  SSDPSRV
+ [svchost.exe]
+  UDP    [fe80::6c7d:5b86:57c1:b120%10]:57784  *:*                                    3892
+  SSDPSRV
+ [svchost.exe]
+  UDP    [fe80::7471:ffcb:bc28:6431%16]:1900  *:*                                    3892
+  SSDPSRV
+ [svchost.exe]
+  UDP    [fe80::7471:ffcb:bc28:6431%16]:57785  *:*                                    3892
+  SSDPSRV
+ [svchost.exe]
+  UDP    [fe80::fd97:4743:655d:d835%18]:1900  *:*                                    3892
+  SSDPSRV
+ [svchost.exe]
+  UDP    [fe80::fd97:4743:655d:d835%18]:57783  *:*                                    3892
+  SSDPSRV
+ [svchost.exe]
+ 
+###################################################################################### 
+---- 9. Domain Policies Applied [REQ - 2.3, 7.2, 8.1, 8.2] ---- 
+###################################################################################### 
+---- 9.1 running Gpresult /R: 
+
+Microsoft (R) Windows (R) Operating System Group Policy Result tool v2.0
+c 2019 Microsoft Corporation. All rights reserved.
+
+Created on ?10/?23/?2020 at 1:31:41 PM
+
+
+
+RSOP data for BILLIAM\Bill Nguyen on BILLIAM : Logging Mode
+------------------------------------------------------------
+
+OS Configuration:            Standalone Workstation
+OS Version:                  10.0.18363
+Site Name:                   N/A
+Roaming Profile:             N/A
+Local Profile:               C:\Users\Bill Nguyen
+Connected over a slow link?: No
+
+
+COMPUTER SETTINGS
+------------------
+    
+    Last time Group Policy was applied: 10/20/2020 at 4:01:22 PM
+    Group Policy was applied from:      N/A
+    Group Policy slow link threshold:   500 kbps
+    Domain Name:                        BILLIAM
+    Domain Type:                        <Local Computer>
+
+    Applied Group Policy Objects
+    -----------------------------
+        N/A
+
+    The following GPOs were not applied because they were filtered out
+    -------------------------------------------------------------------
+        Local Group Policy
+            Filtering:  Not Applied (Empty)
+
+    The computer is a part of the following security groups
+    -------------------------------------------------------
+        BUILTIN\Administrators
+        Everyone
+        NT AUTHORITY\Authenticated Users
+        System Mandatory Level
+        
+
+USER SETTINGS
+--------------
+    
+    Last time Group Policy was applied: 10/23/2020 at 7:24:40 AM
+    Group Policy was applied from:      N/A
+    Group Policy slow link threshold:   500 kbps
+    Domain Name:                        BILLIAM
+    Domain Type:                        <Local Computer>
+    
+    Applied Group Policy Objects
+    -----------------------------
+        N/A
+
+    The following GPOs were not applied because they were filtered out
+    -------------------------------------------------------------------
+        Local Group Policy
+            Filtering:  Not Applied (Empty)
+
+    The user is a part of the following security groups
+    ---------------------------------------------------
+        High Mandatory Level
+        Everyone
+        Local account and member of Administrators group
+        BUILTIN\Administrators
+        BUILTIN\Users
+        NT AUTHORITY\INTERACTIVE
+        CONSOLE LOGON
+        NT AUTHORITY\Authenticated Users
+        This Organization
+        billnguyenh@gmail.com
+        Local account
+        LOCAL
+        Cloud Account Authentication
+         
+###################################################################################### 
+---- 10. Local Security Policies [REQ - 2.3, 8.1, 8.2, 10.2] ---- 
+###################################################################################### 
+---- 10.1 running Secedit /export /cfg "C:\Users\Bill Nguyen\OneDrive\Documents\Payments\BILLIAM-audit-report.txt" : 
+[System Access]
+MinimumPasswordAge = 0
+MaximumPasswordAge = 42
+MinimumPasswordLength = 0
+PasswordComplexity = 0
+PasswordHistorySize = 0
+LockoutBadCount = 0
+RequireLogonToChangePassword = 0
+ForceLogoffWhenHourExpire = 0
+NewAdministratorName = "Administrator"
+NewGuestName = "Guest"
+ClearTextPassword = 0
+LSAAnonymousNameLookup = 0
+EnableAdminAccount = 0
+EnableGuestAccount = 0
+[Event Audit]
+AuditSystemEvents = 0
+AuditLogonEvents = 0
+AuditObjectAccess = 0
+AuditPrivilegeUse = 0
+AuditPolicyChange = 0
+AuditAccountManage = 0
+AuditProcessTracking = 0
+AuditDSAccess = 0
+AuditAccountLogon = 0
+[Registry Values]
+MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\CachedLogonsCount=1,"10"
+MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\ForceUnlockLogon=4,0
+MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\PasswordExpiryWarning=4,5
+MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\ScRemoveOption=1,"0"
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\ConsentPromptBehaviorAdmin=4,2
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\ConsentPromptBehaviorUser=4,3
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\DontDisplayLastUserName=4,0
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableInstallerDetection=4,1
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableLUA=4,1
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableSecureUIAPaths=4,1
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableUIADesktopToggle=4,0
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableVirtualization=4,1
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\LegalNoticeCaption=1,""
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\LegalNoticeText=7,
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\PromptOnSecureDesktop=4,1
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\ScForceOption=4,0
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\ShutdownWithoutLogon=4,1
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\UndockWithoutLogon=4,1
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\ValidateAdminCodeSignatures=4,0
+MACHINE\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\AuthenticodeEnabled=4,0
+MACHINE\System\CurrentControlSet\Control\Lsa\AuditBaseObjects=4,0
+MACHINE\System\CurrentControlSet\Control\Lsa\CrashOnAuditFail=4,0
+MACHINE\System\CurrentControlSet\Control\Lsa\DisableDomainCreds=4,0
+MACHINE\System\CurrentControlSet\Control\Lsa\EveryoneIncludesAnonymous=4,0
+MACHINE\System\CurrentControlSet\Control\Lsa\FIPSAlgorithmPolicy\Enabled=4,0
+MACHINE\System\CurrentControlSet\Control\Lsa\ForceGuest=4,0
+MACHINE\System\CurrentControlSet\Control\Lsa\FullPrivilegeAuditing=3,0
+MACHINE\System\CurrentControlSet\Control\Lsa\LimitBlankPasswordUse=4,1
+MACHINE\System\CurrentControlSet\Control\Lsa\MSV1_0\NTLMMinClientSec=4,536870912
+MACHINE\System\CurrentControlSet\Control\Lsa\MSV1_0\NTLMMinServerSec=4,536870912
+MACHINE\System\CurrentControlSet\Control\Lsa\NoLMHash=4,1
+MACHINE\System\CurrentControlSet\Control\Lsa\RestrictAnonymous=4,0
+MACHINE\System\CurrentControlSet\Control\Lsa\RestrictAnonymousSAM=4,1
+MACHINE\System\CurrentControlSet\Control\Print\Providers\LanMan Print Services\Servers\AddPrinterDrivers=4,0
+MACHINE\System\CurrentControlSet\Control\SecurePipeServers\Winreg\AllowedExactPaths\Machine=7,System\CurrentControlSet\Control\ProductOptions,System\CurrentControlSet\Control\Server Applications,Software\Microsoft\Windows NT\CurrentVersion
+MACHINE\System\CurrentControlSet\Control\SecurePipeServers\Winreg\AllowedPaths\Machine=7,System\CurrentControlSet\Control\Print\Printers,System\CurrentControlSet\Services\Eventlog,Software\Microsoft\OLAP Server,Software\Microsoft\Windows NT\CurrentVersion\Print,Software\Microsoft\Windows NT\CurrentVersion\Windows,System\CurrentControlSet\Control\ContentIndex,System\CurrentControlSet\Control\Terminal Server,System\CurrentControlSet\Control\Terminal Server\UserConfig,System\CurrentControlSet\Control\Terminal Server\DefaultUserConfiguration,Software\Microsoft\Windows NT\CurrentVersion\Perflib,System\CurrentControlSet\Services\SysmonLog
+MACHINE\System\CurrentControlSet\Control\Session Manager\Kernel\ObCaseInsensitive=4,1
+MACHINE\System\CurrentControlSet\Control\Session Manager\Memory Management\ClearPageFileAtShutdown=4,0
+MACHINE\System\CurrentControlSet\Control\Session Manager\ProtectionMode=4,1
+MACHINE\System\CurrentControlSet\Control\Session Manager\SubSystems\optional=7,
+MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters\EnableForcedLogOff=4,1
+MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters\EnableSecuritySignature=4,0
+MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters\NullSessionPipes=7,,RAPSPipe,RAPSPipe,RAPSPipe,RAPSPipe,RAPSPipe,RAPSPipe,RAPSPipe,RAPSPipe,RAPSPipe,RAPSPipe,RAPSPipe,RAPSPipe
+MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters\RequireSecuritySignature=4,0
+MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters\RestrictNullSessAccess=4,1
+MACHINE\System\CurrentControlSet\Services\LanmanWorkstation\Parameters\EnablePlainTextPassword=4,0
+MACHINE\System\CurrentControlSet\Services\LanmanWorkstation\Parameters\EnableSecuritySignature=4,1
+MACHINE\System\CurrentControlSet\Services\LanmanWorkstation\Parameters\RequireSecuritySignature=4,0
+MACHINE\System\CurrentControlSet\Services\LDAP\LDAPClientIntegrity=4,1
+MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters\DisablePasswordChange=4,0
+MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters\MaximumPasswordAge=4,30
+MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters\RequireSignOrSeal=4,1
+MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters\RequireStrongKey=4,1
+MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters\SealSecureChannel=4,1
+MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters\SignSecureChannel=4,1
+[Privilege Rights]
+SeNetworkLogonRight = *S-1-1-0,*S-1-5-32-544,*S-1-5-32-545,*S-1-5-32-551,*S-1-5-32-583
+SeBackupPrivilege = *S-1-5-32-544,*S-1-5-32-551
+SeChangeNotifyPrivilege = *S-1-1-0,*S-1-5-19,*S-1-5-20,*S-1-5-32-544,*S-1-5-32-545,*S-1-5-32-551,*S-1-5-32-583
+SeSystemtimePrivilege = *S-1-5-19,*S-1-5-32-544,*S-1-5-80-3169285310-278349998-1452333686-3865143136-4212226833
+SeCreatePagefilePrivilege = *S-1-5-32-544
+SeDebugPrivilege = *S-1-5-32-544
+SeRemoteShutdownPrivilege = *S-1-5-32-544
+SeAuditPrivilege = *S-1-5-19,*S-1-5-20
+SeIncreaseQuotaPrivilege = *S-1-5-19,*S-1-5-20,*S-1-5-32-544
+SeIncreaseBasePriorityPrivilege = *S-1-5-32-544,*S-1-5-90-0
+SeLoadDriverPrivilege = *S-1-5-32-544
+SeBatchLogonRight = *S-1-5-32-544,*S-1-5-32-551,*S-1-5-32-559
+SeServiceLogonRight = *S-1-5-20,*S-1-5-80-0,*S-1-5-80-3169285310-278349998-1452333686-3865143136-4212226833
+SeInteractiveLogonRight = Guest,*S-1-5-32-544,*S-1-5-32-545,*S-1-5-32-551,*S-1-5-32-583
+SeSecurityPrivilege = *S-1-5-32-544
+SeSystemEnvironmentPrivilege = *S-1-5-32-544
+SeProfileSingleProcessPrivilege = *S-1-5-32-544
+SeSystemProfilePrivilege = *S-1-5-32-544,*S-1-5-80-3139157870-2983391045-3678747466-658725712-1809340420
+SeAssignPrimaryTokenPrivilege = *S-1-5-19,*S-1-5-20
+SeRestorePrivilege = *S-1-5-32-544,*S-1-5-32-551
+SeShutdownPrivilege = *S-1-5-32-544,*S-1-5-32-545,*S-1-5-32-551
+SeTakeOwnershipPrivilege = *S-1-5-32-544
+SeDenyNetworkLogonRight = Guest
+SeDenyInteractiveLogonRight = Guest
+SeUndockPrivilege = *S-1-5-32-544,*S-1-5-32-545
+SeManageVolumePrivilege = *S-1-5-32-544
+SeRemoteInteractiveLogonRight = *S-1-5-32-544,*S-1-5-32-555
+SeImpersonatePrivilege = *S-1-5-19,*S-1-5-20,*S-1-5-32-544,*S-1-5-6
+SeCreateGlobalPrivilege = *S-1-5-19,*S-1-5-20,*S-1-5-32-544,*S-1-5-6
+SeIncreaseWorkingSetPrivilege = *S-1-5-32-545,*S-1-5-32-583
+SeTimeZonePrivilege = *S-1-5-19,*S-1-5-32-544,*S-1-5-32-545,*S-1-5-32-583
+SeCreateSymbolicLinkPrivilege = *S-1-5-32-544
+SeDelegateSessionUserImpersonatePrivilege = *S-1-5-32-544
+[Version]
+signature="$CHICAGO$"
+Revision=1
+ 
+###################################################################################### 
+---- 11. List of Updates Installed [REQ - 6.2] ---- 
+###################################################################################### 
+---- 11.1 running Wmic qfe list full /format:table: 
+Caption                                     CSName   Description      FixComments  HotFixID   InstallDate  InstalledBy          InstalledOn  Name  ServicePackInEffect  Status  
+
+http://support.microsoft.com/?kbid=4578974  BILLIAM  Update                        KB4578974               NT AUTHORITY\SYSTEM  10/20/2020                                      
+
+http://support.microsoft.com/?kbid=4503308  BILLIAM  Security Update               KB4503308               NT AUTHORITY\SYSTEM  9/1/2019                                        
+
+http://support.microsoft.com/?kbid=4508433  BILLIAM  Security Update               KB4508433               NT AUTHORITY\SYSTEM  8/5/2019                                        
+
+http://support.microsoft.com/?kbid=4515383  BILLIAM  Security Update               KB4515383               NT AUTHORITY\SYSTEM  9/14/2019                                       
+
+http://support.microsoft.com/?kbid=4516115  BILLIAM  Security Update               KB4516115               NT AUTHORITY\SYSTEM  9/28/2019                                       
+
+http://support.microsoft.com/?kbid=4517245  BILLIAM  Update                        KB4517245               NT AUTHORITY\SYSTEM  5/9/2020                                        
+
+http://support.microsoft.com/?kbid=4521863  BILLIAM  Security Update               KB4521863               NT AUTHORITY\SYSTEM  11/6/2019                                       
+
+http://support.microsoft.com/?kbid=4524569  BILLIAM  Security Update               KB4524569               NT AUTHORITY\SYSTEM  11/16/2019                                      
+
+http://support.microsoft.com/?kbid=4528759  BILLIAM  Security Update               KB4528759               NT AUTHORITY\SYSTEM  1/18/2020                                       
+
+http://support.microsoft.com/?kbid=4537759  BILLIAM  Security Update               KB4537759               NT AUTHORITY\SYSTEM  2/25/2020                                       
+
+http://support.microsoft.com/?kbid=4538674  BILLIAM  Security Update               KB4538674               NT AUTHORITY\SYSTEM  2/15/2020                                       
+
+http://support.microsoft.com/?kbid=4541338  BILLIAM  Security Update               KB4541338               NT AUTHORITY\SYSTEM  3/12/2020                                       
+
+http://support.microsoft.com/?kbid=4552152  BILLIAM  Security Update               KB4552152               NT AUTHORITY\SYSTEM  4/19/2020                                       
+
+http://support.microsoft.com/?kbid=4559309  BILLIAM  Update                        KB4559309               NT AUTHORITY\SYSTEM  5/23/2020                                       
+
+http://support.microsoft.com/?kbid=4560959  BILLIAM  Security Update               KB4560959               NT AUTHORITY\SYSTEM  6/12/2020                                       
+
+http://support.microsoft.com/?kbid=4561600  BILLIAM  Security Update               KB4561600               NT AUTHORITY\SYSTEM  6/14/2020                                       
+
+http://support.microsoft.com/?kbid=4565554  BILLIAM  Security Update               KB4565554               NT AUTHORITY\SYSTEM  7/16/2020                                       
+
+http://support.microsoft.com/?kbid=4569073  BILLIAM  Security Update               KB4569073               NT AUTHORITY\SYSTEM  8/24/2020                                       
+
+https://support.microsoft.com/help/4576751  BILLIAM  Security Update               KB4576751               NT AUTHORITY\SYSTEM  9/12/2020                                       
+
+https://support.microsoft.com/help/4577670  BILLIAM  Security Update               KB4577670               NT AUTHORITY\SYSTEM  10/20/2020                                      
+
+https://support.microsoft.com/help/4580325  BILLIAM  Security Update               KB4580325               NT AUTHORITY\SYSTEM  10/20/2020                                      
+
+https://support.microsoft.com/help/4577671  BILLIAM  Security Update               KB4577671               NT AUTHORITY\SYSTEM  10/20/2020                                      
+
+
+
+
+ 
+###################################################################################### 
+---- 12. Time Synchronization Configurations - NTP Server [REQ - 10.2] ---- 
+###################################################################################### 
+ 
+---- Audit Information ---- 
+If this computer is a member of a domain it will be obtaining its time sync from a domain server
+However if this device is a domain server the value should be set to something other than 
+Time.windows.com and should be pointing to its primary or secondary NTP services
+  
+W32Time must be enabled to synch with the domain. Finding "W32Time" in running services list
+ 
+    NtpServer    REG_SZ    time.windows.com,0x9
+ 
+---- 12.2 running w32tm /query /status: 
+The following error occurred: The service has not been started. (0x80070426)
+ 
+---- 12.3 running w32tm /query /configuration: 
+The following error occurred: The service has not been started. (0x80070426)
+ 
+---- 12.4 running w32tm /query /peers: 
+The following error occurred: The service has not been started. (0x80070426)
+ 
+---- 12.4 running w32tm /query /source: 
+The following error occurred: The service has not been started. (0x80070426)
+  
+###################################################################################### 
+---- 13. ScreenSaver/Session Timeout [REQ - 8.1.8] ---- 
+###################################################################################### 
+  
+---- Audit Information ---- 
+ Screensaver values must be: 
+ ScreenSaverActive=1  (Screensaver is active) 
+ ScreenSaverIsSecure=1 (Requires a password to  in after timeout) 
+ ScreenSaverTimeOut=900 (Number may be no larger than 900 (900 seconds=15 min) 
+  
+ All items must have a value associated or the item is not set
+  
+  
+---- 13.1 running reg query "HKCU\Control Panel\Desktop" /s: 
+    ScreenSaveActive    REG_SZ    1
+---- 13.2 reg query "HKEY_CURRENT_USER\Control Panel\Desktop" /v ScreenSaveTimeout: 
+
+
+ 
+###################################################################################### 
+---- 14. RDP Security Level [REQ - 2.3] ---- 
+###################################################################################### 
+ 
+---- Audit Information ---- 
+ Value should be 3. If value is not found, Minimum Encryption Level is not configured 
+ 
+ 
+--- 14.1 running "reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" /v MinEncryptionLevel": 
+
+
+ 
+###################################################################################### 
+---- 15. Inactive and Disabled Users [REQ 8.1.4 - Domain Controller] ---- 
+###################################################################################### 
+---- 15.1 running dsquery user -disabled: 
+ 
+---- 15.2 dsquery user -limit 0 -inactive 12: 
+ 

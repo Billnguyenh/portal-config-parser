@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div>
+        <nav class='navbar navbar-light justify-content-start'>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                <a class="nav-link active" href="{% url 'win_parser:upload' %}">File Uploader</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container mt-3">
+        <form class='post-form form-control' method='POST' enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.config_file }}
+            <button type='submit' class='btn btn-success btn sm' name='button'>Upload Files</button>
+        </form>
+    </div>    
+
+    <div class="container">
+        <table class='table'>
+            <thead>
+                <tr>
+                    <th>Uploaded File Name</th>
+                    <th>Uploaded At</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for config in windowsconfigfiles %}
+                <tr>
+                    <td>{{ config.filename }}</td>
+                    <td>{{ config.uploaded_at }}</td>
+                    <td>
+                        <form action="{% url 'win_parser:delete_config_file' config.pk %}" method="POST">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="container">
+        <form action="{% url 'win_parser:parse_configs' %}" method="POST">
+            {% csrf_token %}
+            <button class='btn btn-success'>Run Report</button>
+        </form>
+        
+    </div>
+
+    
+{% endblock %}
